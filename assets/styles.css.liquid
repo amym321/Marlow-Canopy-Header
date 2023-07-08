@@ -12007,20 +12007,27 @@ body.tab-used .cc-checkbox__input:focus + .cc-checkbox__label, html.no-js .cc-ch
   color: {{ body_text_col }} !important;
 }
 
-/*.not-scrolled-backgrd-1,*/
-/*nav-container-not-scrolled,*/
 .not-scrolled .nav-container,
 .not-scrolled .toolbar-container,
-.not-scrolled .page-header
- {
+.not-scrolled .page-header,
+.not-scrolled .header-container {
   background-color: #ffffff00 !important;
+  transition: all .25s ease; 
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  -ms-transition: all .25s ease;
 }
-/*.scrolled-backgrd-1,*/
-/*nav-container-scrolled,*/
 .scroll .nav-container,
 .scroll .toolbar-container,
-.scroll .page-header{
+.scroll .page-header,
+.scroll .header-container {
   background-color: {{ nav_main_bg_col }} !important;
+  transition: all .25s ease; 
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  -ms-transition: all .25s ease;
 }
 
 .transparent-header .section-slideshow {

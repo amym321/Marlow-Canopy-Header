@@ -300,8 +300,10 @@
 	function makeHeaderTransparent() {
 		if (transparent) {
 			if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50)  {
-					if (document.getElementById("header-section")) {document.getElementById("header-section").classList.add("scroll");}
-					if (document.getElementById("header-section")) {document.getElementById("header-section").classList.remove("not-scrolled");}
+					if (document.getElementById("header-section")) {
+						document.getElementById("header-section").classList.add("scroll");
+						document.getElementById("header-section").classList.remove("not-scrolled");
+					}
 					if (document.getElementById("url-logo-first")) { document.getElementById("url-logo-first").classList.add("hide-element");}
 					if (document.getElementById("url-logo-second")) {document.getElementById("url-logo-second").classList.remove("hide-element");}
 					if (document.getElementById("logo-first")) {document.getElementById("logo-first").classList.add("hide-element");}
@@ -309,8 +311,10 @@
 					if (document.getElementById("compact-logo-first")) {document.getElementById("compact-logo-first").classList.add("hide-element");}
 					if (document.getElementById("compact-logo-second")) {document.getElementById("compact-logo-second").classList.remove("hide-element");}
 			} else {
-					if (document.getElementById("header-section")) {document.getElementById("header-section").classList.remove("scroll");}
-					if (document.getElementById("header-section")) {document.getElementById("header-section").classList.add("not-scrolled");}
+					if (document.getElementById("header-section")) {
+						document.getElementById("header-section").classList.remove("scroll");
+						document.getElementById("header-section").classList.add("not-scrolled");
+					}
 					if (document.getElementById("url-logo-first")) {document.getElementById("url-logo-first").classList.remove("hide-element");}
 					if (document.getElementById("url-logo-second")) {document.getElementById("url-logo-second").classList.add("hide-element");}
 					if (document.getElementById("logo-first")) {document.getElementById("logo-first").classList.remove("hide-element");}
