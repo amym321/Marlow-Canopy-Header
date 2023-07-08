@@ -37,7 +37,7 @@
 {%- endstyle-%}
 
 
-<div id="header-section" class="{% if settings.transparent_header %}not-scrolled{% endif %}"
+<div id="header-section" class="{% if settings.transparent_header and template == 'index' %}not-scrolled{% endif %}"
 		data-transparent="{{settings.transparent_header}}">
 
 {% if template == 'gift_card' %}
@@ -295,10 +295,12 @@
 	window.onscroll = function() {makeHeaderTransparent()};
 
 	var transparent = document.getElementById('header-section').getAttribute('data-transparent');
-	console.log('log 40) transparent = '+ transparent );//true
+	var template = document.getElementById('body').getAttribute('data-template');
+	console.log('log 40) transparent = '+ transparent );	//true
+	console.log('log 41) template = '+ template);	//template-index
 
 	function makeHeaderTransparent() {
-		if (transparent) {
+		if (transparent && template == 'index') {
 			if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50)  {
 					if (document.getElementById("header-section")) {
 						document.getElementById("header-section").classList.add("scroll");
