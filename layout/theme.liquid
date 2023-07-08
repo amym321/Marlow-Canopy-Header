@@ -146,7 +146,8 @@
 </head>
 
 {%- assign homepage_divider_col_opacity = settings.homepage_divider_col | color_extract: 'alpha' -%}
-<body class="template-{{ template.name }} {% if template.suffix != blank %}template-sfx-{{ template.suffix }}{% endif %} {% if template.directory != blank %}template-dir-{{ template.directory }}{% endif %}"
+<body class="template-{{ template.name }} {% if template.suffix != blank %}template-sfx-{{ template.suffix }}{% endif %} {% if template.directory != blank %}template-dir-{{ template.directory }}{% endif %}
+      {% if settings.transparent_header %} transparent-header {% endif %}"
       data-cc-animate-timeout="80">
 
 {% if content_for_header contains 'convert_global' %}

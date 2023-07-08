@@ -1047,6 +1047,12 @@
         "label": "Animate text and images on scroll",
         "info": "Only applies to desktop",
         "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "transparent_header",
+        "label": "Enable transparent header on homepage",
+        "default": true
       }
     ]
   }

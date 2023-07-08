@@ -36,6 +36,10 @@
 	{%- endif -%}
 {%- endstyle-%}
 
+
+<div id="header-section" class="{% if settings.transparent_header %}not-scrolled{% endif %}"
+		data-transparent="{{settings.transparent_header}}">
+
 {% if template == 'gift_card' %}
   {% comment %} Gift card template logo {% endcomment %}
   <div class="logo container">
@@ -43,8 +47,12 @@
     <a class="logo" href="{{ routes.root_url }}" itemprop="url">
       {% if section.settings.logo != blank %}
         {% capture img_size %}{{ section.settings.logo_width | times: 2 }}x{% endcapture %}
-        <img src="{{ section.settings.logo | img_url: img_size }}"
+        <img id="logo-first"  src="{{ section.settings.logo | img_url: img_size }}"
              alt="{{ section.settings.logo.alt | escape }}" itemprop="logo"/>
+
+				<img id="logo-second" class="hide-element" src="{{ section.settings.logo_2 | img_url: img_size }}"
+						 alt="{{ section.settings.logo.alt | escape }}" itemprop="logo"/>
+
       {% else %}
         {{ shop.name }}
       {% endif %}
@@ -57,16 +65,26 @@
       {% if section.settings.logo != blank %}
         {% capture img_size %}{{ section.settings.logo_width | times: 2 }}x{% endcapture %}
         <a href="{{ routes.root_url }}" itemprop="url">
-          <img src="{{ section.settings.logo | img_url: img_size }}"
+          <img id="url-logo-first" src="{{ section.settings.logo | img_url: img_size }}"
 							 width="{{ section.settings.logo.width }}"
 							 height="{{ section.settings.logo.height }}"
                {% if section.settings.compact_logo %}class="logo-desktop"{% endif %}
                alt="{{ section.settings.logo.alt | escape }}" itemprop="logo"/>
 
+					<img id="url-logo-second" class="hide-element" src="{{ section.settings.logo_2 | img_url: img_size }}"
+					width="{{ section.settings.logo.width }}"
+					height="{{ section.settings.logo.height }}"
+					{% if section.settings.compact_logo %}class="logo-desktop"{% endif %}
+					alt="{{ section.settings.logo.alt | escape }}" itemprop="logo"/>
+
           {% if section.settings.compact_logo %}
-            <img src="{{ section.settings.compact_logo | img_url: img_size }}" width="{{ section.settings.compact_logo.width }}"
+            <img id="compact-logo-first" src="{{ section.settings.compact_logo | img_url: img_size }}" width="{{ section.settings.compact_logo.width }}"
 								 height="{{ section.settings.compact_logo.height }}" class="logo-mobile" alt="{{ section.settings.compact_logo.alt | escape }}"/>
-          {% endif %}
+         
+						<img id="compact-logo-second" class="hide-element" src="{{ section.settings.compact_logo | img_url: img_size }}" width="{{ section.settings.compact_logo.width }}"
+									height="{{ section.settings.compact_logo.height }}" class="logo-mobile" alt="{{ section.settings.compact_logo.alt | escape }}"/>
+  
+					{% endif %}
         </a>
       {% else %}
         <a href="{{ routes.root_url }}" class="logo-text" itemprop="url">{{ shop.name }}</a>
@@ -269,6 +287,43 @@
   </div>
 {% endif %}
 
+
+</div>
+
+
+<script>
+	window.onscroll = function() {makeHeaderTransparent()};
+
+	var transparent = document.getElementById('header-section').getAttribute('data-transparent');
+	console.log('log 40) transparent = '+ transparent );//true
+
+	function makeHeaderTransparent() {
+		if (transparent) {
+			if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50)  {
+					if (document.getElementById("header-section")) {document.getElementById("header-section").classList.add("scroll");}
+					if (document.getElementById("header-section")) {document.getElementById("header-section").classList.remove("not-scrolled");}
+					if (document.getElementById("url-logo-first")) { document.getElementById("url-logo-first").classList.add("hide-element");}
+					if (document.getElementById("url-logo-second")) {document.getElementById("url-logo-second").classList.remove("hide-element");}
+					if (document.getElementById("logo-first")) {document.getElementById("logo-first").classList.add("hide-element");}
+					if (document.getElementById("logo-second")) {document.getElementById("logo-second").classList.remove("hide-element");}
+					if (document.getElementById("compact-logo-first")) {document.getElementById("compact-logo-first").classList.add("hide-element");}
+					if (document.getElementById("compact-logo-second")) {document.getElementById("compact-logo-second").classList.remove("hide-element");}
+			} else {
+					if (document.getElementById("header-section")) {document.getElementById("header-section").classList.remove("scroll");}
+					if (document.getElementById("header-section")) {document.getElementById("header-section").classList.add("not-scrolled");}
+					if (document.getElementById("url-logo-first")) {document.getElementById("url-logo-first").classList.remove("hide-element");}
+					if (document.getElementById("url-logo-second")) {document.getElementById("url-logo-second").classList.add("hide-element");}
+					if (document.getElementById("logo-first")) {document.getElementById("logo-first").classList.remove("hide-element");}
+					if (document.getElementById("logo-second")) {document.getElementById("logo-second").classList.add("hide-element");}
+					if (document.getElementById("compact-logo-first")) {document.getElementById("compact-logo-first").classList.remove("hide-element");}
+					if (document.getElementById("compact-logo-second")) {document.getElementById("compact-logo-second").classList.add("hide-element");}
+			}
+		}
+	}
+</script>
+
+
+
 {% schema %}
   {
 	"name": "Header",
@@ -291,6 +346,7 @@
 			"default": true,
 			"info": "The setting for social media links on desktop can be found in the Announcement Bar settings."
 		},
+
 		{
 			"type": "header",
 			"content": "Logo"
@@ -298,13 +354,24 @@
 		{
 			"type": "image_picker",
 			"id": "logo",
-			"label": "Desktop logo",
+			"label": "1st Desktop logo",
+			"info": "300 x 200px recommended"
+		},
+		{
+			"type": "image_picker",
+			"id": "logo_2",
+			"label": "2nd Desktop logo after scroll down",
 			"info": "300 x 200px recommended"
 		},
 		{
 			"type": "image_picker",
 			"id": "compact_logo",
-			"label": "Mobile logo"
+			"label": "1st Mobile logo"
+		},
+		{
+			"type": "image_picker",
+			"id": "compact_logo_2",
+			"label": "2nd Mobile logo after scroll down"
 		},
 		{
 			"type": "range",
