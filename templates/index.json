@@ -35,7 +35,7 @@
       ],
       "settings": {
         "height": "fixed",
-        "height_desktop": 720,
+        "height_desktop": 740,
         "height_mobile": 660,
         "full_width": true,
         "desktop_show_hide": "block",
