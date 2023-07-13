@@ -122,7 +122,8 @@
         "settings": {
           "sticky_header": true,
           "social_links_mob": true,
-          "logo": "shopify:\/\/shop_images\/marlow-blue-no_background.png",
+          "logo": "shopify:\/\/shop_images\/beige_logo_marlow-16.png",
+          "logo_2": "shopify:\/\/shop_images\/marlow-blue-no_background.png",
           "logo_width": 130,
           "mobile_logo_width": 120,
           "logo_location": "toolbar",
