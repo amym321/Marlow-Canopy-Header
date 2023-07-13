@@ -1,5 +1,5 @@
 {% assign nav_image_size = '400x' %}
-<nav class="main-nav cf desktop align-{{ section.settings.nav_alignment }}"
+<nav class="main-nav cf desktop align-{{ section.settings.nav_alignment }} nav_menu-{{nav_menu}}"
      data-col-limit="{{ section.settings.nav_col_limit_int }}"
      aria-label="{{ 'layout.desktop_navigation.menu_aria_label' | t | escape }}">
   {%- if section.settings.logo_location == 'links' and section.settings.header_layout == 'left' -%}
