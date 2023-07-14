@@ -188,19 +188,18 @@
         "label": "Featured link color",
         "default": "#dd6666"
       },
-
       {
         "type": "color",
         "id": "nav_tran_desk_col",
         "label": "Desktop Links on transparent header",
         "default": "#ffffff"
-      },      {
+      },
+      {
         "type": "color",
         "id": "nav_tran_mobile_col",
         "label": "Mobile Links on transparent header",
         "default": "#302BA3"
       },
-
       {
         "type": "header",
         "content": "Navigation side menu"
