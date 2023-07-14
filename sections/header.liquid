@@ -43,15 +43,15 @@
 
 {% if template == 'gift_card' %}
   {% comment %} Gift card template logo {% endcomment %}
-  <div class="logo container">
+  <div id="logo-gift" class="logo container not-scrolled">
     <meta itemprop="name" content="{{ shop.name }}">
     <a class="logo" href="{{ routes.root_url }}" itemprop="url">
       {% if section.settings.logo != blank %}
         {% capture img_size %}{{ section.settings.logo_width | times: 2 }}x{% endcapture %}
-        <img id="logo-first"  src="{{ section.settings.logo | img_url: img_size }}"
+        <img id="logo-first" class="logo-1"  src="{{ section.settings.logo | img_url: img_size }}"
              alt="{{ section.settings.logo.alt | escape }}" itemprop="logo"/>
 
-				<img id="logo-second" class="hide-element" src="{{ section.settings.logo_2 | img_url: img_size }}"
+				<img id="logo-second" class="logo-2" src="{{ section.settings.logo_2 | img_url: img_size }}"
 						 alt="{{ section.settings.logo.alt | escape }}" itemprop="logo"/>
 
       {% else %}
@@ -61,7 +61,7 @@
   </div>
 {% else %}
   {% capture logo_html %}
-    <div class="logo align-{% if section.settings.header_layout == 'left' %}left{% else %}center{% endif %}">
+    <div id="logo" class="logo not-scrolled align-{% if section.settings.header_layout == 'left' %}left{% else %}center{% endif %}">
       <meta itemprop="name" content="{{ shop.name }}">
       {% if section.settings.logo != blank %}
         {% capture img_size %}{{ section.settings.logo_width | times: 2 }}x{% endcapture %}
@@ -318,10 +318,18 @@
 					}
 					if (document.getElementById("url-logo-first")) { document.getElementById("url-logo-first").classList.add("hide-element");}
 					if (document.getElementById("url-logo-second")) {document.getElementById("url-logo-second").classList.remove("hide-element");}
-					if (document.getElementById("logo-first")) {document.getElementById("logo-first").classList.add("hide-element");}
-					if (document.getElementById("logo-second")) {document.getElementById("logo-second").classList.remove("hide-element");}
-					if (document.getElementById("compact-logo-first")) {document.getElementById("compact-logo-first").classList.add("hide-element");}
-					if (document.getElementById("compact-logo-second")) {document.getElementById("compact-logo-second").classList.remove("hide-element");}
+					if (document.getElementById("logo")) {
+						document.getElementById("logo").classList.add("scroll");
+						document.getElementById("logo").classList.remove("not-scrolled");
+					}
+					if (document.getElementById("logo-gift")) {
+						document.getElementById("logo-gift").classList.add("scroll");
+						document.getElementById("logo-gift").classList.remove("not-scrolled");
+					}
+					//if (document.getElementById("logo-first")) {document.getElementById("logo-first").classList.add("hide-element");}
+					//if (document.getElementById("logo-second")) {document.getElementById("logo-second").classList.remove("hide-element");}
+					//if (document.getElementById("compact-logo-first")) {document.getElementById("compact-logo-first").classList.add("hide-element");}
+					//if (document.getElementById("compact-logo-second")) {document.getElementById("compact-logo-second").classList.remove("hide-element");}
 			} else {
 					if (document.getElementById("header-section")) {
 						document.getElementById("header-section").classList.remove("scroll");
@@ -329,10 +337,18 @@
 					}
 					if (document.getElementById("url-logo-first")) {document.getElementById("url-logo-first").classList.remove("hide-element");}
 					if (document.getElementById("url-logo-second")) {document.getElementById("url-logo-second").classList.add("hide-element");}
-					if (document.getElementById("logo-first")) {document.getElementById("logo-first").classList.remove("hide-element");}
-					if (document.getElementById("logo-second")) {document.getElementById("logo-second").classList.add("hide-element");}
-					if (document.getElementById("compact-logo-first")) {document.getElementById("compact-logo-first").classList.remove("hide-element");}
-					if (document.getElementById("compact-logo-second")) {document.getElementById("compact-logo-second").classList.add("hide-element");}
+					if (document.getElementById("logo")) {
+						document.getElementById("logo").classList.remove("scroll");
+						document.getElementById("logo").classList.add("not-scrolled");
+					}
+					if (document.getElementById("logo-gift")) {
+						document.getElementById("logo-gift").classList.remove("scroll");
+						document.getElementById("logo-gift").classList.add("not-scrolled");
+					}
+					//if (document.getElementById("logo-first")) {document.getElementById("logo-first").classList.remove("hide-element");}
+					//if (document.getElementById("logo-second")) {document.getElementById("logo-second").classList.add("hide-element");}
+					//if (document.getElementById("compact-logo-first")) {document.getElementById("compact-logo-first").classList.remove("hide-element");}
+					//if (document.getElementById("compact-logo-second")) {document.getElementById("compact-logo-second").classList.add("hide-element");}
 			}
 		}
 	}

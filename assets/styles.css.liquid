@@ -43,6 +43,8 @@ File structure:
 {%- assign nav_drop_link_hover_col = settings.nav_main_hover_col -%}
 {%- assign nav_drop_heading_col = settings.nav_main_col -%}
 {%- assign nav_featured_col = settings.nav_featured_col -%}
+{%- assign nav_tran_desk_col = settings.nav_tran_desk_col -%}
+{%- assign nav_tran_mobile_col = settings.nav_tran_mobile_col -%}
 {%- assign nav_main_bg_col = settings.nav_main_bg_col -%}
 {%- assign nav_main_border_col = settings.divider_col -%}
 {%- assign nav_announcement_bg_col = settings.announcement_col_bar -%}
@@ -11994,12 +11996,45 @@ body.tab-used .cc-checkbox__input:focus + .cc-checkbox__label, html.no-js .cc-ch
 
 /* transparent header & slideshow - am */
 .hide-element {
+  /* display:none; */
+}
+
+.not-scrolled .logo-2,
+.not-scrolled #url-logo-second,
+.not-scrolled #compact-logo-second {
+  display:none;
+}
+.scroll .logo-1,
+.scroll #url-logo-first,
+.scroll #compact-logo-first {
+  display:none;
+}
+.not-scrolled:hover .logo-2,
+.not-scrolled:hover #url-logo-second,
+.not-scrolled:hover #compact-logo-second {
+  display: block;
+}
+.not-scrolled:hover .logo-1,
+.not-scrolled:hover #url-logo-first,
+.not-scrolled:hover #compact-logo-first {
   display:none;
 }
 
+
+
 .not-scrolled .toolbar-container,
 .not-scrolled .main-nav .nav-item .nav-item-link {
-  color: #fff !important;
+  color: {{nav_tran_desk_col}} !important;   /* color: {{#fff}} !important; */
+}
+@media (max-width: 768px) {
+  .not-scrolled .toolbar-container,
+  .not-scrolled .main-nav .nav-item .nav-item-link {
+    color: {{nav_tran_mobile_col}} !important;   /* color: {{#fff}} !important; */
+  }
+}
+.not-scrolled:hover .toolbar-container,
+.not-scrolled:hover .main-nav .nav-item .nav-item-link {
+  color: {{ nav_featured_col}} !important;  /* color: {{ body_text_col }} !important; */
 }
 
 .scroll .toolbar-container,
@@ -12012,6 +12047,17 @@ body.tab-used .cc-checkbox__input:focus + .cc-checkbox__label, html.no-js .cc-ch
 .not-scrolled .page-header,
 .not-scrolled .header-container {
   background-color: #ffffff00 !important;
+  transition: all .25s ease; 
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+}
+.not-scrolled:hover .nav-container,
+.not-scrolled:hover .toolbar-container,
+.not-scrolled:hover .page-header,
+.not-scrolled:hover .header-container {
+  background-color: {{ nav_main_bg_col }} !important;
   transition: all .25s ease; 
   -webkit-transition: all .25s ease;
   -moz-transition: all .25s ease;
@@ -12082,7 +12128,14 @@ body.tab-used .cc-checkbox__input:focus + .cc-checkbox__label, html.no-js .cc-ch
   /* right: 8px !important; */
   /* right: 10% !impor4tant; */
 }
+.not-scrolled:hover .nav_menu-true .sub-nav {
+  border: solid 1px  {{ nav_main_bg_col }} ;
+  background: {{ nav_main_bg_col }} ;
+}
 
 .not-scrolled .main-nav .sub-nav .sub-nav-item-link {
-  color: #fff !important;
+  color: {{nav_tran_desk_col}} !important;   /* color: #fff !important; */
+}
+.not-scrolled:hover .main-nav .sub-nav .sub-nav-item-link {
+  color: {{ nav_featured_col }} !important;
 }
