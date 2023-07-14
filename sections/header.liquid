@@ -48,12 +48,8 @@
     <a class="logo" href="{{ routes.root_url }}" itemprop="url">
       {% if section.settings.logo != blank %}
         {% capture img_size %}{{ section.settings.logo_width | times: 2 }}x{% endcapture %}
-        <img id="logo-first" class="logo-1"  src="{{ section.settings.logo | img_url: img_size }}"
-             alt="{{ section.settings.logo.alt | escape }}" itemprop="logo"/>
-
-				<img id="logo-second" class="logo-2" src="{{ section.settings.logo_2 | img_url: img_size }}"
-						 alt="{{ section.settings.logo.alt | escape }}" itemprop="logo"/>
-
+						<img  class="logo-1"  src="{{ section.settings.logo | img_url: img_size }}"
+									alt="{{ section.settings.logo.alt | escape }}" itemprop="logo"/>
       {% else %}
         {{ shop.name }}
       {% endif %}
@@ -66,25 +62,26 @@
       {% if section.settings.logo != blank %}
         {% capture img_size %}{{ section.settings.logo_width | times: 2 }}x{% endcapture %}
         <a href="{{ routes.root_url }}" itemprop="url">
-          <img id="url-logo-first" src="{{ section.settings.logo | img_url: img_size }}"
-							 width="{{ section.settings.logo.width }}"
-							 height="{{ section.settings.logo.height }}"
-               {% if section.settings.compact_logo %}class="logo-desktop"{% endif %}
-               alt="{{ section.settings.logo.alt | escape }}" itemprop="logo"/>
-
-					<img id="url-logo-second" class="hide-element" src="{{ section.settings.logo_2 | img_url: img_size }}"
-					width="{{ section.settings.logo.width }}"
-					height="{{ section.settings.logo.height }}"
-					{% if section.settings.compact_logo %}class="logo-desktop"{% endif %}
-					alt="{{ section.settings.logo.alt | escape }}" itemprop="logo"/>
+					{% if template contains "index" %}
+						<img id="url-logo-first-{{template}}" src="{{ section.settings.logo | img_url: img_size }}"
+								width="{{ section.settings.logo.width }}"
+								height="{{ section.settings.logo.height }}"
+								{% if section.settings.compact_logo %}class="logo-desktop"{% endif %}
+								alt="{{ section.settings.logo.alt | escape }}" itemprop="logo"/>
+					{% endif %}
+					<img id="url-logo-second-{{template}}"  src="{{ section.settings.logo_2 | img_url: img_size }}"
+							width="{{ section.settings.logo.width }}"
+							height="{{ section.settings.logo.height }}"
+							{% if section.settings.compact_logo %}class="logo-desktop"{% endif %}
+							alt="{{ section.settings.logo.alt | escape }}" itemprop="logo"/>
 
           {% if section.settings.compact_logo %}
-            <img id="compact-logo-first" src="{{ section.settings.compact_logo | img_url: img_size }}" width="{{ section.settings.compact_logo.width }}"
-								 height="{{ section.settings.compact_logo.height }}" class="logo-mobile" alt="{{ section.settings.compact_logo.alt | escape }}"/>
-         
-						<img id="compact-logo-second" class="hide-element" src="{{ section.settings.compact_logo | img_url: img_size }}" width="{{ section.settings.compact_logo.width }}"
+						{% if template contains "index" %}
+							<img id="compact-logo-first-{{template}}" src="{{ section.settings.compact_logo | img_url: img_size }}" width="{{ section.settings.compact_logo.width }}"
 									height="{{ section.settings.compact_logo.height }}" class="logo-mobile" alt="{{ section.settings.compact_logo.alt | escape }}"/>
-  
+						{% endif %}
+						<img id="compact-logo-second-{{template}}" src="{{ section.settings.compact_logo | img_url: img_size }}" width="{{ section.settings.compact_logo.width }}"
+								height="{{ section.settings.compact_logo.height }}" class="logo-mobile" alt="{{ section.settings.compact_logo.alt | escape }}"/>
 					{% endif %}
         </a>
       {% else %}
@@ -316,8 +313,8 @@
 						document.getElementById("header-section").classList.add("scroll");
 						document.getElementById("header-section").classList.remove("not-scrolled");
 					}
-					if (document.getElementById("url-logo-first")) { document.getElementById("url-logo-first").classList.add("hide-element");}
-					if (document.getElementById("url-logo-second")) {document.getElementById("url-logo-second").classList.remove("hide-element");}
+					//if (document.getElementById("url-logo-first")) { document.getElementById("url-logo-first").classList.add("hide-element");}
+					//if (document.getElementById("url-logo-second")) {document.getElementById("url-logo-second").classList.remove("hide-element");}
 					if (document.getElementById("logo")) {
 						document.getElementById("logo").classList.add("scroll");
 						document.getElementById("logo").classList.remove("not-scrolled");
@@ -335,8 +332,8 @@
 						document.getElementById("header-section").classList.remove("scroll");
 						document.getElementById("header-section").classList.add("not-scrolled");
 					}
-					if (document.getElementById("url-logo-first")) {document.getElementById("url-logo-first").classList.remove("hide-element");}
-					if (document.getElementById("url-logo-second")) {document.getElementById("url-logo-second").classList.add("hide-element");}
+					//if (document.getElementById("url-logo-first")) {document.getElementById("url-logo-first").classList.remove("hide-element");}
+					//if (document.getElementById("url-logo-second")) {document.getElementById("url-logo-second").classList.add("hide-element");}
 					if (document.getElementById("logo")) {
 						document.getElementById("logo").classList.remove("scroll");
 						document.getElementById("logo").classList.add("not-scrolled");

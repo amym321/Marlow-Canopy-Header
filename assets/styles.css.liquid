@@ -11999,26 +11999,43 @@ body.tab-used .cc-checkbox__input:focus + .cc-checkbox__label, html.no-js .cc-ch
   /* display:none; */
 }
 
-.not-scrolled .logo-2,
-.not-scrolled #url-logo-second,
-.not-scrolled #compact-logo-second {
+
+
+
+/* .not-scrolled .logo-2, */
+.not-scrolled #url-logo-second-index,
+.not-scrolled #compact-logo-second-index {
   display:none;
 }
-.scroll .logo-1,
-.scroll #url-logo-first,
-.scroll #compact-logo-first {
+/* .scroll .logo-1, */
+.scroll #url-logo-first-index,
+.scroll #compact-logo-first-index {
   display:none;
 }
-.not-scrolled:hover .logo-2,
-.not-scrolled:hover #url-logo-second,
-.not-scrolled:hover #compact-logo-second {
-  display: block;
+@media (min-width: 769px) {
+  /* .not-scrolled:hover .logo-2, */
+  .not-scrolled:hover #url-logo-second-index {
+    display: block;
+  }
+  .scroll #compact-logo-second-index {
+    display:none;
+  }
 }
-.not-scrolled:hover .logo-1,
-.not-scrolled:hover #url-logo-first,
-.not-scrolled:hover #compact-logo-first {
+@media (max-width: 768px) {
+  .not-scrolled:hover #compact-logo-second-index {
+    display: block;
+  }
+  /* .scroll .logo-2, */
+  .scroll #url-logo-second--index {
+    display:none;
+  }
+}
+/* .not-scrolled:hover .logo-1, */
+.not-scrolled:hover #url-logo-first-index,
+.not-scrolled:hover #compact-logo-first-index {
   display:none;
 }
+
 
 
 
