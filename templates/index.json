@@ -88,6 +88,9 @@
         "1b79a2c4-764c-43fa-a0f8-091b4d26edd0",
         "3ef0a5e2-b764-44f7-bb7a-57c00a7c8550"
       ],
+      "custom_css": [
+        ".how-its-work {transform: translateY(-10px);}"
+      ],
       "settings": {
         "main-heading": "How It Works:",
         "sub-heading": "The Marlow lubricant bottle is designed to perfectly coat your tampon in lubricant with one quick, mess-free dip.",
