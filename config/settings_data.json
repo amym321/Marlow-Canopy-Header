@@ -205,8 +205,8 @@
         "settings": {
           "announcement_show": true,
           "announcement_home_only": false,
-          "announcement_text": "🌈 FREE SHIPPING ON ALL SUBSCRIPTIONS & ORDERS OVER $30 🌈",
-          "announcement_link": "shopify:\/\/collections\/all",
+          "announcement_text": "🌈 FREE SHIPPING ON ALL ORDERS OVER $50 🌈",
+          "announcement_link": "shopify:\/\/collections\/shop-all",
           "show_social_icons": false,
           "show_locale_selector": false,
           "show_currency_selector": true
