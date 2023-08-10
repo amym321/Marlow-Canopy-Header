@@ -4,4 +4,6 @@ html body .data-smartrr-top-price{
 }
 html body .data-smartrr-top-price afterpay-placement{
   order:1;
+  width:100%;
+  display:block;
 }
