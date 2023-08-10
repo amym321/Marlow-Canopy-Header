@@ -28,3 +28,9 @@ letter-spacing: 0em;
 text-align: left;
 color: #302BA3;  
 }
+
+
+html body .scroll-link{
+  cursor:pointer;
+  text-decoration:underline;
+}
