@@ -53,6 +53,7 @@ html body .radio-wrapper  .smartrr-purchase-options{
 
 html body .varient-inner{
   display:flex;
+  gap:20px;
 }
 html body .varient{
   min-width:73px;
