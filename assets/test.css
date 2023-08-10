@@ -63,4 +63,5 @@ html body .varient{
   justify-content:center;
   align-items:center;
   border-radius:6px;
+  cursor:pointer;
 }
