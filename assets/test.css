@@ -62,4 +62,5 @@ html body .varient{
   display:flex;
   justify-content:center;
   align-items:center;
+  border-radius:6px;
 }
