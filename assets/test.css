@@ -8,3 +8,7 @@ html body .data-smartrr-top-price afterpay-placement{
   width:100%;
   display:block;
 }
+html body .product-details  .cc-rating-container .cc-rating-custom-caption{
+  line-height:1px
+  top:2px;
+}
