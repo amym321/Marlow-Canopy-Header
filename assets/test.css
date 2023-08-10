@@ -9,8 +9,9 @@ html body .data-smartrr-top-price afterpay-placement{
   display:block;
 }
 html body .product-details  .cc-rating-container .cc-rating-custom-caption{
-  line-height:1px
-  top:2px;
+    left: 6px;
+    line-height: 1;
+    top: 3px;
 }
 
 html body .product-details  .cc-rating-container .cc-rating-stars--inactive svg{
