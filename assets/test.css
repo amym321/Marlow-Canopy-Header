@@ -29,8 +29,13 @@ text-align: left;
 color: #302BA3;  
 }
 
+html body .choose-wrapper{
+  display:flex;
+  gap:10px;
+}
 
 html body .scroll-link{
   cursor:pointer;
   text-decoration:underline;
 }
+
