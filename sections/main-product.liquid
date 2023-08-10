@@ -217,8 +217,13 @@
             <!--   added dropdown based on radio buttons - am -->
               {% for option in product.options_with_values %}
                 {% if option.name != blank and  option.name != "Title" %}
-                  <div class="font-up">{{ option.name }}</div>
+                  <div class="font-up">{{ option.name }}</div>                  
                 {% endif %}
+               <div>How do I choose?</div>  
+
+
+               
+
               {% endfor  %}
               <div dropdown-multi-variants class="variant-select">
                 <div class="dropdown-options dropdown-field">
