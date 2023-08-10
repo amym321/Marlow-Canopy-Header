@@ -39,3 +39,9 @@ html body .scroll-link{
   text-decoration:underline;
 }
 
+html body .radio-wrapper{
+  border: 2px solid #302BA3;
+  box-shadow: 2px 2px 6px 0px #302BA340;
+
+}
+
