@@ -51,3 +51,6 @@ html body .radio-wrapper  .smartrr-purchase-options{
   margin-right:0;
 }
 
+html body .varient-inner{
+  display:flex;
+}
