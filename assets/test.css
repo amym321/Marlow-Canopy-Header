@@ -1,6 +1,7 @@
 html body .data-smartrr-top-price{
   display: flex;
   flex-wrap:wrap;
+  gap:10px;
 }
 html body .data-smartrr-top-price afterpay-placement{
   order:1;
