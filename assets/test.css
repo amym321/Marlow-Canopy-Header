@@ -12,3 +12,8 @@ html body .product-details  .cc-rating-container .cc-rating-custom-caption{
   line-height:1px
   top:2px;
 }
+
+html body .product-details  .cc-rating-container .cc-rating-stars--inactive svg{
+  width:1.5em;
+  height:1.5em;
+}
