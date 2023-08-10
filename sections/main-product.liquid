@@ -322,54 +322,53 @@
                           {% endfor %}
                         </div>
                       {% endif %}
-                      <div class="radio-wrapper">
-                        <div id="dropdownSelections" class="dropdown-content ">
-                          <!-- smartrr code -->
-                          <div data-smartrr-choose-sub class="dropdown-select">
-                            {% for variant in product.variants %}
-                              {% if variant.title contains 'Subscription' %}
-                                <label class="input">
-                                  <input
-                                    type="radio"
-                                    data-smartrr-variant-input="sub"
-                                    value="{{ variant.id }}"
-                                    name="id"
-                                    {% if variant.id == product.selected_or_first_available_variant.id %}
-                                      checked="checked"
-                                    {% endif %}
-                                  >
-                                  <div data-smartrr-variant-id="{{ variant.id }}">{{ variant.title }}</div>
-                                </label>
-                              {% endif %}
-                            {% endfor %}
-                          </div>
-                          <div data-smartrr-choose-otp class="dropdown-select">
-                            {% for variant in product.variants %}
-                              {% unless variant.title contains 'Subscription' %}
-                                <label class="input">
-                                  <input
-                                    type="radio"
-                                    data-smartrr-variant-input="otp"
-                                    value="{{ variant.id }}"
-                                    name="id"
-                                    {% if variant.id == product.selected_or_first_available_variant.id %}
-                                      checked="checked"
-                                    {% endif %}
-                                  >
-                                  <div data-smartrr-variant-id="{{ variant.id }}">{{ variant.title }}</div>
-                                </label>
-                              {% endunless %}
-                            {% endfor %}
-                          </div>
 
-                          {% if product.variants.size == 1 %}
-                            <style>
-                              [data-smartrr-choose-sub], [data-smartrr-choose-otp], [dropdown-multi-variants] {
-                                display: none;
-                              }
-                            </style>
-                          {% endif %}
+                      <div id="dropdownSelections" class="dropdown-content ">
+                        <!-- smartrr code -->
+                        <div data-smartrr-choose-sub class="dropdown-select">
+                          {% for variant in product.variants %}
+                            {% if variant.title contains 'Subscription' %}
+                              <label class="input">
+                                <input
+                                  type="radio"
+                                  data-smartrr-variant-input="sub"
+                                  value="{{ variant.id }}"
+                                  name="id"
+                                  {% if variant.id == product.selected_or_first_available_variant.id %}
+                                    checked="checked"
+                                  {% endif %}
+                                >
+                                <div data-smartrr-variant-id="{{ variant.id }}">{{ variant.title }}</div>
+                              </label>
+                            {% endif %}
+                          {% endfor %}
                         </div>
+                        <div data-smartrr-choose-otp class="dropdown-select">
+                          {% for variant in product.variants %}
+                            {% unless variant.title contains 'Subscription' %}
+                              <label class="input">
+                                <input
+                                  type="radio"
+                                  data-smartrr-variant-input="otp"
+                                  value="{{ variant.id }}"
+                                  name="id"
+                                  {% if variant.id == product.selected_or_first_available_variant.id %}
+                                    checked="checked"
+                                  {% endif %}
+                                >
+                                <div data-smartrr-variant-id="{{ variant.id }}">{{ variant.title }}</div>
+                              </label>
+                            {% endunless %}
+                          {% endfor %}
+                        </div>
+
+                        {% if product.variants.size == 1 %}
+                          <style>
+                            [data-smartrr-choose-sub], [data-smartrr-choose-otp], [dropdown-multi-variants] {
+                              display: none;
+                            }
+                          </style>
+                        {% endif %}
                       </div>
                     </div>
                   </div>
