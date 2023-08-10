@@ -373,37 +373,38 @@
                     </div>
                   </div>
                 </div>
-
-                {% if product.available and block.settings.stock_warning_show %}
-                  {%- if current_variant.inventory_management == 'shopify'
-                    and current_variant.inventory_quantity > 0
-                  -%}
-                    {% if block.settings.stock_warning_limit == 0
-                      or variant.inventory_quantity <= block.settings.stock_warning_limit
-                    %}
-                      <div class="product-inventory-notice product-detail__gap-sm">
-                        {{- 'products.labels.only_x_left' | t: quantity: current_variant.inventory_quantity -}}
-                      </div>
+                <div class="radio-wrapper">
+                  {% if product.available and block.settings.stock_warning_show %}
+                    {%- if current_variant.inventory_management == 'shopify'
+                      and current_variant.inventory_quantity > 0
+                    -%}
+                      {% if block.settings.stock_warning_limit == 0
+                        or variant.inventory_quantity <= block.settings.stock_warning_limit
+                      %}
+                        <div class="product-inventory-notice product-detail__gap-sm">
+                          {{- 'products.labels.only_x_left' | t: quantity: current_variant.inventory_quantity -}}
+                        </div>
+                      {%- else -%}
+                        <div
+                          class="product-inventory-notice product-inventory-notice--no-inventory product-detail__gap-sm"
+                        ></div>
+                      {%- endif -%}
                     {%- else -%}
                       <div
                         class="product-inventory-notice product-inventory-notice--no-inventory product-detail__gap-sm"
                       ></div>
                     {%- endif -%}
-                  {%- else -%}
-                    <div
-                      class="product-inventory-notice product-inventory-notice--no-inventory product-detail__gap-sm"
-                    ></div>
-                  {%- endif -%}
-                {% endif %}
-
-                <!-- code added - am. Benefits text depending on One-Time Purchase or Subscription checked -->
-                {% for tag in product.tags %}
-                  {% if tag == 'benefits' %}
-                    {% assign has_benefits = true %}
                   {% endif %}
-                {% endfor %}
 
-                {% render 'smartrr-product' %}
+                  <!-- code added - am. Benefits text depending on One-Time Purchase or Subscription checked -->
+                  {% for tag in product.tags %}
+                    {% if tag == 'benefits' %}
+                      {% assign has_benefits = true %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% render 'smartrr-product' %}
+                </div>
 
                 {% if has_benefits %}
                   <div data-smartrr-choose-otp-benefit class="hide">
