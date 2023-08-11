@@ -46,8 +46,8 @@ document.querySelector('.smartrr-grp-input[value="sub"]  label ').addEventListen
 
 })
 
-document.querySelector('.Subscribe').addEventListener('click',funtion(){
-   document.querySelector('.smartrr-grp-input[value="sub"]  label').click()
+// document.querySelector('.Subscribe').addEventListener('click',funtion(){
+//    document.querySelector('.smartrr-grp-input[value="sub"]  label').click()
 
-})
+// })
      
