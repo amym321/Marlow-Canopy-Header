@@ -425,16 +425,10 @@
 
                   {% if has_benefits %}
                     <div data-smartrr-choose-otp-benefit class="hide">
-                        <div data-smartrr-benefits-all data-smartrr-benefits-duration></div>
-                        <div data-smartrr-benefits-all>Skip or cancel anytime</div>
-                        <div data-smartrr-benefits-all>Free Shipping</div>                    
-                    </div>
-                    {% assign has_benefits = false %}
-                  {% endif %}
-                </div>
-
-
-                    <div data-smartrr-onetime-benefits>
+                      <div data-smartrr-benefits-all data-smartrr-benefits-duration></div>
+                      <div data-smartrr-benefits-all>Skip or cancel anytime</div>
+                      <div data-smartrr-benefits-all>Free Shipping</div>
+                      <div data-smartrr-onetime-benefits>
                         {% if product == all_products['bundle-save'] %}
                           <div>1 box of tampons, 1 bottle of lubricant</div>
                         {% endif %}
@@ -452,9 +446,12 @@
                         {% if product == all_products['marlow-tampons'] %}
                           <div>3 boxes of tampons</div>
                         {% endif %}
-                      
                       </div>
-                  
+                    </div>
+                    {% assign has_benefits = false %}
+                  {% endif %}
+                </div>
+
               {%- when 'buy_buttons' -%}
                 {% if product.available %}
                   {% if is_variant_picker == false %}
