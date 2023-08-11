@@ -6,6 +6,7 @@ document.querySelectorAll('.varient').forEach(function (el) {
           document.querySelectorAll('.variant-select [data-variant-id] .dropbtn').forEach(function (el) {
           if(el.textContent.indexOf(checkText)>-1){
                 console.log(el)
+                 el.click()
             }
     })
     })
