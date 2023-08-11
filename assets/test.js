@@ -1,7 +1,15 @@
+function removeClass(){
+document.querySelectorAll('.varient').forEach(function (el) {
+el.classList.remove('active')
+})
+}
+
+
+
 document.querySelectorAll('.varient').forEach(function (el) {
 
     el.addEventListener('click',function(){
-
+      removeClass()
      this.classList.add('active')
          var checkText=el.textContent
 
