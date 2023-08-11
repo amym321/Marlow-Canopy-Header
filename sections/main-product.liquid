@@ -389,6 +389,26 @@
                     <div class="varient">Combo</div>
                   </div>
                 </div>
+
+                <div class="radio-form">
+                  <label>
+                    <input type="radio" name="purchase_option" value="buy_once">
+                    Buy once
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="purchase_option" value="subscribe">
+                    Subscribe and SAVE 10%
+                  </label>
+                  {% if purchase_option == 'subscribe' %}
+                    <ul>
+                      <li>Delivered every 90 days</li>
+                      <li>Skip or cancel anytime</li>
+                      <li>Free shipping for orders over $50</li>
+                    </ul>
+                  {% endif %}
+                </div>
+
                 <div class="radio-wrapper">
                   {% if product.available and block.settings.stock_warning_show %}
                     {%- if current_variant.inventory_management == 'shopify'
