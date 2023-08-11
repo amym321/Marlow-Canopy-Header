@@ -13,7 +13,7 @@ document.querySelectorAll('.varient').forEach(function (el) {
      this.classList.add('active')
          var checkText=el.textContent
 
-          document.querySelectorAll('#dropdownSelections  .dropdown-select .input').forEach(function (el) {
+          document.querySelectorAll('#dropdownSelections  .dropdown-select:not(.hide) .input').forEach(function (el) {
           if(el.textContent.indexOf(checkText)>-1){
                 console.log(el)
                  el.querySelector('input').click()
