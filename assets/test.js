@@ -22,7 +22,7 @@ document.querySelectorAll('.varient').forEach(function (el) {
     })
   })
 
- document.querySelector('.varient-wrapper.data-smartrr-label-otp').classList.add('hide')
+ // document.querySelector('.varient-wrapper.data-smartrr-label-otp').classList.add('hide')
 
 document.querySelector('.smartrr-otp.smartrr-grp-input label ').addEventListener('click',function () {
     document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.remove('hide')
