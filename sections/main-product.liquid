@@ -499,6 +499,8 @@
                         </div>
                       </div>
 
+                      helll
+
                     {% else %}
                       <input type="hidden" name="quantity" value="1">
                     {% endif %}
@@ -519,7 +521,7 @@
                         <span class="loading-spinner" aria-label="{{ 'products.product.adding_to_cart' | t }}"></span>
                       </button>
                     </span>
-                    helll
+
                     {% if block.settings.enable_payment_button and product.selling_plan_groups == empty %}
                       {{ form | payment_button }}
                     {% endif %}
