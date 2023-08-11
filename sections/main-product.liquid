@@ -1,7 +1,5 @@
 {{ 'test.css' | asset_url | stylesheet_tag }}
 
-{{ 'test.js' | asset_url | script_tag }}
-
 {%- assign is_featured_product = false -%}
 
 {%- liquid
@@ -1241,3 +1239,5 @@
   ]
 }
 {% endschema %}
+
+{{ 'test.js' | asset_url | script_tag }}
