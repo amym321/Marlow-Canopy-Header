@@ -24,15 +24,15 @@
 
 //  document.querySelector('.varient-wrapper.data-smartrr-label-otp').classList.add('hide')
 
-// document.querySelector('.smartrr-otp.smartrr-grp-input label ').addEventListener('click',function () {
-//     document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.remove('hide')
-//      document.querySelector('.varient-wrapper.data-smartrr-label-otp').classList.add('hide')
-// })
+document.querySelector('.smartrr-otp.smartrr-grp-input label ').addEventListener('click',function () {
+    document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.remove('hide')
+     document.querySelector('.varient-wrapper.data-smartrr-label-otp').classList.add('hide')
+})
 
-// document.querySelector('.smartrr-grp-input[value="sub"]  label ').addEventListener('click',function () {
-//     document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.add('hide')
-//      document.querySelector('.varient-wrapper.data-smartrr-label-otp').classList.remove('hide')
-// })
+document.querySelector('.smartrr-grp-input[value="sub"]  label ').addEventListener('click',function () {
+    document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.add('hide')
+     document.querySelector('.varient-wrapper.data-smartrr-label-otp').classList.remove('hide')
+})
 
 
      
