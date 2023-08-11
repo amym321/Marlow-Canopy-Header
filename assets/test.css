@@ -67,3 +67,8 @@ html body .varient{
   border-radius:6px;
   cursor:pointer;
 }
+
+html body .varient.active{
+  background:#302ba3;
+  color:#fff;
+}
