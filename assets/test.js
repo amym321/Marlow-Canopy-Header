@@ -32,11 +32,12 @@ document.querySelector('.smartrr-otp.smartrr-grp-input label ').addEventListener
 
 })
 
+   document.querySelector('.smartrr-grp-input[value="sub"]  label').click()
  document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.add('hide')
      document.querySelector('.varient-wrapper.data-smartrr-label-otp').classList.remove('hide')
         document.querySelector('.varient-wrapper.data-smartrr-label-otp>div :last-child').click()
 
-   document.querySelector('.smartrr-grp-input[value="sub"]  label').click()
+
 
 document.querySelector('.smartrr-grp-input[value="sub"]  label ').addEventListener('click',function () {
     document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.add('hide')
