@@ -28,7 +28,7 @@ document.querySelector('.smartrr-otp.smartrr-grp-input label ').addEventListener
     document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.remove('hide')
      document.querySelector('.varient-wrapper.data-smartrr-label-otp').classList.add('hide')
 
-          document.querySelector('.varient-wrapper.data-smartrr-label-sub>div:first-child').click()
+          document.querySelector('.varient-wrapper.data-smartrr-label-sub>div :first-child').click()
 
 })
 
