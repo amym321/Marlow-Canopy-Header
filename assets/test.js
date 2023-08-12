@@ -26,7 +26,7 @@ document.querySelectorAll('.varient').forEach(function (el) {
     })
     // description 
     document.querySelectorAll('.description-wrapper .varient-description').forEach(function (el) {
-      if (!el.classList.contains(Combo)) {
+      if (!el.classList.contains('Combo')) {
           console.log(el)
         addClass()
         el.classList.remove('hide') ;
