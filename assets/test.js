@@ -5,8 +5,8 @@ el.classList.remove('active')
 }
 
 function addClass(){
-document.querySelectorAll('.varient').forEach(function (el) {
-el.classList.add('active')
+document.querySelectorAll('.description-wrapper .varient-description').forEach(function (el) {
+el.classList.add('hide')
 })
 }
 
