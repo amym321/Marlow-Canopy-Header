@@ -26,16 +26,12 @@ document.querySelectorAll('.varient').forEach(function (el) {
     })
     // description 
     document.querySelectorAll('.description-wrapper .varient-description').forEach(function (el) {
-      if (!el.classList.contains('Combo')) {
+      if (el.classList.contains(checkText)) {
           console.log(el)
         addClass()
-        el.classList.remove('hide') ;
-     
+        el.classList.remove('hide');     
         el.querySelector('span').innerHTML=checkText;
-
-      }else{
-        el.classList.remove('hide')
-       }
+      }
     })
   })
 })
