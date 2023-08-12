@@ -68,8 +68,9 @@ document.querySelectorAll('.varient').forEach(function (el) {
 
           document.querySelectorAll('.description-wrapper .varient-description').forEach(function (el) {
           if(el.classList.contains(checkText)){
+             addClass()
               el.clasList.remove('hide')
-               
+              
             }
     })      
     })
