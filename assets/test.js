@@ -32,6 +32,7 @@ document.querySelectorAll('.varient').forEach(function (el) {
         el.classList.remove('hide');     
         el.querySelector('span').innerHTML=checkText;
       }
+      if(el.classList.contains('Combo'))
     })
   })
 })
