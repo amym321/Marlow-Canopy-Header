@@ -50,4 +50,26 @@ document.querySelector('.Subscribe').addEventListener('click',function(){
    document.querySelector('.smartrr-grp-input[value="sub"]  label').click()
 
 })
+
+ // description 
+
+document.querySelectorAll('.varient').forEach(function (el) {
+
+    el.addEventListener('click',function(){
+      removeClass()
+     this.classList.add('active')
+         var checkText=el.textContent
+
+          document.querySelectorAll('.description-wrapper .varient-description').forEach(function (el) {
+          if(el.classList.contains(checkText)){
+              el.clasList.remove('hide')
+               
+            }
+    })      
+    })
+  })
+
+
+
+
      
