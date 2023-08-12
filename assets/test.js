@@ -30,6 +30,8 @@ document.querySelectorAll('.varient').forEach(function (el) {
           console.log(el)
         addClass()
         el.classList.remove('hide')
+      
+el.querySelector('span').innerHTML=checkText
 
       }
     })
