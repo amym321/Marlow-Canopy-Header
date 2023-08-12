@@ -34,7 +34,7 @@ document.querySelectorAll('.varient').forEach(function (el) {
         el.querySelector('span').innerHTML=checkText;
 
       }else{
-        el.querySelector('span').innerHTML='1 box each of light, regular, and super tampons and 3 bottles of lubricant';
+        el.classList.remove('hide')
        }
     })
   })
