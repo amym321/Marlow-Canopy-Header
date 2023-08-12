@@ -29,7 +29,7 @@ document.querySelectorAll('.varient').forEach(function (el) {
       if (el.classList.contains(checkText)) {
           console.log(el)
         addClass()
-        el.clasList.remove('hide')
+        el.classList.remove('hide')
 
       }
     })
