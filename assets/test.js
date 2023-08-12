@@ -4,6 +4,12 @@ el.classList.remove('active')
 })
 }
 
+function addClass(){
+document.querySelectorAll('.varient').forEach(function (el) {
+el.classList.add('active')
+})
+}
+
 
 
 document.querySelectorAll('.varient').forEach(function (el) {
