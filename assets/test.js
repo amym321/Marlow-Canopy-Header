@@ -34,6 +34,7 @@ document.querySelectorAll('.varient').forEach(function (el) {
       }
       if(el.classList.contains('Combo')){
           el.querySelector('.Combo').classList.remove('hide')
+           addClass()
 }
     })
   })
