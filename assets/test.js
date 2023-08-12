@@ -20,13 +20,14 @@ document.querySelectorAll('.varient').forEach(function (el) {
 
     document.querySelectorAll('#dropdownSelections  .dropdown-select:not(.hide) .input').forEach(function (el) {
       if (el.textContent.indexOf(checkText) > -1) {
-        console.log(el)
+      
         el.querySelector('input').click()
       }
     })
     // description 
     document.querySelectorAll('.description-wrapper .varient-description').forEach(function (el) {
       if (el.classList.contains(checkText)) {
+          console.log(el)
         addClass()
         el.clasList.remove('hide')
 
