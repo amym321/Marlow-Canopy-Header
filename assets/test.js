@@ -23,16 +23,15 @@ document.querySelectorAll('.varient').forEach(function (el) {
           if(el.textContent.indexOf(checkText)>-1){
                 console.log(el)
                  el.querySelector('input').click()
-            }
-
-             // description 
+            }           
+    })    
+  // description 
             document.querySelectorAll('.description-wrapper .varient-description').forEach(function (el) {
           if(el.classList.contains(checkText)){
                  addClass()
               el.clasList.remove('hide')
               
-            }
-    })      
+            }  
     })
   })
 
