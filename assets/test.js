@@ -24,6 +24,13 @@ document.querySelectorAll('.varient').forEach(function (el) {
                 console.log(el)
                  el.querySelector('input').click()
             }
+
+            document.querySelectorAll('.description-wrapper .varient-description').forEach(function (el) {
+          if(el.classList.contains(checkText)){
+             addClass()
+              el.clasList.remove('hide')
+              
+            }
     })      
     })
   })
@@ -66,12 +73,7 @@ document.querySelectorAll('.varient').forEach(function (el) {
      this.classList.add('active')
          var checkText=el.textContent
 
-          document.querySelectorAll('.description-wrapper .varient-description').forEach(function (el) {
-          if(el.classList.contains(checkText)){
-             addClass()
-              el.clasList.remove('hide')
-              
-            }
+       
     })      
     })
   })
