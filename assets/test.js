@@ -67,7 +67,3 @@ document.querySelector('.Subscribe').addEventListener('click',function(){
 
 
 
-
-
-
-     
