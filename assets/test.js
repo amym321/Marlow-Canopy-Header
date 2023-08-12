@@ -11,29 +11,29 @@ el.classList.add('hide')
 }
 
 
-
 document.querySelectorAll('.varient').forEach(function (el) {
 
-    el.addEventListener('click',function(){
-      removeClass()
-     this.classList.add('active')
-         var checkText=el.textContent
+  el.addEventListener('click', function () {
+    removeClass()
+    this.classList.add('active')
+    var checkText = el.textContent
 
-          document.querySelectorAll('#dropdownSelections  .dropdown-select:not(.hide) .input').forEach(function (el) {
-          if(el.textContent.indexOf(checkText)>-1){
-                console.log(el)
-                 el.querySelector('input').click()
-            }           
-    })    
-  // description 
-            document.querySelectorAll('.description-wrapper .varient-description').forEach(function (el) {
-          if(el.classList.contains(checkText)){
-                 addClass()
-              el.clasList.remove('hide')
-              
-            }  
+    document.querySelectorAll('#dropdownSelections  .dropdown-select:not(.hide) .input').forEach(function (el) {
+      if (el.textContent.indexOf(checkText) > -1) {
+        console.log(el)
+        el.querySelector('input').click()
+      }
+    })
+    // description 
+    document.querySelectorAll('.description-wrapper .varient-description').forEach(function (el) {
+      if (el.classList.contains(checkText)) {
+        addClass()
+        el.clasList.remove('hide')
+
+      }
     })
   })
+})
 
  // document.querySelector('.varient-wrapper.data-smartrr-label-otp').classList.add('hide')
 
