@@ -25,6 +25,7 @@ document.querySelectorAll('.varient').forEach(function (el) {
                  el.querySelector('input').click()
             }
 
+             // description 
             document.querySelectorAll('.description-wrapper .varient-description').forEach(function (el) {
           if(el.classList.contains(checkText)){
              addClass()
@@ -64,19 +65,8 @@ document.querySelector('.Subscribe').addEventListener('click',function(){
 
 })
 
- // description 
 
-document.querySelectorAll('.varient').forEach(function (el) {
 
-    el.addEventListener('click',function(){
-      removeClass()
-     this.classList.add('active')
-         var checkText=el.textContent
-
-       
-    })      
-    })
-  })
 
 
 
