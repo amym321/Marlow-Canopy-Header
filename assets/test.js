@@ -20,7 +20,7 @@
   function removeclass(selector) {
       var element = document.querySelectorAll(selector)
       element.forEach(function (el, i) {
-        el.classList.remove('active')
+        el.classList.remove('hide')
       })
     }
 
