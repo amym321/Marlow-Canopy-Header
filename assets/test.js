@@ -119,7 +119,6 @@ document.querySelectorAll('.varient').forEach(function (el) {
     var checkText = el.textContent;
     if (el.textContent.includes(checkText)) {
       el.classList.remove('hide');
-
     }
   });
 });
