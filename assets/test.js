@@ -117,7 +117,7 @@ document.querySelector('.Subscribe').addEventListener('click',function(){
   setTimeout(() => {
           document.querySelector('.varient-wrapper.data-smartrr-label-sub .varient.Subscribe').click()
           console.log('kjbkjbkjb')
-      },500);
+      },1000);
 
 
 
