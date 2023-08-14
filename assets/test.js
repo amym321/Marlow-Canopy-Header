@@ -135,11 +135,7 @@ document.querySelector('.varient-wrapper.data-smartrr-label-otp .varient.Subscri
 })
 
 
-// document.querySelectorAll('.varient').forEach(function(el) {
-//     el.addEventListener('click', function() {
-//         var varientText = this.textContent;            
-//     });
-// });
+
 
 
 
@@ -173,12 +169,6 @@ scrollLink.addEventListener('click', function (event) {
   });
 });
 
-
-
-
- document.querySelector('.scroll-link').addEventListener('click',function(){
-       document.querySelector('.mod-indicators .station-tabs-tabtitle:first-of-type span').click()
- })
 
 
 
