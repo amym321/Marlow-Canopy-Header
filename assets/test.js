@@ -34,13 +34,7 @@ function selectDropdownByVariant(checkText) {
     });
 }
 
-function showDescriptionForComboVariants() {
-    document.querySelectorAll('.description-wrapper .varient-description').forEach(function (el) {
-        if (el.classList.contains(checkText)) {
-            el.classList.remove('hide');
-        }
-    });
-}
+
 
 document.querySelectorAll('.varient').forEach(function (el) {
     el.addEventListener('click', function () {
@@ -50,7 +44,7 @@ document.querySelectorAll('.varient').forEach(function (el) {
 
         selectDropdownByVariant(checkText);
 
-        showDescriptionForComboVariants();
+      
     });
 });
 
@@ -118,7 +112,17 @@ document.querySelector('.varient-wrapper.data-smartrr-label-otp .varient.Subscri
 
 
 
-   
+
+document.querySelectorAll('.varient').forEach(function (el) {
+  el.addEventListener('click', function () {
+    el.classList.add('hide')
+    var checkText = el.textContent;
+    if (el.textContent.includes(checkText)) {
+      el.classList.remove('hide');
+
+    }
+  });
+});
 
 
 
