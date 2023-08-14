@@ -36,6 +36,9 @@ document.querySelectorAll('.varient').forEach(function (el) {
 
 
 
+document.querySelector('.smartrr-grp-input[value="sub"]').click()
+document.querySelector('.data-smartrr-label-sub .varient.Subscribe ').click()
+
 
 
 
