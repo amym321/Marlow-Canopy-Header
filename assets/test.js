@@ -153,9 +153,6 @@ document.querySelectorAll('.smartrr-purchase-options div[data-smartrr-selling-pl
 });
 
 
- document.querySelector('.scroll-link').addEventListener('click',function(){
-       document.querySelector('.mod-indicators .station-tabs-tabtitle:first-of-type span').click()
- })
 
 
 
@@ -179,6 +176,9 @@ scrollLink.addEventListener('click', function (event) {
 
 
 
+ document.querySelector('.scroll-link').addEventListener('click',function(){
+       document.querySelector('.mod-indicators .station-tabs-tabtitle:first-of-type span').click()
+ })
 
 
 
