@@ -123,6 +123,8 @@ div[data-smartrr-benefits-all]{
 .Light:after{
   content:'';
   background-image:url('https://cdn.shopify.com/s/files/1/0384/8254/2731/files/Light_1080x@2x.png?v=1691989209')
+   background-size:contain;
+  background-position:center;
 }
 /* .Regular:after{
   	https://cdn.shopify.com/s/files/1/0384/8254/2731/files/Regular_1080x@2x.png?v=1691989209
