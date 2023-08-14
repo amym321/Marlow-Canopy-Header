@@ -42,7 +42,7 @@ document.querySelectorAll('.varient').forEach(function (el) {
 
 // on load combo clicked 
   setTimeout(() => {
-          document.querySelector('.varient-wrapper.data-smartrr-label-sub .varient.Subscribe').click()
+          document.querySelector('.varient-wrapper.data-smartrr-label-otp .varient.Subscribe').click()
           console.log('kjbkjbkjb')
       },500);
 
