@@ -36,7 +36,7 @@ function selectDropdownByVariant(checkText) {
 
 function showDescriptionForComboVariants() {
     document.querySelectorAll('.description-wrapper .varient-description').forEach(function (el) {
-        if (el.classList.contains('Combo')) {
+        if (el.classList.contains(checkText)) {
             el.classList.remove('hide');
         }
     });
