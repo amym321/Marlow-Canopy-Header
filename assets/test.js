@@ -18,6 +18,21 @@
   }
 
 
+// remove class function 
+function removeClassBySelectors(className, selectors) {
+  const elements = document.querySelectorAll(selectors);
+  
+  elements.forEach(element => {
+    if (element.classList.contains(className)) {
+      element.classList.remove(className);
+    }
+  });
+}
+
+
+
+
+
 
 
 function removeClass() {
@@ -41,7 +56,6 @@ document.querySelectorAll('.varient').forEach(function (el) {
         removeClass();
         this.classList.add('active');
         var checkText = el.textContent;
-
         selectDropdownByVariant(checkText);
 
 
@@ -127,6 +141,9 @@ document.querySelector('.varient-wrapper.data-smartrr-label-otp .varient.Subscri
 //     });
 // });
 
+
+// Example usage
+removeClassBySelectors("my-class", ".selector1, .selector2, .selector3");
 
 
 
