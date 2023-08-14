@@ -35,10 +35,11 @@ document.querySelectorAll('.varient').forEach(function (el) {
 
 
 
+setTimeout(() => {
+  document.querySelector('.smartrr-grp-input[value="sub"] label').click()
+  document.querySelector('.data-smartrr-label-sub .varient.Subscribe ').click()
+}, 800);
 
-document.querySelector('.smartrr-grp-input[value="sub"] label').click()
-
-document.querySelector('.data-smartrr-label-sub .varient.Subscribe ').click()
 
 
 
