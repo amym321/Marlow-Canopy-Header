@@ -1,4 +1,3 @@
-   document.querySelector('.smartrr-grp-input[value="sub"]  label').click()
 
 
 function removeClass(){
@@ -27,6 +26,8 @@ document.querySelectorAll('.varient').forEach(function (el) {
         el.querySelector('input').click()
       }
     })
+
+    
     // description 
     document.querySelectorAll('.description-wrapper .varient-description').forEach(function (el) {
       if (el.classList.contains('Combo')) {
@@ -37,6 +38,41 @@ document.querySelectorAll('.varient').forEach(function (el) {
     })
   })
 })
+
+
+function addDynamicClickListener(triggerSelector, hideSelector, showSelector, clickSelector) {
+    const triggerElement = document.querySelector(triggerSelector);
+    const hideElement = document.querySelector(hideSelector);
+    const showElement = document.querySelector(showSelector);
+    const clickElement = document.querySelector(clickSelector);
+
+    if (triggerElement && hideElement && showElement && clickElement) {
+        triggerElement.addEventListener('click', function () {
+            hideElement.classList.add('hide');
+            showElement.classList.remove('hide');
+            clickElement.click();
+        });
+    }
+}
+
+// Usage
+addDynamicClickListener(
+    '.smartrr-grp-input[value="sub"] label',
+    '.varient-wrapper.data-smartrr-label-sub',
+    '.varient-wrapper.data-smartrr-label-otp',
+    '.varient-wrapper.data-smartrr-label-otp>div :last-child'
+);
+
+
+addDynamicClickListener(
+    '.smartrr-otp.smartrr-grp-input label',
+    '.varient-wrapper.data-smartrr-label-sub',
+    '.varient-wrapper.data-smartrr-label-otp',
+    '.varient-wrapper.data-smartrr-label-sub>div :first-child'
+);
+
+
+
 
  document.querySelector('.varient-wrapper.data-smartrr-label-otp').classList.add('hide')
 
@@ -66,6 +102,17 @@ document.querySelector('.Subscribe').addEventListener('click',function(){
    document.querySelector('.smartrr-grp-input[value="sub"]  label').click()
 
 })
+
+
+
+
+
+
+
+
+
+
+
 
 
 
