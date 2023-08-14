@@ -20,11 +20,16 @@
   function removeclass(selector) {
       var element = document.querySelectorAll(selector)
       element.forEach(function (el, i) {
-        el.classList.remove('hide')||   el.classList.remove('active')
+        el.classList.remove('hide')
       })
     }
 
 
+function removeClass() {
+    document.querySelectorAll('.varient.active').forEach(function (el) {
+        el.classList.remove('active');
+    });
+}
 
 function selectDropdownByVariant(checkText) {
     document.querySelectorAll('#dropdownSelections .dropdown-select:not(.hide) .input').forEach(function (el) {
@@ -34,10 +39,17 @@ function selectDropdownByVariant(checkText) {
     });
 }
 
+// function showDescriptionForComboVariants() {
+//     document.querySelectorAll('.description-wrapper .varient-description').forEach(function (el) {
+//         if (el.classList.contains('Combo')) {
+//             el.classList.remove('hide');
+//         }
+//     });
+// }
 
 document.querySelectorAll('.varient').forEach(function (el) {
     el.addEventListener('click', function () {
-        removeclass('active');
+        removeClass();
         this.classList.add('active');
         var checkText = el.textContent;
 
