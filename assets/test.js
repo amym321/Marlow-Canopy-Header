@@ -78,12 +78,12 @@ addDynamicClickListener(
     '.varient-wrapper.data-smartrr-label-sub>div :first-child'
 );
 
-// addDynamicClickListener(
-//     '.smartrr-grp-input[value="sub"]  label',
-//     '.varient-wrapper.data-smartrr-label-sub',
-//     '.varient-wrapper.data-smartrr-label-otp',
-//     '.varient-wrapper.data-smartrr-label-sub>div :first-child'
-// );
+addDynamicClickListener(
+    '.varient-wrapper.data-smartrr-label-otp .varient.Subscribe',
+    '.varient-wrapper.data-smartrr-label-sub',
+    '.varient-wrapper.data-smartrr-label-otp',
+    '.varient-wrapper.data-smartrr-label-sub>div :first-child'
+);
 
 
 //  document.querySelector('.varient-wrapper.data-smartrr-label-otp .varient.Subscribe').click()
