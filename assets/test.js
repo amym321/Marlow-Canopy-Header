@@ -165,8 +165,7 @@ const scrollLink = document.querySelector('.scroll-link');
 scrollLink.addEventListener('click', function (event) {
   // Scroll to the target element
   targetElement.scrollIntoView({
-    behavior: 'smooth', // Use smooth scrolling
-    block: 'start',     // Scroll to the top of the target element
+    behavior: 'smooth' // Use smooth scrolling         
   });
 });
 
