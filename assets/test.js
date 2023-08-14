@@ -163,6 +163,9 @@ const scrollLink = document.querySelector('.scroll-link');
 
 // Add a click event listener to the scrollLink
 scrollLink.addEventListener('click', function (event) {
+
+  document.querySelector('.mod-indicators .station-tabs-tabtitle:first-of-type').click()
+
   // Scroll to the target element
    targetElement.scrollIntoView({
     behavior: 'smooth', // Use smooth scrolling
