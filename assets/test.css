@@ -52,6 +52,10 @@ html body .radio-wrapper  .smartrr-purchase-options{
   margin-right:0;
 }
 
+html body .radio-wrapper  .smartrr-purchase-options label{
+  background-color:#fdf3eb;
+}
+
 html body .varient-inner{
   display:flex;
   gap:20px;
