@@ -44,6 +44,17 @@ document.querySelectorAll('.varient').forEach(function (el) {
 
         selectDropdownByVariant(checkText);
 
+
+      // description text 
+
+    document.querySelectorAll('.varient-description .' + varientText).forEach(function(el) {
+          if (el.classList.contains('hide')) {
+              el.classList.remove('hide');
+          } else {
+              el.classList.add('hide');
+          }
+      });
+
       
     });
 });
@@ -110,18 +121,16 @@ document.querySelector('.varient-wrapper.data-smartrr-label-otp .varient.Subscri
 })
 
 
+document.querySelectorAll('.varient').forEach(function(el) {
+    el.addEventListener('click', function() {
+        var varientText = this.textContent;
 
-
-
-document.querySelectorAll('.varient').forEach(function (el) {
-  el.addEventListener('click', function () {
-    el.classList.add('hide')
-    var checkText = el.textContent;
-    if (el.textContent.includes(checkText)) {
-      el.classList.remove('hide');
-    }
-  });
+     
+    });
 });
+
+
+
 
 
 
