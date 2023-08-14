@@ -106,3 +106,7 @@ text-align: left;
 
 }
 
+
+.product-details >.product-detail__gap-sm.rte.product-area__rte:nth-child(3){
+  display:none;
+}
