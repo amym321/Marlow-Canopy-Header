@@ -77,9 +77,10 @@ html body .varient.active{
   background:#302ba3;
   color:#fff;
 }
-
-
 html body .smartrr-purchase-options .smartrr-selling-plan-group-input-display:before{
   border:2px solid #302BA3 ;
+}
 
+html body .smartrr-purchase-options .smartrr-selling-plan-group-input-display:after{
+  color:#302BA3 ;
 }
