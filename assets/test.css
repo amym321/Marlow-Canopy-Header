@@ -113,3 +113,8 @@ text-align: left;
 {
   display:none;
 }
+
+
+div[data-smartrr-benefits-all]{
+  padding:15px 0;
+}
