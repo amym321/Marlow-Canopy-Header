@@ -134,7 +134,7 @@ document.querySelector('.varient-wrapper.data-smartrr-label-otp .varient.Subscri
       });
 
       if (targetVariant) {
-        targetVariant.classList.add('active');
+        targetVariant.classList.add('hide');
       }
     });
 
