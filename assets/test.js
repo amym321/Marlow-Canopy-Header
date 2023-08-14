@@ -1,3 +1,6 @@
+   document.querySelector('.smartrr-grp-input[value="sub"]  label').click()
+
+
 function removeClass(){
 document.querySelectorAll('.varient').forEach(function (el) {
 el.classList.remove('active')
