@@ -63,20 +63,20 @@ function addDynamicClickListener(triggerSelector, hideSelector, showSelector, cl
 }
 
 // // Usage
-// addDynamicClickListener(
-//     '.smartrr-grp-input[value="sub"] label',                       //trigger
-//     '.varient-wrapper.data-smartrr-label-sub',                     //hide
-//     '.varient-wrapper.data-smartrr-label-otp',                     //show
-//     '.varient-wrapper.data-smartrr-label-otp>div :last-child'      // click 
-// );
+addDynamicClickListener(
+    '.smartrr-grp-input[value="sub"] label',                       //trigger
+    '.varient-wrapper.data-smartrr-label-sub',                     //hide
+    '.varient-wrapper.data-smartrr-label-otp',                     //show
+    '.varient-wrapper.data-smartrr-label-otp>div :last-child'      // click 
+);
 
 
-// addDynamicClickListener(
-//     '.smartrr-otp.smartrr-grp-input label',
-//     '.varient-wrapper.data-smartrr-label-sub',
-//     '.varient-wrapper.data-smartrr-label-otp',
-//     '.varient-wrapper.data-smartrr-label-sub>div :first-child'
-// );
+addDynamicClickListener(
+    '.smartrr-otp.smartrr-grp-input label',
+    '.varient-wrapper.data-smartrr-label-sub',
+    '.varient-wrapper.data-smartrr-label-otp',
+    '.varient-wrapper.data-smartrr-label-sub>div :first-child'
+);
 
 // addDynamicClickListener(
 //     '.smartrr-grp-input[value="sub"]  label',
