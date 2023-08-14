@@ -17,6 +17,13 @@
     live(selector, event, callback, context);
   }
 
+  function removeclass(selector) {
+      var element = document.querySelectorAll(selector)
+      element.forEach(function (el, i) {
+        el.classList.remove('active')
+      })
+    }
+
 
 function removeClass() {
     document.querySelectorAll('.varient.active').forEach(function (el) {
@@ -120,7 +127,7 @@ document.querySelector('.varient-wrapper.data-smartrr-label-otp .varient.Subscri
       console.log('click');
       var gettext = this.innerText;
       var bmVariants = document.querySelectorAll('.varient-description');
-      removeClass('.hide');
+      removeclass('.hide');
 
       var targetVariant = Array.from(bmVariants).find(function(variant) {
         return variant.classList.contains(gettext);
