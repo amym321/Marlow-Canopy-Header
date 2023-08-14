@@ -12,13 +12,13 @@ function selectDropdownByVariant(checkText) {
     });
 }
 
-function showDescriptionForComboVariants() {
-    document.querySelectorAll('.description-wrapper .varient-description').forEach(function (el) {
-        if (el.classList.contains('Combo')) {
-            el.classList.remove('hide');
-        }
-    });
-}
+// function showDescriptionForComboVariants() {
+//     document.querySelectorAll('.description-wrapper .varient-description').forEach(function (el) {
+//         if (el.classList.contains('Combo')) {
+//             el.classList.remove('hide');
+//         }
+//     });
+// }
 
 document.querySelectorAll('.varient').forEach(function (el) {
     el.addEventListener('click', function () {
@@ -28,7 +28,7 @@ document.querySelectorAll('.varient').forEach(function (el) {
 
         selectDropdownByVariant(checkText);
 
-        showDescriptionForComboVariants();
+        // showDescriptionForComboVariants();
     });
 });
 
