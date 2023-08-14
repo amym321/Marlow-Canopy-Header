@@ -82,7 +82,7 @@ addDynamicClickListener(
     '.varient-wrapper.data-smartrr-label-otp .varient.Subscribe',
     '.varient-wrapper.data-smartrr-label-otp',
     '.varient-wrapper.data-smartrr-label-sub',
-    '.varient-wrapper.data-smartrr-label-sub>div :first-child'
+    '#dropdownSelections div[data-smartrr-choose-sub].dropdown-select label:last-child'
 );
 
 
