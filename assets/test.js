@@ -108,16 +108,13 @@ addDynamicClickListener(
 
 // })
 
-// document.querySelector('.Subscribe').addEventListener('click',function(){
-//    document.querySelector('.smartrr-grp-input[value="sub"]  label').click()
+document.querySelector('.Subscribe').addEventListener('click',function(){
+   document.querySelector('.smartrr-grp-input[value="sub"]  label').click()
 
-// })
-
-// on load combo clicked 
-  // setTimeout(() => {
-          document.querySelector('.varient-wrapper.data-smartrr-label-otp .Subscribe').click()
-          console.log('kjbkjbkjb')
-      // },1000);
+})
+ document.querySelector('.varient-wrapper.data-smartrr-label-otp .Subscribe').click()
+       
+     
 
 
 
