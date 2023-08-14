@@ -126,7 +126,7 @@ document.querySelector('.varient-wrapper.data-smartrr-label-otp .varient.Subscri
     live('.varient-inner .varient', 'click', function() {
       console.log('click');
       var gettext = this.innerText;
-      var bmVariants = document.querySelectorAll('.bm-varient-description');
+      var bmVariants = document.querySelectorAll('.bm-varient-description .bm-varient-description');
       removeclass('.hide');
 
       var targetVariant = Array.from(bmVariants).find(function(variant) {
