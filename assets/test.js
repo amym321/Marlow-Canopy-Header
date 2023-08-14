@@ -108,10 +108,10 @@ addDynamicClickListener(
 
 // })
 
-document.querySelector('.Subscribe').addEventListener('click',function(){
-   document.querySelector('.smartrr-grp-input[value="sub"]  label').click()
+// document.querySelector('.Subscribe').addEventListener('click',function(){
+//    document.querySelector('.smartrr-grp-input[value="sub"]  label').click()
 
-})
+// })
 
 // on load combo clicked 
   setTimeout(() => {
