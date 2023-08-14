@@ -165,7 +165,7 @@ const scrollLink = document.querySelector('.scroll-link');
 scrollLink.addEventListener('click', function (event) {
 
 console.log('click')
-  document.querySelector('.mod-indicators .station-tabs-tabtitle:first-of-type').click()
+  document.querySelector('.mod-indicators .station-tabs-tabtitle:first-of-type span').click()
 
   // Scroll to the target element
    targetElement.scrollIntoView({
