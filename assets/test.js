@@ -142,8 +142,17 @@ document.querySelector('.varient-wrapper.data-smartrr-label-otp .varient.Subscri
 // });
 
 
-// Example usage
-removeClassBySelectors("my-class", ".selector1, .selector2, .selector3");
+
+
+
+document.querySelectorAll('.smartrr-purchase-options div[data-smartrr-selling-plan-groups] >div').forEach(function (el) {
+    el.addEventListener('click',function () {
+        removeClassBySelectors("color-active", el);
+        this.classList.add('color-active')
+    })
+})
+
+
 
 
 
