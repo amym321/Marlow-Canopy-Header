@@ -114,10 +114,10 @@ addDynamicClickListener(
 // })
 
 // on load combo clicked 
-  setTimeout(() => {
+  // setTimeout(() => {
           document.querySelector('.varient-wrapper.data-smartrr-label-otp .Subscribe').click()
           console.log('kjbkjbkjb')
-      },1000);
+      // },1000);
 
 
 
