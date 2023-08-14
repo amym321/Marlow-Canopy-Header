@@ -123,9 +123,7 @@ document.querySelector('.varient-wrapper.data-smartrr-label-otp .varient.Subscri
 
 document.querySelectorAll('.varient').forEach(function(el) {
     el.addEventListener('click', function() {
-        var varientText = this.textContent;
-
-     
+        var varientText = this.textContent;            
     });
 });
 
