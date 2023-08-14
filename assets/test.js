@@ -162,8 +162,7 @@ scrollLink.addEventListener('click', function (event) {
   // Scroll to the target element, stopping a bit before the top
   targetElement.scrollIntoView({
     behavior: 'smooth', // Use smooth scrolling
-    block: 'start',     // Align the top of the target element with the top of the scrollable area
-    inline: 'nearest',  // Keep the target element as close to the vertical center as possible
+    inline: 'nearest'  // Keep the target element as close to the vertical center as possible
   });
 });
 
