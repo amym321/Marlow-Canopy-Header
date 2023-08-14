@@ -41,7 +41,11 @@ document.querySelectorAll('.varient').forEach(function (el) {
 
 
 // on load combo clicked 
-document.querySelector('.varient-wrapper.data-smartrr-label-otp .Subscribe').click()
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelector('.varient-wrapper.data-smartrr-label-otp .Subscribe').click()
+})
+
+
 
 
 
