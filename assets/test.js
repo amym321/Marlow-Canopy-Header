@@ -115,7 +115,7 @@ document.querySelector('.Subscribe').addEventListener('click',function(){
 
 // on load combo clicked 
   setTimeout(() => {
-          document.querySelector('.varient-wrapper.data-smartrr-label-sub .varient.Subscribe').click()
+          document.querySelector('.varient-wrapper.data-smartrr-label-otp .Subscribe').click()
           console.log('kjbkjbkjb')
       },1000);
 
