@@ -41,9 +41,11 @@ document.querySelectorAll('.varient').forEach(function (el) {
 
 
 // on load combo clicked 
-document.addEventListener('DOMContentLoaded', function () {
-  document.querySelector('.varient-wrapper.data-smartrr-label-sub .varient.Subscribe').click()
-})
+  setTimeout(() => {
+          document.querySelector('.varient-wrapper.data-smartrr-label-sub .varient.Subscribe').click()
+
+      },500);
+
 
 
 
