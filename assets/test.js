@@ -97,6 +97,8 @@ document.querySelector('.varient-wrapper.data-smartrr-label-sub .Subscribe').add
 
 
 
+
+
 //    document.querySelector('.smartrr-grp-input[value="sub"]  label').click()
 //  document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.add('hide')
 //      document.querySelector('.varient-wrapper.data-smartrr-label-otp').classList.remove('hide')
