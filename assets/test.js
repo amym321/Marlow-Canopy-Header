@@ -78,51 +78,28 @@ addDynamicClickListener(
     '.varient-wrapper.data-smartrr-label-sub>div :first-child'
 );
 
-addDynamicClickListener(
-    '.smartrr-grp-input[value="sub"]  label',
-    '.varient-wrapper.data-smartrr-label-sub',
-    '.varient-wrapper.data-smartrr-label-otp',
-    '.varient-wrapper.data-smartrr-label-sub>div :first-child'
-);
+// addDynamicClickListener(
+//     '.smartrr-grp-input[value="sub"]  label',
+//     '.varient-wrapper.data-smartrr-label-sub',
+//     '.varient-wrapper.data-smartrr-label-otp',
+//     '.varient-wrapper.data-smartrr-label-sub>div :first-child'
+// );
 
 
- document.querySelector('.varient-wrapper.data-smartrr-label-otp .varient.Subscribe').click()
+//  document.querySelector('.varient-wrapper.data-smartrr-label-otp .varient.Subscribe').click()
 
-// otp combo click 
-document.querySelector('.varient-wrapper.data-smartrr-label-sub .Subscribe').addEventListener('click',function(){
-  document.querySelector('.smartrr-grp-input[value="sub"] label').click()
- document.querySelector('.varient-wrapper.data-smartrr-label-otp').classList.add('hide')
-})
-
-
-document.querySelector('.smartrr-otp.smartrr-grp-input[value="otp"]  label').addEventListener('click',function () {
-   document.querySelector('.varient-wrapper.data-smartrr-label-otp').classList.remove('hide') 
-    document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.add('hide') 
-})
-
-document.querySelector('.smartrr-grp-input[value="sub"]  label').addEventListener('click',function () {
-   document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.remove('hide') 
-    document.querySelector('.varient-wrapper.data-smartrr-label-otp').classList.add('hide')
-})
-
-
-
-
-
-
-//    document.querySelector('.smartrr-grp-input[value="sub"]  label').click()
-//  document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.add('hide')
-//      document.querySelector('.varient-wrapper.data-smartrr-label-otp').classList.remove('hide')
-//         document.querySelector('.varient-wrapper.data-smartrr-label-otp>div :last-child').click()
-
-
-
-// document.querySelector('.smartrr-grp-input[value="sub"]  label ').addEventListener('click',function () {
-//     document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.add('hide')
-//      document.querySelector('.varient-wrapper.data-smartrr-label-otp').classList.remove('hide')
-//         document.querySelector('.varient-wrapper.data-smartrr-label-otp>div :last-child').click()
-
+// // otp combo click 
+// document.querySelector('.varient-wrapper.data-smartrr-label-otp .varient.Subscribe ').addEventListener('click',function(){
+//   document.querySelector('.smartrr-grp-input[value="sub"] label').click()
+//  document.querySelector('.varient-wrapper.data-smartrr-label-otp').classList.add('hide')
 // })
+
+
+
+
+
+
+
 
 
 
