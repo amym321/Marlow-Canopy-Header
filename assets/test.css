@@ -51,12 +51,6 @@ html body .radio-wrapper{
 html body .radio-wrapper  .smartrr-purchase-options{
   margin-right:0;
 }
-
-html body .radio-wrapper  .smartrr-purchase-options label{
-  background-color:#fdf3eb;
-  padding:10px 4px;
-}
-
 html body .varient-inner{
   display:flex;
   gap:20px;
@@ -84,3 +78,9 @@ html body .smartrr-purchase-options .smartrr-selling-plan-group-input-display:be
 html body .smartrr-purchase-options .smartrr-selling-plan-group-input-display:after{
   background:#302BA3 ;
 }
+
+html body .radio-wrapper  .color-active{
+  background-color:#fdf3eb;
+  padding:10px 0;
+}
+
