@@ -108,11 +108,13 @@ addDynamicClickListener(
 
 // })
 
+
+ document.querySelector('.varient-wrapper.data-smartrr-label-otp .Subscribe').click()
 document.querySelector('.Subscribe').addEventListener('click',function(){
    document.querySelector('.smartrr-grp-input[value="sub"]  label').click()
 
 })
- document.querySelector('.varient-wrapper.data-smartrr-label-otp .Subscribe').click()
+
        
      
 
