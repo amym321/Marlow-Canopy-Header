@@ -40,6 +40,11 @@ document.querySelectorAll('.varient').forEach(function (el) {
 })
 
 
+// on load combo clicked 
+document.querySelector('.varient-wrapper.data-smartrr-label-otp .Subscribe').click()
+
+
+
 // triggerSelector: The selector for the element that triggers the click event.
 // hideSelector: The selector for the element to be hidden.
 // showSelector: The selector for the element to be shown.
