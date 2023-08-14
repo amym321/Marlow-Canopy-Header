@@ -151,23 +151,29 @@ document.querySelectorAll('.smartrr-purchase-options div[data-smartrr-selling-pl
 
 
 
+// Find the element to scroll to
+const targetElement = document.querySelector('.quantity'');
+
+// Find the element that triggers the scroll
+const scrollLink = document.querySelector('.scroll-link');
+
+// Add a click event listener to the scrollLink
+scrollLink.addEventListener('click', function (event) {
+  event.preventDefault(); // Prevent the default link behavior
+
+  // Scroll to the target element, stopping a bit before the top
+  targetElement.scrollIntoView({
+    behavior: 'smooth', // Use smooth scrolling
+    block: 'start',     // Align the top of the target element with the top of the scrollable area
+    inline: 'nearest',  // Keep the target element as close to the vertical center as possible
+  });
+});
 
 
-//   // scroll function 
-// // Find the element to scroll to
-// const targetElement = document.querySelector('.quantity');
-// // Find the element that triggers the scroll
-// const scrollLink = document.querySelector('.scroll-link');
 
-// // Add a click event listener to the scrollLink
-// scrollLink.addEventListener('click', function (event) {
-//   // Scroll to the target element
-//    targetElement.scrollIntoView({
-//     behavior: 'smooth', // Use smooth scrolling
-//     block: 'start',     // Align the top of the target element with the top of the scrollable area
-//     inline: 'nearest',  // Keep the target element as close to the vertical center as possible
-//   });
-// });
+
+
+
 
 
 
