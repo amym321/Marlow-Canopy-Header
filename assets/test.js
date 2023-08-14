@@ -165,7 +165,6 @@ const scrollLink = document.querySelector('.scroll-link');
 scrollLink.addEventListener('click', function (event) {
 
 console.log('click')
-  document.querySelector('.mod-indicators .station-tabs-tabtitle:first-of-type span').click()
 
   // Scroll to the target element
    targetElement.scrollIntoView({
@@ -173,6 +172,9 @@ console.log('click')
     block: 'start',     // Align the top of the target element with the top of the scrollable area
     inline: 'nearest',  // Keep the target element as close to the vertical center as possible
   });
+
+    document.querySelector('.mod-indicators .station-tabs-tabtitle:first-of-type span').click()
+
 });
 
 
