@@ -156,7 +156,7 @@ document.querySelectorAll('.smartrr-purchase-options div[data-smartrr-selling-pl
 // scroll function 
 
 // Find the element to scroll to
-const targetElement = document.querySelector('.station-tabs-product-block');
+const targetElement = document.querySelector('.quantity');
 
 // Find the element that triggers the scroll
 const scrollLink = document.querySelector('.scroll-link');
