@@ -79,8 +79,12 @@ html body .smartrr-purchase-options .smartrr-selling-plan-group-input-display:af
   background:#302BA3 ;
 }
 
+.smartrr-purchase-options div[data-smartrr-selling-plan-groups] > div{
+    padding:10px 4px;
+  
+}
+
 html body .radio-wrapper  .color-active{
   background-color:#fdf3eb;
-  padding:10px 4px;
 }
 
