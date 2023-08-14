@@ -40,6 +40,12 @@ document.querySelectorAll('.varient').forEach(function (el) {
 })
 
 
+// triggerSelector: The selector for the element that triggers the click event.
+// hideSelector: The selector for the element to be hidden.
+// showSelector: The selector for the element to be shown.
+// clickSelector: The selector for the element to be clicked.
+
+
 function addDynamicClickListener(triggerSelector, hideSelector, showSelector, clickSelector) {
     const triggerElement = document.querySelector(triggerSelector);
     const hideElement = document.querySelector(hideSelector);
@@ -57,10 +63,10 @@ function addDynamicClickListener(triggerSelector, hideSelector, showSelector, cl
 
 // Usage
 addDynamicClickListener(
-    '.smartrr-grp-input[value="sub"] label',
-    '.varient-wrapper.data-smartrr-label-sub',
-    '.varient-wrapper.data-smartrr-label-otp',
-    '.varient-wrapper.data-smartrr-label-otp>div :last-child'
+    '.smartrr-grp-input[value="sub"] label',                       //trigger
+    '.varient-wrapper.data-smartrr-label-sub',                     //hide
+    '.varient-wrapper.data-smartrr-label-otp',                     //show
+    '.varient-wrapper.data-smartrr-label-otp>div :last-child'      // click 
 );
 
 
@@ -71,18 +77,15 @@ addDynamicClickListener(
     '.varient-wrapper.data-smartrr-label-sub>div :first-child'
 );
 
+addDynamicClickListener(
+    '.smartrr-grp-input[value="sub"]  label',
+    '.varient-wrapper.data-smartrr-label-sub',
+    '.varient-wrapper.data-smartrr-label-otp',
+    '.varient-wrapper.data-smartrr-label-sub>div :first-child'
+);
 
 
 
- document.querySelector('.varient-wrapper.data-smartrr-label-otp').classList.add('hide')
-
-document.querySelector('.smartrr-otp.smartrr-grp-input label ').addEventListener('click',function () {
-    document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.remove('hide')
-     document.querySelector('.varient-wrapper.data-smartrr-label-otp').classList.add('hide')
-
-          document.querySelector('.varient-wrapper.data-smartrr-label-sub>div :first-child').click()
-
-})
 
    document.querySelector('.smartrr-grp-input[value="sub"]  label').click()
  document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.add('hide')
