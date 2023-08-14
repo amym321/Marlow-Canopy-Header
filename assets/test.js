@@ -153,6 +153,22 @@ document.querySelectorAll('.smartrr-purchase-options div[data-smartrr-selling-pl
 });
 
 
+// scroll function 
+
+// Find the element to scroll to
+const targetElement = document.querySelector('.station-tabs-product-block');
+
+// Find the element that triggers the scroll
+const scrollLink = document.querySelector('.scroll-link');
+
+// Add a click event listener to the scrollLink
+scrollLink.addEventListener('click', function (event) {
+  // Scroll to the target element
+  targetElement.scrollIntoView({
+    behavior: 'smooth', // Use smooth scrolling
+    block: 'start',     // Scroll to the top of the target element
+  });
+});
 
 
 
