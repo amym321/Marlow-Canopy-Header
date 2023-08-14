@@ -17,12 +17,12 @@
     live(selector, event, callback, context);
   }
 
-  function removeclass(selector) {
-      var element = document.querySelectorAll(selector)
-      element.forEach(function (el, i) {
-        el.classList.remove('hide')
-      })
-    }
+  // function removeclass(selector) {
+  //     var element = document.querySelectorAll(selector)
+  //     element.forEach(function (el, i) {
+  //       el.classList.remove('hide')
+  //     })
+  //   }
 
 
 function removeClass() {
@@ -123,20 +123,20 @@ document.querySelector('.varient-wrapper.data-smartrr-label-otp .varient.Subscri
 
 
 
-    live('.varient-inner .varient', 'click', function() {
-      console.log('click');
-      var gettext = this.innerText;
-      var bmVariants = document.querySelectorAll('.varient-description');
-      removeClass();
+    // live('.varient-inner .varient', 'click', function() {
+    //   console.log('click');
+    //   var gettext = this.innerText;
+    //   var bmVariants = document.querySelectorAll('.varient-description');
+    //   removeclass();
 
-      var targetVariant = Array.from(bmVariants).find(function(variant) {
-        return variant.classList.contains(gettext);
-      });
+    //   var targetVariant = Array.from(bmVariants).find(function(variant) {
+    //     return variant.classList.contains(gettext);
+    //   });
 
-      if (targetVariant) {
-        targetVariant.classList.add('active');
-      }
-    });
+    //   if (targetVariant) {
+    //     targetVariant.classList.add('active');
+    //   }
+    // });
 
 
 
