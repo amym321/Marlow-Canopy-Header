@@ -33,7 +33,7 @@ document.querySelectorAll('.varient').forEach(function (el) {
 });
 
 
-
+// by default subscribe click 
 
 setTimeout(() => {
   document.querySelector('.smartrr-grp-input[value="sub"] label').click()
@@ -68,6 +68,8 @@ function addDynamicClickListener(triggerSelector, hideSelector, showSelector, cl
 }
 
 // // Usage
+
+// subscribe cleck 
 addDynamicClickListener(
     '.smartrr-grp-input[value="sub"] label',                       //trigger
     '.varient-wrapper.data-smartrr-label-otp',                     //hide
@@ -75,7 +77,7 @@ addDynamicClickListener(
     '.varient-wrapper.data-smartrr-label-sub>div :last-child'      // click 
 );
 
-
+ // OTP CLICK 
 addDynamicClickListener(
     '.smartrr-otp.smartrr-grp-input label',
     '.varient-wrapper.data-smartrr-label-sub',
@@ -83,20 +85,9 @@ addDynamicClickListener(
     '.varient-wrapper.data-smartrr-label-otp  [data-id="0"]'
 );
 
-// addDynamicClickListener(
-//     '.varient-wrapper.data-smartrr-label-otp .varient.Subscribe',
-//     '.varient-wrapper.data-smartrr-label-otp',
-//     '.varient-wrapper.data-smartrr-label-sub',
-//     '#dropdownSelections div[data-smartrr-choose-sub].dropdown-select label:last-child'
-// );
 
 
-
-
-
-//  document.querySelector('.varient-wrapper.data-smartrr-label-otp .varient.Subscribe').click()
-
-// // otp combo click 
+// otp combo click 
 document.querySelector('.varient-wrapper.data-smartrr-label-otp .varient.Subscribe ').addEventListener('click',function(){
   document.querySelector('.smartrr-grp-input[value="sub"] label').click()
  document.querySelector('.varient-wrapper.data-smartrr-label-otp').classList.add('hide')
