@@ -17,12 +17,12 @@
     live(selector, event, callback, context);
   }
 
-  // function removeclass(selector) {
-  //     var element = document.querySelectorAll(selector)
-  //     element.forEach(function (el, i) {
-  //       el.classList.remove('hide')
-  //     })
-  //   }
+    function removeclass(selector) {
+      var element = document.querySelectorAll(selector)
+      element.forEach(function (el, i) {
+        el.classList.remove('active')
+      })
+    }
 
 
 function removeClass() {
