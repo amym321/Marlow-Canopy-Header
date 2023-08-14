@@ -34,13 +34,13 @@ function selectDropdownByVariant(checkText) {
     });
 }
 
-// function showDescriptionForComboVariants() {
-//     document.querySelectorAll('.description-wrapper .varient-description').forEach(function (el) {
-//         if (el.classList.contains('Combo')) {
-//             el.classList.remove('hide');
-//         }
-//     });
-// }
+function showDescriptionForComboVariants() {
+    document.querySelectorAll('.description-wrapper .varient-description').forEach(function (el) {
+        if (el.classList.contains('Combo')) {
+            el.classList.remove('hide');
+        }
+    });
+}
 
 document.querySelectorAll('.varient').forEach(function (el) {
     el.addEventListener('click', function () {
@@ -50,7 +50,7 @@ document.querySelectorAll('.varient').forEach(function (el) {
 
         selectDropdownByVariant(checkText);
 
-        // showDescriptionForComboVariants();
+        showDescriptionForComboVariants();
     });
 });
 
@@ -118,13 +118,7 @@ document.querySelector('.varient-wrapper.data-smartrr-label-otp .varient.Subscri
 
 
 
-    live('.varient-inner .varient', 'click', function() {
-      console.log('click');
-      var gettext = this.innerText;
-      var bmVariants = document.querySelectorAll('.bm-varient-description');
-      bmVariants.classList.add('hide')
-      
-        });
+   
 
 
 
