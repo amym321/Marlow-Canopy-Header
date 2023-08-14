@@ -145,7 +145,7 @@ document.querySelector('.varient-wrapper.data-smartrr-label-otp .varient.Subscri
 
 
 
-document.querySelectorAll('.smartrr-purchase-options div[data-smartrr-selling-plan-groups] > div').forEach(function (el) {
+document.querySelectorAll('.smartrr-purchase-options div[data-smartrr-selling-plan-groups] > div label').forEach(function (el) {
   el.addEventListener('click', function () {
     removeClassBySelectors('color-active', '.smartrr-purchase-options div[data-smartrr-selling-plan-groups] > div');
     this.classList.add('color-active');
