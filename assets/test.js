@@ -164,8 +164,10 @@ const scrollLink = document.querySelector('.scroll-link');
 // Add a click event listener to the scrollLink
 scrollLink.addEventListener('click', function (event) {
   // Scroll to the target element
-  targetElement.scrollIntoView({
-    behavior: 'smooth' // Use smooth scrolling         
+   targetElement.scrollIntoView({
+    behavior: 'smooth', // Use smooth scrolling
+    block: 'start',     // Align the top of the target element with the top of the scrollable area
+    inline: 'nearest',  // Keep the target element as close to the vertical center as possible
   });
 });
 
