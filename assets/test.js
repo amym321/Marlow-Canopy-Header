@@ -159,8 +159,6 @@ const scrollLink = document.querySelector('.scroll-link');
 
 // Add a click event listener to the scrollLink
 scrollLink.addEventListener('click', function (event) {
-  event.preventDefault(); // Prevent the default link behavior
-
   // Scroll to the target element, stopping a bit before the top
   targetElement.scrollIntoView({
     behavior: 'smooth', // Use smooth scrolling
