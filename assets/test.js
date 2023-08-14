@@ -122,7 +122,7 @@ document.querySelector('.varient-wrapper.data-smartrr-label-otp .varient.Subscri
       console.log('click');
       var gettext = this.innerText;
       var bmVariants = document.querySelectorAll('.bm-varient-description');
-      bmVariants.classList.remove('hide')
+      bmVariants.classList.add('hide')
       
         });
 
