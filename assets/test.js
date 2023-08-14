@@ -17,12 +17,12 @@
     live(selector, event, callback, context);
   }
 
-  function removeclass(selector) {
-      var element = document.querySelectorAll(selector)
-      element.forEach(function (el, i) {
-        el.classList.remove('hide')
-      })
-    }
+  // function removeclass(selector) {
+  //     var element = document.querySelectorAll(selector)
+  //     element.forEach(function (el, i) {
+  //       el.classList.remove('hide')
+  //     })
+  //   }
 
 
 function removeClass() {
@@ -127,7 +127,7 @@ document.querySelector('.varient-wrapper.data-smartrr-label-otp .varient.Subscri
       console.log('click');
       var gettext = this.innerText;
       var bmVariants = document.querySelectorAll('.varient-description');
-      removeclass('.hide');
+      removeClass();
 
       var targetVariant = Array.from(bmVariants).find(function(variant) {
         return variant.classList.contains(gettext);
