@@ -88,11 +88,19 @@ addDynamicClickListener(
 
  document.querySelector('.varient-wrapper.data-smartrr-label-otp .varient.Subscribe').click()
 
+// otp combo click 
 document.querySelector('.varient-wrapper.data-smartrr-label-sub .Subscribe').addEventListener('click',function(){
   document.querySelector('.smartrr-grp-input[value="sub"] label').click()
 })
 
 
+document.querySelector('.smartrr-otp.smartrr-grp-input[value="otp"]  label').addEventListener('click',function () {
+   document.querySelector('.varient-wrapper.data-smartrr-label-otp').classList.remove('hide') 
+})
+
+document.querySelector('.smartrr-otp.smartrr-grp-input[value="otp"]  label').addEventListener('click',function () {
+   document.querySelector('.varient-wrapper.data-smartrr-label-otp').classList.remove('hide') 
+})
 
 
 
