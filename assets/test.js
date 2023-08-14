@@ -159,7 +159,7 @@ document.querySelectorAll('.smartrr-purchase-options div[data-smartrr-selling-pl
 
 
 
-function scrolled(){
+
   // scroll function 
 // Find the element to scroll to
 const targetElement = document.querySelector('.quantity');
@@ -176,7 +176,6 @@ scrollLink.addEventListener('click', function (event) {
   });
 });
 
-}
 
 
 
