@@ -83,12 +83,12 @@ addDynamicClickListener(
     '.varient-wrapper.data-smartrr-label-otp  [data-id="0"]'
 );
 
-// addDynamicClickListener(
-//     '.varient-wrapper.data-smartrr-label-otp .varient.Subscribe',
-//     '.varient-wrapper.data-smartrr-label-otp',
-//     '.varient-wrapper.data-smartrr-label-sub',
-//     '#dropdownSelections div[data-smartrr-choose-sub].dropdown-select label:last-child'
-// );
+addDynamicClickListener(
+    '.varient-wrapper.data-smartrr-label-otp .varient.Subscribe',
+    '.varient-wrapper.data-smartrr-label-otp',
+    '.varient-wrapper.data-smartrr-label-sub',
+    '#dropdownSelections div[data-smartrr-choose-sub].dropdown-select label:last-child'
+);
 
 
 //  document.querySelector('.varient-wrapper.data-smartrr-label-otp .varient.Subscribe').click()
