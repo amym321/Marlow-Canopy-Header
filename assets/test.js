@@ -25,11 +25,11 @@
     }
 
 
-function removeClass() {
-    document.querySelectorAll('.varient.active').forEach(function (el) {
-        el.classList.remove('active');
-    });
-}
+// function removeClass() {
+//     document.querySelectorAll('.varient.active').forEach(function (el) {
+//         el.classList.remove('active');
+//     });
+// }
 
 function selectDropdownByVariant(checkText) {
     document.querySelectorAll('#dropdownSelections .dropdown-select:not(.hide) .input').forEach(function (el) {
@@ -49,7 +49,7 @@ function selectDropdownByVariant(checkText) {
 
 document.querySelectorAll('.varient').forEach(function (el) {
     el.addEventListener('click', function () {
-        removeClass();
+        removeclass('active');
         this.classList.add('active');
         var checkText = el.textContent;
 
