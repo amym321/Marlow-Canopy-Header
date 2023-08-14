@@ -91,6 +91,7 @@ addDynamicClickListener(
 // otp combo click 
 document.querySelector('.varient-wrapper.data-smartrr-label-sub .Subscribe').addEventListener('click',function(){
   document.querySelector('.smartrr-grp-input[value="sub"] label').click()
+ document.querySelector('.varient-wrapper.data-smartrr-label-otp').classList.add('hide')
 })
 
 
