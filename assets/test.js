@@ -87,7 +87,7 @@ addDynamicClickListener(
 
 addDynamicClickListener(
     '.varient-wrapper.data-smartrr-label-sub .Subscribe',   
-    '.varient-wrapper.data-smartrr-label-sub>div :last-child'
+    '.smartrr-grp-input[value="sub"] label'
 );
 
 
