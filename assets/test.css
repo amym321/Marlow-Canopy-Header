@@ -17,8 +17,8 @@ html body .product-details  .cc-rating-container .cc-rating-custom-caption{
 }
 
 html body .product-details  .cc-rating-container .cc-rating-stars--inactive svg{
-  width:1.5em;
-  height:1.5em;
+  width:25px;
+  height:25px;
 }
 
 html body .product-details .font-up{
