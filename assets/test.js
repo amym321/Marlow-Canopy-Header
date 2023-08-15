@@ -19,6 +19,12 @@ function removeClass() {
     });
 }
 
+function removeClass() {
+    document.querySelectorAll('.varient-description').forEach(function (el) {
+        el.classList.remove('hide');
+    });
+}
+
 function selectDropdownByVariant(checkText) {
     document.querySelectorAll('#dropdownSelections .dropdown-select:not(.hide) .input').forEach(function (el) {
         if (el.textContent.includes(checkText)) {
