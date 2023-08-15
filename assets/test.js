@@ -64,7 +64,7 @@ document.querySelectorAll('.varient').forEach(function (el) {
        document.querySelectorAll('.varient-description.' + varientText).forEach(function(el) { 
          addhideClass()
          el.classList.remove('hide')  
-         el.querySelector('.otp p span').innerHTML=varientText;
+         document.querySelector('.otp p span').innerHTML=varientText;
       });      
     });
 });
