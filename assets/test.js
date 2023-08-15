@@ -40,7 +40,7 @@ document.querySelectorAll('.varient').forEach(function (el) {
       // description text 
        var varientText = this.textContent; 
 console.log(varientText)
-    document.querySelectorAll('.varient-description .' + varientText).forEach(function(el) {
+    document.querySelectorAll('.varient-description.' + varientText).forEach(function(el) {
           if (el.classList.contains('hide')) {
               el.classList.remove('hide');
           } else {
