@@ -105,10 +105,7 @@ addDynamicClickListener(
 // otp combo click 
 document.querySelector('.varient-wrapper.data-smartrr-label-otp .varient.Subscribe ').addEventListener('click',function(){
   document.querySelector('.smartrr-grp-input[value="sub"] label').click()
- document.querySelector('.varient-wrapper.data-smartrr-label-otp').classList.add('hide')
-
-  console.log('lknklnlkn')
-  
+ document.querySelector('.varient-wrapper.data-smartrr-label-otp').classList.add('hide')  
 });
 
 
@@ -119,10 +116,7 @@ document.querySelector('.varient-wrapper.data-smartrr-label-otp .varient.Subscri
 
 
 document.querySelectorAll('.smartrr-purchase-options div[data-smartrr-selling-plan-groups] > div label').forEach(function (el) {
-  el.addEventListener('click', function () {
-
-    console.log(this)
-    
+  el.addEventListener('click', function () {    
     removeClassBySelectors('color-active', '.smartrr-purchase-options div[data-smartrr-selling-plan-groups] > div');
     this.closest('.smartrr-grp-input').classList.add('color-active');
   });
