@@ -112,6 +112,7 @@ function addDynamicClickListener(triggerSelector, hideSelector, showSelector, cl
 
 // subscribe cleck 
 addDynamicClickListener(
+console.log('kjkjgkjkjb');
     '.smartrr-grp-input[value="sub"] label',                       //trigger
     '.varient-wrapper.data-smartrr-label-otp',                     //hide
     '.varient-wrapper.data-smartrr-label-sub',                     //show
