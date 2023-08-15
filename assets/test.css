@@ -97,13 +97,13 @@ html body .radio-wrapper  .color-active{
 }
 
 .bm-description-wrapper .varient-description,
-.bm-description-wrapper.otp description
+.bm-description-wrapper.otp .description
   {
   margin:20px 0;
 }
 
 .bm-description-wrapper .varient-description p,
-.bm-description-wrapper.otp description p
+.bm-description-wrapper.otp .description p
  {
 font-family: Avenir Next;
 font-size: 16px;
