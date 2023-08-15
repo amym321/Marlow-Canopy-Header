@@ -111,8 +111,8 @@ text-align: left;
 }
 
 
-.product-details >.product-detail__gap-sm.rte.product-area__rte:nth-child(3),
-.variant-select
+.product-details >.product-detail__gap-sm.rte.product-area__rte:nth-child(3)
+/* .variant-select */
 {
   display:none;
 }
@@ -168,3 +168,10 @@ div[data-smartrr-benefits-all]{
 .Subscribe.active:after{
    background-image:url('https://cdn.shopify.com/s/files/1/0384/8254/2731/files/ComboActive_1080x@2x.png?v=1691989210'); 
 } 
+
+
+
+div[data-smartrr-benefits-all]:before{
+  color:#00B48A;
+
+}
