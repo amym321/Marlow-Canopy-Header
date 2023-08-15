@@ -114,7 +114,7 @@ addDynamicClickListener(
     '.smartrr-otp.smartrr-grp-input label',
     '.varient-wrapper.data-smartrr-label-sub',
     '.varient-wrapper.data-smartrr-label-otp',
-    '.varient-wrapper.data-smartrr-label-otp  [data-id="0"]'
+    '.varient-wrapper.data-smartrr-label-otp  [data-id="7"]'
 );
 
 
