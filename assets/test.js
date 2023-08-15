@@ -157,15 +157,11 @@ scrollLink.addEventListener('click', function (event) {
 
  live('.smartrr-otp.smartrr-grp-input','click', function(){
    document.querySelector('.bm-description-wrapper.otp').classList.remove('hide')
-      document.querySelector('.bm-description-wrapper.otp .varient-description').classList.remove('hide')
-
     document.querySelector('.bm-description-wrapper.sub').classList.add('hide')
  });
 
 live('.smartrr-grp-input[value="sub"],.Subscribe','click', function(){
    document.querySelector('.bm-description-wrapper.otp').classList.add('hide')
-      document.querySelector('.bm-description-wrapper.otp .varient-description').classList.add('hide')
-
     document.querySelector('.bm-description-wrapper.sub').classList.remove('hide')
  });
 
