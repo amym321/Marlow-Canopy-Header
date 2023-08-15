@@ -1,33 +1,33 @@
- function live(selector, event, callback, context) {
-    /****Helper Functions****/
-    // helper for enabling IE 8 event bindings
-    function addEvent(el, type, handler) {
-      if (el.attachEvent) el.attachEvent('on' + type, handler);
-      else el.addEventListener(type, handler);
-    }
-    // live binding helper using matchesSelector
-    function live(selector, event, callback, context) {
-      addEvent(context || document, event, (e) => {
-        let found,
-          el = e.target || e.srcElement;
-        while (el && el.matches && el !== context && !(found = el.matches(selector))) el = el.parentElement;
-        if (found) callback.call(el, e);
-      });
-    }
-    live(selector, event, callback, context);
-  }
+ // function live(selector, event, callback, context) {
+ //    /****Helper Functions****/
+ //    // helper for enabling IE 8 event bindings
+ //    function addEvent(el, type, handler) {
+ //      if (el.attachEvent) el.attachEvent('on' + type, handler);
+ //      else el.addEventListener(type, handler);
+ //    }
+ //    // live binding helper using matchesSelector
+ //    function live(selector, event, callback, context) {
+ //      addEvent(context || document, event, (e) => {
+ //        let found,
+ //          el = e.target || e.srcElement;
+ //        while (el && el.matches && el !== context && !(found = el.matches(selector))) el = el.parentElement;
+ //        if (found) callback.call(el, e);
+ //      });
+ //    }
+ //    live(selector, event, callback, context);
+ //  }
 
 
-// remove class function 
-function removeClassBySelectors(className, selectors) {
-  const elements = document.querySelectorAll(selectors);
+// // remove class function 
+// function removeClassBySelectors(className, selectors) {
+//   const elements = document.querySelectorAll(selectors);
   
-  elements.forEach(element => {
-    if (element.classList.contains(className)) {
-      element.classList.remove(className);
-    }
-  });
-}
+//   elements.forEach(element => {
+//     if (element.classList.contains(className)) {
+//       element.classList.remove(className);
+//     }
+//   });
+// }
 
 
 function removeClass() {
@@ -140,7 +140,7 @@ document.querySelectorAll('.smartrr-purchase-options div[data-smartrr-selling-pl
 
     console.log('ckick')
     
-    // removeClassBySelectors('color-active', '.smartrr-purchase-options div[data-smartrr-selling-plan-groups] > div');
+    removeClassBySelectors('color-active', '.smartrr-purchase-options div[data-smartrr-selling-plan-groups] > div');
     this.closest('.smartrr-grp-input').classList.add('color-active');
   });
 });
