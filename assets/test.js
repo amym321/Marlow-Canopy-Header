@@ -20,7 +20,7 @@ function removeClass() {
 }
 
 function addhideClass() {
-    document.querySelectorAll('.varient-description').forEach(function (el) {
+    document.querySelectorAll('.description-wrapper .varient-description').forEach(function (el) {
         el.classList.remove('hide');
     });
 }
