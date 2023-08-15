@@ -145,12 +145,16 @@ div[data-smartrr-benefits-all]{
 }
 
 
- .Regular:after{
+.Regular:after{
  background-image:url('https://cdn.shopify.com/s/files/1/0384/8254/2731/files/Regular_1080x@2x.png?v=1691989209');  	
 }
 
  .Regular.active:after{
- background-image:url('https://cdn.shopify.com/s/files/1/0384/8254/2731/files/Regular_1080x@2x.png?v=1691989209');  	
+ background-image:url('https://cdn.shopify.com/s/files/1/0384/8254/2731/files/RegularActive_1080x@2x.png?v=1691989209');  	
+}
+
+.Super:after{
+ background-image:url('https://cdn.shopify.com/s/files/1/0384/8254/2731/files/super_1080x@2x.png?v=1691989209');  	
 }
 
 .super{
@@ -161,7 +165,7 @@ div[data-smartrr-benefits-all]{
 
 
 regularacctive{
-  	https://cdn.shopify.com/s/files/1/0384/8254/2731/files/RegularActive_1080x@2x.png?v=1691989209
+  	
 }
 
 combo{
