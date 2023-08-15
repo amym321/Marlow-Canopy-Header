@@ -45,7 +45,7 @@ document.querySelectorAll('.varient').forEach(function (el) {
 
       // description text 
        var varientText = this.textContent; 
-    document.querySelectorAll('.varient-description.' + varientText).forEach(function(el) { 
+       document.querySelectorAll('.data-smartrr-label-sub .varient-description.' + varientText).forEach(function(el) { 
          addhideClass()
          el.classList.remove('hide')     
       });
