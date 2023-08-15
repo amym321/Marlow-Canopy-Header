@@ -160,10 +160,10 @@ div[data-smartrr-benefits-all]{
 .Super.active:after{
  background-image:url('https://cdn.shopify.com/s/files/1/0384/8254/2731/files/SuberActive_1080x@2x.png?v=1691989209');  	
 }
-.combo:after{
+.Combo:after{
    background-image:url('https://cdn.shopify.com/s/files/1/0384/8254/2731/files/ComboActive_1080x@2x.png?v=1691989210');   
 } 
 
-.combo.active:after{
+.Combo.active:after{
    background-image:url('https://cdn.shopify.com/s/files/1/0384/8254/2731/files/Combo_1080x@2x.png?v=1691989209');   
 } 
