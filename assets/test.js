@@ -50,7 +50,14 @@ function selectDropdownByVariant(checkText) {
     });
 }
 
-
+funtion checkTargetElement(){
+    // description text 
+       var varientText = this.textContent; 
+       document.querySelectorAll('.varient-description.' + varientText).forEach(function(el) { 
+         addhideClass()
+         el.classList.remove('hide')     
+      }); 
+}
 
 document.querySelectorAll('.varient').forEach(function (el) {
     el.addEventListener('click', function () {
@@ -58,13 +65,8 @@ document.querySelectorAll('.varient').forEach(function (el) {
         this.classList.add('active');
         var checkText = el.textContent;
         selectDropdownByVariant(checkText);
-      
-      // description text 
-       var varientText = this.textContent; 
-       document.querySelectorAll('.varient-description.' + varientText).forEach(function(el) { 
-         addhideClass()
-         el.classList.remove('hide')     
-      });      
+      checkTargetElement()
+         
     });
 });
 
@@ -156,6 +158,9 @@ scrollLink.addEventListener('click', function (event) {
  live('.smartrr-otp.smartrr-grp-input,.data-smartrr-label-otp', 'click', function(){
    document.querySelector('.bm-description-wrapper.otp .varient-description').classList.remove('hide')
     document.querySelector('.bm-description-wrapper.sub .varient-description').classList.add('hide')
+
+   document.querySelector('.bm-description-wrapper.otp p').innerHTML=
+
  });
 
 
