@@ -18,20 +18,20 @@
  //  }
 
 
-// remove class function 
-function removeClassBySelectors(className, selectors) {
-  const elements = document.querySelectorAll(selectors);
+// // remove class function 
+// function removeClassBySelectors(className, selectors) {
+//   const elements = document.querySelectorAll(selectors);
   
-  elements.forEach(element => {
-    if (element.classList.contains(className)) {
-      element.classList.remove(className);
-    }
-  });
-}
+//   elements.forEach(element => {
+//     if (element.classList.contains(className)) {
+//       element.classList.remove(className);
+//     }
+//   });
+// }
 
 
 function removeClass() {
-    document.querySelectorAll('.varient.active').forEach(function (el) {
+    document.querySelectorAll('.varient').forEach(function (el) {
         el.classList.remove('active');
     });
 }
