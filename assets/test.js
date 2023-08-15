@@ -153,8 +153,7 @@ scrollLink.addEventListener('click', function (event) {
 
 
 
- live('.smartrr-otp.smartrr-grp-input,.data-smartrr-label-otp .varient.Subscribe', 'click', function(){
-
+ live('.smartrr-otp.smartrr-grp-input,.data-smartrr-label-otp', 'click', function(){
    document.querySelector('.bm-description-wrapper.otp ').classList.remove('hide')
    
  });
