@@ -161,6 +161,7 @@ div[data-smartrr-benefits-all]{
  background-image:url('https://cdn.shopify.com/s/files/1/0384/8254/2731/files/SuberActive_1080x@2x.png?v=1691989209');  	
 }
 .Subscribe:after{
+    background-position: 18px 25px;
     background-image:url('https://cdn.shopify.com/s/files/1/0384/8254/2731/files/Combo_1080x@2x.png?v=1691989209');  
 } 
 
