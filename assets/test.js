@@ -41,8 +41,7 @@ document.querySelectorAll('.varient').forEach(function (el) {
         this.classList.add('active');
         var checkText = el.textContent;
         selectDropdownByVariant(checkText);
-
-
+      
       // description text 
        var varientText = this.textContent; 
        document.querySelectorAll('.varient-description.' + varientText).forEach(function(el) { 
