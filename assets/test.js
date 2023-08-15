@@ -39,10 +39,9 @@ document.querySelectorAll('.varient').forEach(function (el) {
 
       // description text 
        var varientText = this.textContent; 
-    document.querySelectorAll('.varient-description.' + varientText).forEach(function(el) {   
-      removeClassBySelectors('hide','.varient-description')
-       
+    document.querySelectorAll('.varient-description.' + varientText).forEach(function(el) { 
          el.classList.add('hide')
+      removeClassBySelectors('hide','.varient-description')      
       });
 
       
