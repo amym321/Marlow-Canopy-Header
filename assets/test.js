@@ -51,7 +51,7 @@ function selectDropdownByVariant(checkText) {
 }
 
 
-
+ var varientText; 
 document.querySelectorAll('.varient').forEach(function (el) {
     el.addEventListener('click', function () {
         removeClass();
@@ -60,7 +60,7 @@ document.querySelectorAll('.varient').forEach(function (el) {
         selectDropdownByVariant(checkText);
       
       // description text 
-       var varientText = this.textContent; 
+        varientText = this.textContent; 
        document.querySelectorAll('.varient-description.' + varientText).forEach(function(el) { 
          addhideClass()
          el.classList.remove('hide')     
