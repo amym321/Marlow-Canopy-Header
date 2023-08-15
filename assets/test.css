@@ -120,6 +120,7 @@ text-align: left;
 
 div[data-smartrr-benefits-all]{
   padding:8px 0;
+  display:flex;
 }
 
 
