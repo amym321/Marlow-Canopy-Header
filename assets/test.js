@@ -112,7 +112,6 @@ function addDynamicClickListener(triggerSelector, hideSelector, showSelector, cl
 
 // subscribe cleck 
 addDynamicClickListener(
-console.log('kjkjgkjkjb');
     '.smartrr-grp-input[value="sub"] label',                       //trigger
     '.varient-wrapper.data-smartrr-label-otp',                     //hide
     '.varient-wrapper.data-smartrr-label-sub',                     //show
@@ -120,8 +119,7 @@ console.log('kjkjgkjkjb');
 );
 
  // OTP CLICK 
-addDynamicClickListener(
-  console.log('11111');
+addDynamicClickListener(  
     '.smartrr-otp.smartrr-grp-input label',
     '.varient-wrapper.data-smartrr-label-sub',
     '.varient-wrapper.data-smartrr-label-otp',
