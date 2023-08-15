@@ -63,7 +63,8 @@ document.querySelectorAll('.varient').forEach(function (el) {
         varientText = this.textContent; 
        document.querySelectorAll('.varient-description.' + varientText).forEach(function(el) { 
          addhideClass()
-         el.classList.remove('hide')     
+         el.classList.remove('hide')  
+         console.log(el.querySelector('p'))   
       });      
     });
 });
