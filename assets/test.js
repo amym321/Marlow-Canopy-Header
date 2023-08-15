@@ -108,13 +108,7 @@ document.querySelector('.varient-wrapper.data-smartrr-label-otp .varient.Subscri
  document.querySelector('.varient-wrapper.data-smartrr-label-otp').classList.add('hide')  
 });
 
-
-
-
-
-
-
-
+// for varient image 
 document.querySelectorAll('.smartrr-purchase-options div[data-smartrr-selling-plan-groups] > div label').forEach(function (el) {
   el.addEventListener('click', function () {    
     removeClassBySelectors('color-active', '.smartrr-purchase-options div[data-smartrr-selling-plan-groups] > div');
