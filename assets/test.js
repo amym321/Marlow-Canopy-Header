@@ -155,7 +155,7 @@ document.querySelectorAll('.smartrr-purchase-options div[data-smartrr-selling-pl
 var targetElement = document.querySelector('.quantity');
 
 // Find the element that triggers the scroll
-const scrollLink = document.querySelector('.scroll-link');
+var scrollLink = document.querySelector('.scroll-link');
 
 // Add a click event listener to the scrollLink
 scrollLink.addEventListener('click', function (event) {
