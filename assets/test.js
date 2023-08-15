@@ -21,7 +21,7 @@ function removeClass() {
 
 function addhideClass() {
     document.querySelectorAll('.description-wrapper .varient-description').forEach(function (el) {
-        el.classList.remove('hide');
+        el.classList.add('hide');
     });
 }
 
