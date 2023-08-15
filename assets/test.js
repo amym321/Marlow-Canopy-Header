@@ -49,6 +49,8 @@ document.querySelectorAll('.varient').forEach(function (el) {
          addhideClass()
          el.classList.remove('hide')     
       });
+      
+   
 
       
     });
