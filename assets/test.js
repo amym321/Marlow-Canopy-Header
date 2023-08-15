@@ -121,6 +121,7 @@ console.log('kjkjgkjkjb');
 
  // OTP CLICK 
 addDynamicClickListener(
+  console.log('11111');
     '.smartrr-otp.smartrr-grp-input label',
     '.varient-wrapper.data-smartrr-label-sub',
     '.varient-wrapper.data-smartrr-label-otp',
