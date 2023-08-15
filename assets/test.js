@@ -30,11 +30,6 @@ function removeClassBySelectors(className, selectors) {
 }
 
 
-
-
-
-
-
 function removeClass() {
     document.querySelectorAll('.varient.active').forEach(function (el) {
         el.classList.remove('active');
@@ -83,10 +78,6 @@ setTimeout(() => {
 
 
 
-
-
-
-
 // triggerSelector: The selector for the element that triggers the click event.
 // hideSelector: The selector for the element to be hidden.
 // showSelector: The selector for the element to be shown.
@@ -110,7 +101,7 @@ function addDynamicClickListener(triggerSelector, hideSelector, showSelector, cl
 
 // // Usage
 
-// subscribe cleck 
+// subscribe click 
 addDynamicClickListener(
     '.smartrr-grp-input[value="sub"] label',                       //trigger
     '.varient-wrapper.data-smartrr-label-otp',                     //hide
