@@ -153,20 +153,6 @@ scrollLink.addEventListener('click', function (event) {
 
 
 
- live('.varient-wrapper.data-smartrr-label-otp .varient', 'click', function(){
-   document.querySelector('.bm-description-wrapper.otp ').classList.remove('hide')
-    document.querySelector('.bm-description-wrapper.sub ').classList.add('hide')  
-
- });
-
- // live('.smartrr-grp-input[value="otp"]', 'click', function(){
- //   document.querySelector('.bm-description-wrapper.otp ').classList.add('hide')
- //    document.querySelector('.bm-description-wrapper.sub ').classList.remove('hide')  
- //    document.querySelector('.bm-description-wrapper.sub .varient-description').classList.remove('hide')  
-   
-
- // });
-
 
 
 
