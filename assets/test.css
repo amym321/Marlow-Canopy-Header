@@ -171,7 +171,7 @@ div[data-smartrr-benefits-all]{
 
 
 
-div[data-smartrr-benefits-all]:before{
+html body div[data-smartrr-benefits-all]:before{
   color:#00B48A;
    font-size:35px;
    transform: rotateX(55deg);
