@@ -1,21 +1,21 @@
- function live(selector, event, callback, context) {
-    /****Helper Functions****/
-    // helper for enabling IE 8 event bindings
-    function addEvent(el, type, handler) {
-      if (el.attachEvent) el.attachEvent('on' + type, handler);
-      else el.addEventListener(type, handler);
-    }
-    // live binding helper using matchesSelector
-    function live(selector, event, callback, context) {
-      addEvent(context || document, event, (e) => {
-        let found,
-          el = e.target || e.srcElement;
-        while (el && el.matches && el !== context && !(found = el.matches(selector))) el = el.parentElement;
-        if (found) callback.call(el, e);
-      });
-    }
-    live(selector, event, callback, context);
-  }
+ // function live(selector, event, callback, context) {
+ //    /****Helper Functions****/
+ //    // helper for enabling IE 8 event bindings
+ //    function addEvent(el, type, handler) {
+ //      if (el.attachEvent) el.attachEvent('on' + type, handler);
+ //      else el.addEventListener(type, handler);
+ //    }
+ //    // live binding helper using matchesSelector
+ //    function live(selector, event, callback, context) {
+ //      addEvent(context || document, event, (e) => {
+ //        let found,
+ //          el = e.target || e.srcElement;
+ //        while (el && el.matches && el !== context && !(found = el.matches(selector))) el = el.parentElement;
+ //        if (found) callback.call(el, e);
+ //      });
+ //    }
+ //    live(selector, event, callback, context);
+ //  }
 
 
 // remove class function 
