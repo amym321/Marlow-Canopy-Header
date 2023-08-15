@@ -19,7 +19,7 @@ function removeClass() {
     });
 }
 
-function removeClass() {
+function addhideClass() {
     document.querySelectorAll('.varient-description').forEach(function (el) {
         el.classList.remove('hide');
     });
