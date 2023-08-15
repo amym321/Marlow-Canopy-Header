@@ -153,7 +153,7 @@ scrollLink.addEventListener('click', function (event) {
 
 
 
- live('.smartrr-otp.smartrr-grp-input', 'click', function(){
+ live('.varient-wrapper.data-smartrr-label-otp .varient', 'click', function(){
    document.querySelector('.bm-description-wrapper.otp ').classList.remove('hide')
     document.querySelector('.bm-description-wrapper.sub ').classList.add('hide')  
 
