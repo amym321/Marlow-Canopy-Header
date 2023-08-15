@@ -48,6 +48,8 @@ document.querySelectorAll('.varient').forEach(function (el) {
          addhideClass()
          el.classList.remove('hide')     
       });
+
+    if(document.querySelector('.otp .varient-description.' + varientText))
       
    
 
