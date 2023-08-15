@@ -50,14 +50,7 @@ function selectDropdownByVariant(checkText) {
     });
 }
 
-funtion checkTargetElement(){
-    // description text 
-       var varientText = this.textContent; 
-       document.querySelectorAll('.varient-description.' + varientText).forEach(function(el) { 
-         addhideClass()
-         el.classList.remove('hide')     
-      }); 
-}
+
 
 document.querySelectorAll('.varient').forEach(function (el) {
     el.addEventListener('click', function () {
@@ -65,8 +58,13 @@ document.querySelectorAll('.varient').forEach(function (el) {
         this.classList.add('active');
         var checkText = el.textContent;
         selectDropdownByVariant(checkText);
-      checkTargetElement()
-         
+      
+      // description text 
+       var varientText = this.textContent; 
+       document.querySelectorAll('.varient-description.' + varientText).forEach(function(el) { 
+         addhideClass()
+         el.classList.remove('hide')     
+      });      
     });
 });
 
