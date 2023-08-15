@@ -137,7 +137,7 @@ document.querySelectorAll('.smartrr-purchase-options div[data-smartrr-selling-pl
 
     console.log('ckick')
     
-    removeClassBySelectors('color-active', '.smartrr-purchase-options div[data-smartrr-selling-plan-groups] > div');
+    // removeClassBySelectors('color-active', '.smartrr-purchase-options div[data-smartrr-selling-plan-groups] > div');
     this.closest('.smartrr-grp-input').classList.add('color-active');
   });
 });
