@@ -148,6 +148,14 @@ html body.bundle-marlow  .variant-select
 html body.bundle-marlow  div[data-smartrr-benefits-all]{
   padding:8px 0;
   display:flex;
+font-family: Avenir Next;
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+
+  
 }
 
 
