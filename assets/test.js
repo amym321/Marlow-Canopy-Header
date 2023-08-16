@@ -166,12 +166,13 @@ scrollLink.addEventListener('click', function (event) {
 
 
 
-live(scrollLink,'click',function(){  
-  if(document.querySelector('#station-tabs-tab_ht-i1-t11')){
-       document.querySelector('#station-tabs-tab_ht-i1-t11').click()
-  }
+// live('scrollLink','click',function(){  
+//   if(document.querySelector('#station-tabs-tab_ht-i1-t11')){
+//        document.querySelector('#station-tabs-tab_ht-i1-t11').click()
+//   }
+  
 
-})
+// })
 
 
 
