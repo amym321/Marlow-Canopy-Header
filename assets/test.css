@@ -153,11 +153,12 @@ font-size: 14px;
 font-weight: 400;
 line-height: 22px;
 letter-spacing: 0em;
-text-align: left;
-
-  
+text-align: left; 
 }
 
+html body.bundle-marlow .bm-description-wrapper .varient-description p span{
+  text-transform:lowercase;
+}
 
  html body.bundle-marlow  .varient:after{
     content:'';   
