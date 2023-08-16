@@ -198,7 +198,7 @@ html body.bundle-marlow .Subscribe.active:after {
 html body.bundle-marlow [data-smartrr-subscription-benefits] [data-smartrr-benefits-all]:before {
   content:'';
   color: #00b48a;
-  font-size: 30px;  
+  min-width: 30px;  
   font-weight: 900;
   display: inline-block;
   color: #00b48a;
