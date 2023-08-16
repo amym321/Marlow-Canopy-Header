@@ -168,11 +168,17 @@ scrollLink.addEventListener('click', function (event) {
 
 live('.scroll-link','click',function(){  
   if( document.querySelector('#station-tabs-tab_ht-i1-t11')){
-    document.querySelector('#station-tabs-tab_ht-i1-t11').click()
+  setTimeout(() => {
+     document.querySelector('#station-tabs-tab_ht-i1-t11').click()
+  }, 500);
+   
   }
 
   if( document.querySelector('#station-tabs-tab_ht-i1-t5')){
-    document.querySelector('#station-tabs-tab_ht-i1-t5').click()
+     setTimeout(() => {
+   document.querySelector('#station-tabs-tab_ht-i1-t5').click()
+  }, 500);
+   
   }
        
   })
