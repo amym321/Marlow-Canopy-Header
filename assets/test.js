@@ -175,7 +175,7 @@ live('.smartrr-grp-input[value="sub"],.Subscribe','click', function(){
  });
 
 live('.scroll-link','click',function(){
-  document.querySelector('.station-tabs .station-tabs-tabtitle:first-child').click()
+  document.querySelector('.station-tabs .station-tabs-tabtitle:first-child span').click()
 })
 
 
