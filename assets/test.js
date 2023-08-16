@@ -167,9 +167,9 @@ scrollLink.addEventListener('click', function (event) {
 if(marlowFirst){
   marlowFirst.click() 
 }
-if(TamponsFirst){
-   TamponsFirst.click()
-}
+// if(TamponsFirst){
+//    TamponsFirst.click()
+// }
   
 
   
