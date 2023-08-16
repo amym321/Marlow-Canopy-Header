@@ -1,30 +1,29 @@
-{% if product == all_products['bundle-save'] or product == all_products['marlow-tampons'] %}
 
 
-html body .data-smartrr-top-price{
+html body.bundle-marlow .data-smartrr-top-price{
   display: flex;
   flex-wrap:wrap;
   gap:10px;
   flex-direction: row-reverse;
   justify-content: flex-end;
 }
-html body .data-smartrr-top-price afterpay-placement{
+html body.bundle-marlow  .data-smartrr-top-price afterpay-placement{
   order:1;
   width:100%;
   display:block;
 }
-html body .product-details  .cc-rating-container .cc-rating-custom-caption{
+html body.bundle-marlow  .product-details  .cc-rating-container .cc-rating-custom-caption{
     left: 6px;
     line-height: 1;
     top: 3px;
 }
 
-html body .product-details  .cc-rating-container .cc-rating-stars--inactive svg{
+html body.bundle-marlow  .product-details  .cc-rating-container .cc-rating-stars--inactive svg{
   width:25px;
   height:25px;
 }
 
-html body .product-details .font-up{
+html body.bundle-marlow  .product-details .font-up{
 font-family: Avenir Next;
 font-size: 16px;
 font-weight: 700;
@@ -34,20 +33,20 @@ text-align: left;
 color: #302BA3;  
 }
 
-html body .choose-wrapper{
+html body.bundle-marlow  .choose-wrapper{
   display:flex;
   gap:10px;
   margin:20px 0;
 }
 
-html body .scroll-link{
+html body.bundle-marlow  .scroll-link{
   cursor:pointer;
   text-decoration:underline;
 }
 
 
 
-html body .radio-wrapper{
+html body.bundle-marlow  .radio-wrapper{
   border: 2px solid #302BA3;
   box-shadow: 2px 2px 6px 0px #302BA340;
   background-color:#FFFAF6;
@@ -57,15 +56,15 @@ html body .radio-wrapper{
 
 }
 
-html body .radio-wrapper  .smartrr-purchase-options{
+html body.bundle-marlow  .radio-wrapper  .smartrr-purchase-options{
   margin-right:0;
 }
-html body .varient-inner{
+html body.bundle-marlow  .varient-inner{
   display:flex;
   gap:20px;
   margin-bottom:20px;
 }
-html body .varient{
+html body.bundle-marlow  .varient{
     min-width: 73px;
     min-height: 73px;
     border: 1px solid #302BA3;
@@ -79,36 +78,36 @@ html body .varient{
     padding-bottom: 10px;
 }
 
-html body .varient.active{
+html body.bundle-marlow  .varient.active{
   background:#302ba3;
   color:#fff;
 }
-html body .smartrr-purchase-options .smartrr-selling-plan-group-input-display:before{
+html body.bundle-marlow  .smartrr-purchase-options .smartrr-selling-plan-group-input-display:before{
   border:2px solid #302BA3 ;
 }
 
-html body .smartrr-purchase-options .smartrr-selling-plan-group-input-display:after{
+html body.bundle-marlow  .smartrr-purchase-options .smartrr-selling-plan-group-input-display:after{
   background:#302BA3 ;
 }
 
-.smartrr-purchase-options div[data-smartrr-selling-plan-groups] > div{
+html body.bundle-marlow  .smartrr-purchase-options div[data-smartrr-selling-plan-groups] > div{
     padding:16px 4px;  
 }
 
 
-html body .radio-wrapper  .color-active{
+html body.bundle-marlow  .radio-wrapper  .color-active{
   background-color:#fdf3eb;
     box-shadow: 2px 2px 6px 0px #302BA340;
 }
 
-.bm-description-wrapper .varient-description,
-.bm-description-wrapper.otp .description
+html body.bundle-marlow .bm-description-wrapper .varient-description,
+html body.bundle-marlow  .bm-description-wrapper.otp .description
   {
   margin:20px 0;
 }
 
-.bm-description-wrapper .varient-description p,
-.bm-description-wrapper.otp .description p
+html body.bundle-marlow  .bm-description-wrapper .varient-description p,
+html body.bundle-marlow  .bm-description-wrapper.otp .description p
  {
 font-family: Avenir Next;
 font-size: 16px;
@@ -120,20 +119,20 @@ text-align: left;
 }
 
 
-.product-details >.product-detail__gap-sm.rte.product-area__rte:nth-child(3),
-.variant-select
+html body.bundle-marlow  .product-details >.product-detail__gap-sm.rte.product-area__rte:nth-child(3),
+html body.bundle-marlow  .variant-select
 {
   display:none;
 }
 
 
-div[data-smartrr-benefits-all]{
+html body.bundle-marlow  div[data-smartrr-benefits-all]{
   padding:8px 0;
   display:flex;
 }
 
 
- .varient:after{
+ html body.bundle-marlow  .varient:after{
     content:'';   
     background-size: auto;
     background-position: 12px 25px;
@@ -146,42 +145,42 @@ div[data-smartrr-benefits-all]{
     left: 0;
 }
 
-.Light:after{
+html body.bundle-marlow  .Light:after{
   background-image:url('https://cdn.shopify.com/s/files/1/0384/8254/2731/files/Light_1080x@2x.png?v=1691989209');
 }
 
-.Light.active:after{
+html body.bundle-marlow  .Light.active:after{
   background-image:url('https://cdn.shopify.com/s/files/1/0384/8254/2731/files/LightActive_1080x@2x.png?v=1691989218'); 
 }
 
 
-.Regular:after{
+html body.bundle-marlow  .Regular:after{
  background-image:url('https://cdn.shopify.com/s/files/1/0384/8254/2731/files/Regular_1080x@2x.png?v=1691989209');  	
 }
 
- .Regular.active:after{
+html body.bundle-marlow  .Regular.active:after{
  background-image:url('https://cdn.shopify.com/s/files/1/0384/8254/2731/files/RegularActive_1080x@2x.png?v=1691989209');  	
 }
 
-.Super:after{
+html body.bundle-marlow  .Super:after{
  background-image:url('https://cdn.shopify.com/s/files/1/0384/8254/2731/files/super_1080x@2x.png?v=1691989209');  	
 }
 
-.Super.active:after{
+html body.bundle-marlow  .Super.active:after{
  background-image:url('https://cdn.shopify.com/s/files/1/0384/8254/2731/files/SuberActive_1080x@2x.png?v=1691989209');  	
 }
-.Subscribe:after{
+html body.bundle-marlow  .Subscribe:after{
     background-position: 18px 25px;
     background-image:url('https://cdn.shopify.com/s/files/1/0384/8254/2731/files/Combo_1080x@2x.png?v=1691989209');  
 } 
 
-.Subscribe.active:after{
+html body.bundle-marlow  .Subscribe.active:after{
    background-image:url('https://cdn.shopify.com/s/files/1/0384/8254/2731/files/ComboActive_1080x@2x.png?v=1691989210'); 
 } 
 
 
 
-html body [data-smartrr-subscription-benefits] [data-smartrr-benefits-all]:before{
+html body.bundle-marlow  [data-smartrr-subscription-benefits] [data-smartrr-benefits-all]:before{
   color:#00B48A;
    font-size:35px;
    transform: rotateX(55deg);
@@ -190,4 +189,4 @@ html body [data-smartrr-subscription-benefits] [data-smartrr-benefits-all]:befor
    color: #00B48A;
 }
 
-      {% endif %}
+ 
