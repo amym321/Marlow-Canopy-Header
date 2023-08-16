@@ -497,17 +497,19 @@
                     </div>
                   </div>
                 {% endif %}
-                <div
-                  class="data-smartrr-top-price"
-                  data-smartrr-product-id="{{ product.id }}"
-                  data-smartrr-price-style="original-compare"
-                  class="data-smartrr-top-price"
-                >
-                  <span data-smartrr-subscribe-price></span>
-                  <span data-smartrr-compare-price></span>
-                  <span data-smartrr-regular-price></span>
-                </div>
 
+                {% if product == all_products['bundle-save'] or product == all_products['marlow-tampons'] %}
+                  <div
+                    class="data-smartrr-top-price"
+                    data-smartrr-product-id="{{ product.id }}"
+                    data-smartrr-price-style="original-compare"
+                    class="data-smartrr-top-price"
+                  >
+                    <span data-smartrr-subscribe-price></span>
+                    <span data-smartrr-compare-price></span>
+                    <span data-smartrr-regular-price></span>
+                  </div>
+                {% endif %}
               {%- when 'buy_buttons' -%}
                 {% if product.available %}
                   {% if is_variant_picker == false %}
