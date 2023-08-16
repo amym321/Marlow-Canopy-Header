@@ -442,6 +442,19 @@
                   {% render 'smartrr-product' %}
 
                   {% if has_benefits %}
+                    <!--
+                      <div data-smartrr-choose-otp-benefit class="hide">
+                        <div data-smartrr-onetime-benefits>
+                          {% if product == all_products['bundle-save'] %}
+                            <div>1 box of tampons, 1 bottle of lubricant</div>
+                          {% endif %}
+                          {% if product == all_products['marlow-tampons'] %}
+                            <div>1 box of tampons</div>
+                          {% endif %}
+                          <div data-smartrr-benefits-onetime>Auto-refill deliveries</div>
+                        </div>
+                      </div>
+                    -->
                     <div data-smartrr-choose-sub-benefit class="hide">
                       <div data-smartrr-subscription-benefits>
                         {% if product == all_products['bundle-save'] %}
