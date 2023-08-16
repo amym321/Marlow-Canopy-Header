@@ -170,12 +170,14 @@ live('.scroll-link','click',function(){
   if( document.querySelector('#station-tabs-tab_ht-i1-t11')){
     document.querySelector('#station-tabs-tab_ht-i1-t11').click()
   }
+
+  if( document.querySelector('#station-tabs-tab_ht-i1-t11')){
+    document.querySelector('#station-tabs-tab_ht-i1-t5').click()
+  }
        
   })
 
-  live('.scroll-link','click',function(){  
-       document.querySelector('#station-tabs-tab_ht-i1-t5').click()
-  })
+
 
 
 
