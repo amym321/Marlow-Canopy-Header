@@ -1,20 +1,13 @@
 // targetting 
 
 
-{% assign urlSegments = page.url | split: '/' %}
-{% assign bundleSaveIndex = urlSegments | index: 'bundle-save' %}
-{% assign marlowTamponsIndex = urlSegments | index: 'marlow-tampons' %}
 
-{% if bundleSaveIndex != nil or marlowTamponsIndex != nil %}
+
+{% if window.location.pathname.includes('bundle-save') or window.location.pathname.includes('marlow-tampons')  %}
+
 document.querySelector('body').classList.add('bundle-marlow')
-{% endif %}
 
-
-// {% if page.url contains 'bundle-save' or page.url contains 'marlow-tampons' %}
-
-
-
-//   {% endif %}
+  {% endif %}
 
  function live(selector, event, callback, context) {
     /****Helper Functions****/
