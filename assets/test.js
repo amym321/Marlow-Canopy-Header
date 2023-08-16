@@ -146,16 +146,16 @@ document.querySelectorAll('.smartrr-purchase-options div[data-smartrr-selling-pl
 
 live('.scroll-link','click',function(){  
   if( document.querySelector('#station-tabs-tab_ht-i1-t11')){
-  setTimeout(() => {
+  // setTimeout(() => {
      document.querySelector('#station-tabs-tab_ht-i1-t11').click()
-  }, 500);
+  // }, 500);
    
   }
 
   if( document.querySelector('#station-tabs-tab_ht-i1-t5')){
-     setTimeout(() => {
+     // setTimeout(() => {
    document.querySelector('#station-tabs-tab_ht-i1-t5').click()
-  }, 500);
+  // }, 500);
    
   }
        
