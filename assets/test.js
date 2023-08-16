@@ -162,12 +162,12 @@ scrollLink.addEventListener('click', function (event) {
   
 });
 
-live(scrollLink,'click',function(){
 
   var marlowFirst=document.querySelector('#station-tabs-tab_ht-i1-t11');
 
 var TamponsFirst=document.querySelector('#station-tabs-tab_ht-i1-t5');
-  
+
+live(scrollLink,'click',function(){  
 if(marlowFirst){
   marlowFirst.click() 
 }
