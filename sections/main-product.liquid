@@ -390,23 +390,24 @@
                   </div>
                 </div>
 
-                <div class="varient-wrapper data-smartrr-label-otp hide">
-                  <div class="varient-inner">
-                    {% if section.settings.Light != blank %}
-                      <div class="varient Light" data-id="4">{{ section.settings.Light }}</div>
-                    {% endif -%}
-                    {% if section.settings.Regular != blank %}
-                      <div class="varient Regular" data-id="5">{{ section.settings.Regular }}</div>
-                    {% endif -%}
-                    {% if section.settings.Super != blank %}
-                      <div class="varient Super" data-id="6">{{ section.settings.Super }}</div>
-                    {% endif -%}
-                    {% if section.settings.Combo != blank %}
-                      <div class="varient Subscribe" data-id="7">{{ section.settings.Combo }}</div>
-                    {% endif -%}
+                {% if product == all_products['bundle-save'] or product == all_products['marlow-tampons'] %}
+                  <div class="varient-wrapper data-smartrr-label-otp hide">
+                    <div class="varient-inner">
+                      {% if section.settings.Light != blank %}
+                        <div class="varient Light" data-id="4">{{ section.settings.Light }}</div>
+                      {% endif -%}
+                      {% if section.settings.Regular != blank %}
+                        <div class="varient Regular" data-id="5">{{ section.settings.Regular }}</div>
+                      {% endif -%}
+                      {% if section.settings.Super != blank %}
+                        <div class="varient Super" data-id="6">{{ section.settings.Super }}</div>
+                      {% endif -%}
+                      {% if section.settings.Combo != blank %}
+                        <div class="varient Subscribe" data-id="7">{{ section.settings.Combo }}</div>
+                      {% endif -%}
+                    </div>
                   </div>
-                </div>
-
+                {% endif %}
                 <div class="radio-wrapper">
                   {% if product.available and block.settings.stock_warning_show %}
                     {%- if current_variant.inventory_management == 'shopify'
