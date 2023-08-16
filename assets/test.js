@@ -1,6 +1,6 @@
 // targetting 
 
-{% if product == all_products['bundle-save'] or product == all_products['marlow-tampons'] %}
+{% if page.url contains 'bundle-save' or page.url contains 'marlow-tampons' %}
 
 document.querySelector('body').classList.add('bundle-marlow')
 
