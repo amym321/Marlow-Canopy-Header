@@ -198,11 +198,12 @@ html body.bundle-marlow .Subscribe.active:after {
 html body.bundle-marlow [data-smartrr-subscription-benefits] [data-smartrr-benefits-all]:before {
   content:'';
   color: #00b48a;
-  min-width: 30px;  
+  min-width: 30px; 
+  background-repeat:no-repeat;
   font-weight: 900;
   display: inline-block;
   color: #00b48a;
-  background-image:url(https://cdn.shopify.com/s/files/1/0384/8254/2731/files/g-check_1_1080x@2x.png?v=1692175550)
+  background-image:url(https://cdn.shopify.com/s/files/1/0384/8254/2731/files/g-check_1_1080x@2x.png?v=1692175550);
 }
 
 html body.bundle-marlow .purchase-radio {
