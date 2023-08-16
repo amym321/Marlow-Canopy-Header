@@ -1,14 +1,12 @@
 // targetting 
 
 
-var urlCheck=window.location.pathname;
+var urlCheck = window.location.pathname;
 
+if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
+  document.querySelector('body').classList.add('bundle-marlow');
+}
 
-{% if urlCheck.includes('bundle-save') or urlCheck.includes('marlow-tampons')  %}
-
-document.querySelector('body').classList.add('bundle-marlow')
-
-  {% endif %}
 
  function live(selector, event, callback, context) {
     /****Helper Functions****/
