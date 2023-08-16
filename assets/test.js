@@ -164,12 +164,12 @@ scrollLink.addEventListener('click', function (event) {
     inline: 'nearest'  // Keep the target element as close to the vertical center as possible
   });
 
-if(marlowFirst){
-  marlowFirst.click() 
-}
-// if(TamponsFirst){
-//    TamponsFirst.click()
+// if(marlowFirst){
+//   marlowFirst.click() 
 // }
+if(TamponsFirst){
+   TamponsFirst.click()
+}
   
 
   
