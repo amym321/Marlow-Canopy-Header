@@ -469,34 +469,34 @@
                     {% assign has_benefits = false %}
                   {% endif %}
                 </div>
+                {% if product == all_products['bundle-save'] or product == all_products['marlow-tampons'] %}
+                  <div class="description-wrapper bm-description-wrapper sub">
+                    <!-- subscription + non-combo -->
+                    <div class="varient-description  Light hide">
+                      <p>3 boxes of <span>Light</span> tampons and 3 bottles of lubricant</p>
+                    </div>
+                    <!-- subscription + non-combo -->
+                    <div class="varient-description Regular hide">
+                      <p>3 boxes of <span>Regular</span> tampons and 3 bottles of lubricant</p>
+                    </div>
+                    <!-- subscription + non-combo -->
+                    <div class="varient-description Super hide">
+                      <p>3 boxes of <span>Super</span> tampons and 3 bottles of lubricant</p>
+                    </div>
 
-                <div class="description-wrapper bm-description-wrapper sub">
-                  <!-- subscription + non-combo -->
-                  <div class="varient-description  Light hide">
-                    <p>3 boxes of <span>Light</span> tampons and 3 bottles of lubricant</p>
-                  </div>
-                  <!-- subscription + non-combo -->
-                  <div class="varient-description Regular hide">
-                    <p>3 boxes of <span>Regular</span> tampons and 3 bottles of lubricant</p>
-                  </div>
-                  <!-- subscription + non-combo -->
-                  <div class="varient-description Super hide">
-                    <p>3 boxes of <span>Super</span> tampons and 3 bottles of lubricant</p>
+                    <!-- subscription + combo: -->
+                    <div class="varient-description Combo ">
+                      <p>1 box each of light, regular, and super tampons and 3 bottles of lubricant</p>
+                    </div>
                   </div>
 
-                  <!-- subscription + combo: -->
-                  <div class="varient-description Combo ">
-                    <p>1 box each of light, regular, and super tampons and 3 bottles of lubricant</p>
+                  <div class="description-wrapper bm-description-wrapper otp ">
+                    <!-- otp + non-combo -->
+                    <div class="description">
+                      <p>1 box of <span></span> tampons</p>
+                    </div>
                   </div>
-                </div>
-
-                <div class="description-wrapper bm-description-wrapper otp ">
-                  <!-- otp + non-combo -->
-                  <div class="description">
-                    <p>1 box of <span></span> tampons</p>
-                  </div>
-                </div>
-
+                {% endif %}
                 <div
                   class="data-smartrr-top-price"
                   data-smartrr-product-id="{{ product.id }}"
