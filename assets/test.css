@@ -193,4 +193,25 @@ html body.bundle-marlow  [data-smartrr-subscription-benefits] [data-smartrr-bene
    color: #00B48A;
 }
 
+
+html body.bundle-marlow .purchase-radio{
+font-family: Avenir Next;
+font-size: 16px;
+font-weight: 500;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+html body.bundle-marlow .purchase-radio span{
+    font-family: Avenir Next;
+font-size: 16px;
+font-weight: 700;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+
  
