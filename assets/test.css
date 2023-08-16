@@ -156,7 +156,7 @@ letter-spacing: 0em;
 text-align: left; 
 }
 
-html body.bundle-marlow .bm-description-wrapper .varient-description p span{
+html body.bundle-marlow .bm-description-wrapper  p span{
   text-transform:lowercase;
 }
 
