@@ -197,11 +197,11 @@ html body.bundle-marlow .Subscribe.active:after {
 
 html body.bundle-marlow [data-smartrr-subscription-benefits] [data-smartrr-benefits-all]:before {
   color: #00b48a;
-  font-size: 30px;
-  transform: rotateX(55deg);
+  font-size: 30px;  
   font-weight: 900;
   display: inline-block;
   color: #00b48a;
+  background-image:url(https://cdn.shopify.com/s/files/1/0384/8254/2731/files/g-check_1_1080x@2x.png?v=1692175550)
 }
 
 html body.bundle-marlow .purchase-radio {
