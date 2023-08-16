@@ -156,6 +156,14 @@ var marlowFirst=document.querySelector('#station-tabs-tab_ht-i1-t11');
 
 var TamponsFirst=document.querySelector('#station-tabs-tab_ht-i1-t5');
 
+
+if(marlowFirst){
+  marlowFirst.click() 
+}
+if(TamponsFirst){
+   TamponsFirst.click()
+}
+
 // Add a click event listener to the scrollLink
 scrollLink.addEventListener('click', function (event) {
   // Scroll to the target element, stopping a bit before the top
@@ -163,15 +171,6 @@ scrollLink.addEventListener('click', function (event) {
     behavior: 'smooth', // Use smooth scrolling
     inline: 'nearest'  // Keep the target element as close to the vertical center as possible
   });
-
-// if(marlowFirst){
-//   marlowFirst.click() 
-// }
-if(TamponsFirst){
-   TamponsFirst.click()
-}
-  
-
   
 });
 
