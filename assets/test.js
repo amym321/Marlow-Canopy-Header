@@ -192,7 +192,7 @@ scrollLink.addEventListener('click', function (event) {
     document.querySelector('.bm-description-wrapper.sub').classList.add('hide')
  });
 
-live('.smartrr-grp-input[value="sub"],.Subscribe','click', function(){
+live('.smartrr-grp-input[value="sub"] label,.Subscribe','click', function(){
    document.querySelector('.bm-description-wrapper.otp').classList.add('hide')
     document.querySelector('.bm-description-wrapper.sub').classList.remove('hide')
  });
