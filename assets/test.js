@@ -174,7 +174,9 @@ live('.smartrr-grp-input[value="sub"],.Subscribe','click', function(){
     document.querySelector('.bm-description-wrapper.sub').classList.remove('hide')
  });
 
-
+live('.scroll-link','click',function(){
+  document.querySelector('.station-tabs .station-tabs-tabtitle:first-child').click()
+})
 
 
 
