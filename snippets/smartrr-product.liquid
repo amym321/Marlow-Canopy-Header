@@ -1,30 +1,30 @@
 {%- liquid
   assign current_variant = product.selected_or_first_available_variant
   assign current_selling_plan_allocation = current_variant.selected_selling_plan_allocation
-  if current_selling_plan_allocation == nil and current_variant.requires_selling_plan
-  assign current_selling_plan_allocation = current_variant.selling_plan_allocations | first
+  if current_selling_plan_allocation == null and current_variant.requires_selling_plan
+    assign current_selling_plan_allocation = current_variant.selling_plan_allocations | first
   endif
   assign offer = current_selling_plan_allocation | default: current_variant
-  assign filtered_selling_plan_groups = product.selling_plan_groups | where: "app_id", "4836205"
-  assign hiddenGroups = filtered_selling_plan_groups | map: "name" | where: "[hidden]"
+  assign filtered_selling_plan_groups = product.selling_plan_groups | where: 'app_id', '4836205'
+  assign hiddenGroups = filtered_selling_plan_groups | map: 'name' | where: '[hidden]'
   assign visibleGroupsSize = filtered_selling_plan_groups.size | minus: hiddenGroups.size
   assign smartrr_unique_id = product.id
-  -%}
+-%}
 
-  {% comment %}
+{% comment %}
   <!-- Add 'data-smartrr-form-id: product.id' to your '{ % form 'product' ... % } code so Smartrr can find your form. -->
   <!-- data-smartrr-form-id should have the same value as smartrr_unique_id, product.id in this case -->
   <!-- Add a { % render 'smartrr-product' % } in the product form for this code to be displayed. -->
   <!-- Use uiImplementDetectChange below to inform Smartrr when Variant/Quantity are changed. -->
   <!-- Set smartrr_collection for collection pages to avoid duplicate <style> and <script> for each product on the page. -->
   <!-- Add the style and script render code separately to the top of the collection page. -->
-  {% endcomment %}
+{% endcomment %}
 
-  {% unless smartrr_collection %}
+{% unless smartrr_collection %}
   {% render 'smartrr-product-styles' %}
-  {% endunless %}
+{% endunless %}
 
-  {% comment %}
+{% comment %}
   <!-- use this code to create a pricing display element anywhere on the page -->
   <!-- Available Styles: original(variant-price), strike(discounted price struck through), overwrite -->
   <!-- Adding '-compare' at the end of the style will show the Compare At price when One time purchase is selected -->
@@ -35,82 +35,91 @@
     <span data-smartrr-regular-price></span>
     <span data-smartrr-subscribe-price></span>
   </div>
-  {% endcomment %}
+{% endcomment %}
 
-  {% comment %}
+{% comment %}
   <!-- Make sure your cart/add.js AJAX call gets this value. Older/Custom carts may not extract this input from the form. -->
-  {% endcomment %}
-  <input type="hidden" name="selling_plan" data-smartrr-selling-plan-input
-    value="{{ current_selling_plan_allocation.selling_plan.id | default: '' }}">
+{% endcomment %}
+<input
+  type="hidden"
+  name="selling_plan"
+  data-smartrr-selling-plan-input
+  value="{{ current_selling_plan_allocation.selling_plan.id | default: '' }}"
+>
 
-  <div class="hide" data-smartrr-page-load-variant="{{ current_variant.id }}"></div>
-<!--   <div class="data-smartrr-top-price" data-smartrr-product-id="{{ smartrr_unique_id }}"
+<div class="hide" data-smartrr-page-load-variant="{{ current_variant.id }}"></div>
+<!--
+  <div class="data-smartrr-top-price" data-smartrr-product-id="{{ smartrr_unique_id }}"
        data-smartrr-price-style="original-compare" data-smartrr-constant={{ group.id }} class="data-smartrr-top-price">
     <span data-smartrr-compare-price></span>
     <span data-smartrr-regular-price></span>
     <span data-smartrr-subscribe-price></span>{% if product == all_products["bundle-save"]%} / Bundle {% endif %}
-  </div> -->
-  {% if visibleGroupsSize > 0 %}
+  </div>
+-->
+{% if visibleGroupsSize > 0 %}
   <fieldset class="smartrr-purchase-options" data-smartrr-purchase-options>
     <div class="smartrr-no-plans-available hide" data-smartrr-no-plans>
       No available purchase options for this selection.
     </div>
     <div data-smartrr-selling-plan-groups>
       {% unless product.requires_selling_plan %}
-      <div data-smartrr-selling-plan-group-id class="smartrr-otp smartrr-grp-input" value="otp">
-        <div class="smartrr-selling-plan-group-header">
-          <label class="smartrr-selling-plan-group-label">
-            <input type="radio" data-smartrr-selling-plan-group-input name="purchase_option" value="">
-            <div class="smartrr-selling-plan-group-input-display"></div>
-            <div class="smartrr-selling-plan-group-name">
-              <div>One time purchase</div>
-            </div>
-          </label>
+        <div data-smartrr-selling-plan-group-id class="smartrr-otp smartrr-grp-input" value="otp">
+          <div class="smartrr-selling-plan-group-header">
+            <label class="smartrr-selling-plan-group-label">
+              <input type="radio" data-smartrr-selling-plan-group-input name="purchase_option" value="">
+              <div class="smartrr-selling-plan-group-input-display"></div>
+              <div class="smartrr-selling-plan-group-name">
+                <div>Buy once</div>
+              </div>
+            </label>
+          </div>
+          <div data-smartrr-selling-plan-group-contents class="hide"></div>
         </div>
-        <div data-smartrr-selling-plan-group-contents class="hide">
-        </div>
-      </div>
       {% endunless %}
 
       {% for group in filtered_selling_plan_groups %}
-      {% unless group.name contains "[hidden]" %}
-      <div data-smartrr-selling-plan-group-id="{{ group.id }}" class="smartrr-grp-input" value="sub">
-        <div class="smartrr-selling-plan-group-header">
-          <label class="smartrr-selling-plan-group-label">
-            <input type="radio" data-smartrr-selling-plan-group-input="{{ group.id }}" name="purchase_option"
-              value="{{ group.id }}">
-            <div class="smartrr-selling-plan-group-input-display"></div>
-            <div class="smartrr-selling-plan-group-name">
-              <div>{{ group.name }}</div>
+        {% unless group.name contains '[hidden]' %}
+          <div data-smartrr-selling-plan-group-id="{{ group.id }}" class="smartrr-grp-input" value="sub">
+            <div class="smartrr-selling-plan-group-header">
+              <label class="smartrr-selling-plan-group-label">
+                <input
+                  type="radio"
+                  data-smartrr-selling-plan-group-input="{{ group.id }}"
+                  name="purchase_option"
+                  value="{{ group.id }}"
+                >
+                <div class="smartrr-selling-plan-group-input-display"></div>
+                <div class="smartrr-selling-plan-group-name">
+                  <div>{{ group.name }}</div>
+                </div>
+              </label>
             </div>
-          </label>
-        </div>
-        <div data-smartrr-selling-plan-group-contents="{{ group.id }}" class="hide">
-          <div data-smartrr-selling-plan-group-plans>
-            <div data-smartrr-selling-plans-select="{{ group.id }}">
-              {% if group.selling_plans.size > 1 %}
-              <select data-smartrr-selling-plans-select="{{ group.id }}">
-                {% for plan in group.selling_plans %}
-                {% endfor %}
-              </select>
-              {% endif %}
+            <div data-smartrr-selling-plan-group-contents="{{ group.id }}" class="hide">
+              <div data-smartrr-selling-plan-group-plans>
+                <div data-smartrr-selling-plans-select="{{ group.id }}">
+                  {% if group.selling_plans.size > 1 %}
+                    <select data-smartrr-selling-plans-select="{{ group.id }}">
+                      {% for plan in group.selling_plans %}
+                      {% endfor %}
+                    </select>
+                  {% endif %}
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      {%endunless %}
-      {%endfor %}
+        {% endunless %}
+      {% endfor %}
     </div>
-
   </fieldset>
-  {% endif %}
+{% endif %}
 
-  {% unless smartrr_collection %}
+{% unless smartrr_collection %}
   <script type="text/javascript" src="{{ 'smartrr-product-script.js' | asset_url }}"></script>
-  {% endunless %}
+{% endunless %}
 
-  {% if product.id %}
+{% if product.id %}
   <script>
+    
     if (typeof window.smartrrProductList === 'undefined') {
       window.smartrrProductList = {};
     }
@@ -406,6 +415,6 @@
   }
 
   
-  </script>
 
-  {% endif %}
+  </script>
+{% endif %}
