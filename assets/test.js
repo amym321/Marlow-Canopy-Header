@@ -1,8 +1,7 @@
 // targetting 
 
-
+// tagetting set 
 var urlCheck = window.location.pathname;
-
 if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
   document.querySelector('body').classList.add('bundle-marlow');
 }
