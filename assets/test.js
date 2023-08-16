@@ -1,9 +1,10 @@
 // targetting 
 
 
+var urlCheck=window.location.pathname;
 
 
-{% if window.location.pathname.includes('bundle-save') or window.location.pathname.includes('marlow-tampons')  %}
+{% if urlCheck.includes('bundle-save') or urlCheck.includes('marlow-tampons')  %}
 
 document.querySelector('body').classList.add('bundle-marlow')
 
