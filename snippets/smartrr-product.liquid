@@ -69,7 +69,7 @@
               <input type="radio" data-smartrr-selling-plan-group-input name="purchase_option" value="">
               <div class="smartrr-selling-plan-group-input-display"></div>
               <div class="smartrr-selling-plan-group-name">
-                <div>Buy once</div>
+                <div class="purchase-radio">Buy once</div>
               </div>
             </label>
           </div>
@@ -119,6 +119,7 @@
 
 {% if product.id %}
   <script>
+    
     
     if (typeof window.smartrrProductList === 'undefined') {
       window.smartrrProductList = {};
@@ -415,6 +416,7 @@
   }
 
   
+
 
   </script>
 {% endif %}
