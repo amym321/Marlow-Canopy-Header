@@ -1,247 +1,224 @@
-
-
-html body.bundle-marlow .data-smartrr-top-price{
+html body.bundle-marlow .data-smartrr-top-price {
   display: flex;
-  flex-wrap:wrap;
-  gap:10px;
+  flex-wrap: wrap;
+  gap: 10px;
   flex-direction: row-reverse;
   justify-content: flex-end;
-  padding-bottom:0;
+  padding-bottom: 0;
 }
-html body.bundle-marlow  .data-smartrr-top-price afterpay-placement{
-  order:1;
-  width:100%;
-  display:block;
+html body.bundle-marlow .data-smartrr-top-price afterpay-placement {
+  order: 1;
+  width: 100%;
+  display: block;
 }
-html body.bundle-marlow  .product-details  .cc-rating-container .cc-rating-custom-caption{
-    left: 6px;
-    line-height: 1;
-    top: 3px;
-}
-
-html body.bundle-marlow  .product-details  .cc-rating-container .cc-rating-stars--inactive svg{
-  width:25px;
-  height:25px;
+html body.bundle-marlow .product-details .cc-rating-container .cc-rating-custom-caption {
+  left: 6px;
+  line-height: 1;
+  top: 3px;
 }
 
-html body.bundle-marlow  .product-details .font-up{
-font-family: Avenir Next;
-font-size: 16px;
-font-weight: 700;
-line-height: 22px;
-letter-spacing: 0em;
-text-align: left;
-color: #302BA3;  
+html body.bundle-marlow .product-details .cc-rating-container .cc-rating-stars--inactive svg {
+  width: 25px;
+  height: 25px;
 }
 
-html body.bundle-marlow  .choose-wrapper{
-  display:flex;
-  gap:10px;
-  margin:20px 0;
-}
-
-html body.bundle-marlow  .scroll-link{
-  cursor:pointer;
-  text-decoration:underline;
+html body.bundle-marlow .product-details .font-up {
   font-family: Avenir Next;
-font-size: 14px;
-font-weight: 400;
-line-height: 22px;
-letter-spacing: 0em;
-text-align: left;
-
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #302ba3;
 }
 
+html body.bundle-marlow .choose-wrapper {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
 
+html body.bundle-marlow .scroll-link {
+  cursor: pointer;
+  text-decoration: underline;
+  font-family: Avenir Next;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
 
-html body.bundle-marlow  .radio-wrapper{
-  border: 2px solid #302BA3;
-  box-shadow: 2px 2px 6px 0px #302BA340;
-  background-color:#FFFAF6;
+html body.bundle-marlow .radio-wrapper {
+  border: 2px solid #302ba3;
+  box-shadow: 2px 2px 6px 0px #302ba340;
+  background-color: #fffaf6;
   /* min-height:200px; */
-  border-radius:6px;
-  overflow:hidden;
-
+  border-radius: 6px;
+  overflow: hidden;
 }
 
-html body.bundle-marlow  .radio-wrapper  .smartrr-purchase-options{
-  margin-right:0;
-  margin-bottom:0;
+html body.bundle-marlow .radio-wrapper .smartrr-purchase-options {
+  margin-right: 0;
+  margin-bottom: 0;
 }
-html body.bundle-marlow div[data-smartrr-choose-sub-benefit]{
-  margin-top:1.2rem;
+html body.bundle-marlow div[data-smartrr-choose-sub-benefit] {
+  margin-top: 1.2rem;
 }
-html body.bundle-marlow  .varient-inner{
-  display:flex;
-  gap:20px;
-  margin-bottom:20px;
+html body.bundle-marlow .varient-inner {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
 }
-html body.bundle-marlow  .varient{
-    min-width: 73px;
-    min-height: 73px;
-    border: 1px solid #302BA3;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    border-radius: 6px;
-    cursor: pointer;
-    position: relative;
-    z-index: 9;  
-    padding-bottom: 10px;
+html body.bundle-marlow .varient {
+  min-width: 73px;
+  min-height: 73px;
+  border: 1px solid #302ba3;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  z-index: 9;
+  padding-bottom: 10px;
   font-family: Avenir Next;
-font-size: 14px;
-font-weight: 400;
-line-height: 22px;
-letter-spacing: 0em;
-text-align: center;
-
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
 }
 
-html body.bundle-marlow  .varient.active{
-  background:#302ba3;
-  color:#fff;
+html body.bundle-marlow .varient.active {
+  background: #302ba3;
+  color: #fff;
 }
-html body.bundle-marlow  .smartrr-purchase-options .smartrr-selling-plan-group-input-display:before{
-  border:2px solid #302BA3 ;
-}
-
-html body.bundle-marlow  .smartrr-purchase-options .smartrr-selling-plan-group-input-display:after{
-  background:#302BA3 ;
+html body.bundle-marlow .smartrr-purchase-options .smartrr-selling-plan-group-input-display:before {
+  border: 2px solid #302ba3;
 }
 
-html body.bundle-marlow  .smartrr-purchase-options div[data-smartrr-selling-plan-groups] > div{
-    padding:16px;  
+html body.bundle-marlow .smartrr-purchase-options .smartrr-selling-plan-group-input-display:after {
+  background: #302ba3;
 }
 
+html body.bundle-marlow .smartrr-purchase-options div[data-smartrr-selling-plan-groups] > div {
+  padding: 16px;
+}
 
-
-html body.bundle-marlow  .radio-wrapper  .color-active{
-  background-color:#fdf3eb;
-    box-shadow: 2px 2px 6px 0px #302BA340;
+html body.bundle-marlow .radio-wrapper .color-active {
+  background-color: #fdf3eb;
+  box-shadow: 2px 2px 6px 0px #302ba340;
 }
 
 html body.bundle-marlow .bm-description-wrapper .varient-description,
-html body.bundle-marlow  .bm-description-wrapper.otp .description
-  {
-  margin:20px 0;
+html body.bundle-marlow .bm-description-wrapper.otp .description {
+  margin: 20px 0;
 }
 
-html body.bundle-marlow  .bm-description-wrapper .varient-description p,
-html body.bundle-marlow  .bm-description-wrapper.otp .description p
- {
-font-family: Avenir Next;
-font-size: 16px;
-font-weight: 700;
-line-height: 22px;
-letter-spacing: 0em;
-text-align: left;
-
+html body.bundle-marlow .bm-description-wrapper .varient-description p,
+html body.bundle-marlow .bm-description-wrapper.otp .description p {
+  font-family: Avenir Next;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
-
-html body.bundle-marlow  .product-details >.product-detail__gap-sm.rte.product-area__rte:nth-child(3),
-html body.bundle-marlow  .variant-select
-{
-  display:none;  
+html body.bundle-marlow .product-details > .product-detail__gap-sm.rte.product-area__rte:nth-child(3),
+html body.bundle-marlow .variant-select {
+  display: none;
 }
 
-html body.bundle-marlow  .product-details >.product-detail__gap-sm.rte.product-area__rte{
-  padding:0 !important;
+html body.bundle-marlow .product-details > .product-detail__gap-sm.rte.product-area__rte {
+  padding: 0 !important;
 }
 
-
-html body.bundle-marlow  div[data-smartrr-benefits-all]{
-  padding:8px 0;
-  display:flex;
-font-family: Avenir Next;
-font-size: 14px;
-font-weight: 400;
-line-height: 22px;
-letter-spacing: 0em;
-text-align: left; 
+html body.bundle-marlow div[data-smartrr-benefits-all] {
+  padding: 8px 0;
+  display: flex;
+  font-family: Avenir Next;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
-html body.bundle-marlow .bm-description-wrapper  p span{
-  text-transform:lowercase;
+html body.bundle-marlow .bm-description-wrapper p span {
+  text-transform: lowercase;
 }
 
- html body.bundle-marlow  .varient:after{
-    content:'';   
-    background-size: auto;
-    background-position: 12px 25px;
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    z-index: 1;
-    left: 0;
+html body.bundle-marlow .varient:after {
+  content: "";
+  background-size: auto;
+  background-position: 12px 25px;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  z-index: 1;
+  left: 0;
 }
 
-html body.bundle-marlow  .Light:after{
-  background-image:url('https://cdn.shopify.com/s/files/1/0384/8254/2731/files/Light_1080x@2x.png?v=1691989209');
+html body.bundle-marlow .Light:after {
+  background-image: url("https://cdn.shopify.com/s/files/1/0384/8254/2731/files/Light_1080x@2x.png?v=1691989209");
 }
 
-html body.bundle-marlow  .Light.active:after{
-  background-image:url('https://cdn.shopify.com/s/files/1/0384/8254/2731/files/LightActive_1080x@2x.png?v=1691989218'); 
+html body.bundle-marlow .Light.active:after {
+  background-image: url("https://cdn.shopify.com/s/files/1/0384/8254/2731/files/LightActive_1080x@2x.png?v=1691989218");
 }
 
-
-html body.bundle-marlow  .Regular:after{
- background-image:url('https://cdn.shopify.com/s/files/1/0384/8254/2731/files/Regular_1080x@2x.png?v=1691989209');  	
+html body.bundle-marlow .Regular:after {
+  background-image: url("https://cdn.shopify.com/s/files/1/0384/8254/2731/files/Regular_1080x@2x.png?v=1691989209");
 }
 
-html body.bundle-marlow  .Regular.active:after{
- background-image:url('https://cdn.shopify.com/s/files/1/0384/8254/2731/files/RegularActive_1080x@2x.png?v=1691989209');  	
+html body.bundle-marlow .Regular.active:after {
+  background-image: url("https://cdn.shopify.com/s/files/1/0384/8254/2731/files/RegularActive_1080x@2x.png?v=1691989209");
 }
 
-html body.bundle-marlow  .Super:after{
- background-image:url('https://cdn.shopify.com/s/files/1/0384/8254/2731/files/super_1080x@2x.png?v=1691989209');  	
+html body.bundle-marlow .Super:after {
+  background-image: url("https://cdn.shopify.com/s/files/1/0384/8254/2731/files/super_1080x@2x.png?v=1691989209");
 }
 
-html body.bundle-marlow  .Super.active:after{
- background-image:url('https://cdn.shopify.com/s/files/1/0384/8254/2731/files/SuberActive_1080x@2x.png?v=1691989209');  	
+html body.bundle-marlow .Super.active:after {
+  background-image: url("https://cdn.shopify.com/s/files/1/0384/8254/2731/files/SuberActive_1080x@2x.png?v=1691989209");
 }
-html body.bundle-marlow  .Subscribe:after{
-    background-position: 18px 25px;
-    background-image:url('https://cdn.shopify.com/s/files/1/0384/8254/2731/files/Combo_1080x@2x.png?v=1691989209');  
-} 
-
-html body.bundle-marlow  .Subscribe.active:after{
-   background-image:url('https://cdn.shopify.com/s/files/1/0384/8254/2731/files/ComboActive_1080x@2x.png?v=1691989210'); 
-} 
-
-
-
-html body.bundle-marlow  [data-smartrr-subscription-benefits] [data-smartrr-benefits-all]:before{
-  color:#00B48A;
-   font-size:30px;
-   transform: rotateX(55deg);
-   font-weight: 900;
-   display: inline-block;
-   color: #00B48A;
+html body.bundle-marlow .Subscribe:after {
+  background-position: 18px 25px;
+  background-image: url("https://cdn.shopify.com/s/files/1/0384/8254/2731/files/Combo_1080x@2x.png?v=1691989209");
 }
 
-
-html body.bundle-marlow .purchase-radio{
-font-family: Avenir Next;
-font-size: 16px;
-font-weight: 500;
-line-height: 17px;
-letter-spacing: 0em;
-text-align: left;
-
+html body.bundle-marlow .Subscribe.active:after {
+  background-image: url("https://cdn.shopify.com/s/files/1/0384/8254/2731/files/ComboActive_1080x@2x.png?v=1691989210");
 }
 
-html body.bundle-marlow .purchase-radio span{
-    font-family: Avenir Next;
-font-size: 16px;
-font-weight: 700;
-line-height: 17px;
-letter-spacing: 0em;
-text-align: left;
-  color:#00B48A;
+html body.bundle-marlow [data-smartrr-subscription-benefits] [data-smartrr-benefits-all]:before {
+  color: #00b48a;
+  font-size: 30px;
+  transform: rotateX(55deg);
+  font-weight: 900;
+  display: inline-block;
+  color: #00b48a;
 }
 
+html body.bundle-marlow .purchase-radio {
+  font-family: Avenir Next;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+}
 
- 
+html body.bundle-marlow .purchase-radio span {
+  font-family: Avenir Next;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #00b48a;
+}
