@@ -166,8 +166,12 @@ scrollLink.addEventListener('click', function (event) {
 
 
 
-live('.scroll-link','click',function(){  
+live(scrollLink,'click',function(){  
        document.querySelector('#station-tabs-tab_ht-i1-t11').click()
+  })
+
+  live(scrollLink,'click',function(){  
+       document.querySelector('#station-tabs-tab_ht-i1-t5').click()
   })
 
 
