@@ -1,3 +1,9 @@
+// targetting 
+
+                {% if product == all_products['bundle-save'] or product == all_products['marlow-tampons'] %}
+
+  {% endif %}
+
  function live(selector, event, callback, context) {
     /****Helper Functions****/
     // helper for enabling IE 8 event bindings
