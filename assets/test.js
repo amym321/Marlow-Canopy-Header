@@ -1,9 +1,10 @@
-// targetting 
+
 
 // tagetting set 
 var urlCheck = window.location.pathname;
 if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
-  document.querySelector('body').classList.add('bundle-marlow');
+
+    document.querySelector('body').classList.add('bundle-marlow');
 
 
 
@@ -180,18 +181,10 @@ live('.smartrr-grp-input[value="sub"],.Subscribe','click', function(){
    document.querySelector('.bm-description-wrapper.otp').classList.add('hide')
     document.querySelector('.bm-description-wrapper.sub').classList.remove('hide')
  });
-
-
-
-
-
-
-
-
-
        
      
 }
+// end targetting 
 
 
 
