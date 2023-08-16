@@ -159,9 +159,11 @@ scrollLink.addEventListener('click', function (event) {
     behavior: 'smooth', // Use smooth scrolling
     inline: 'nearest'  // Keep the target element as close to the vertical center as possible
   });
-  document.querySelector('.station-tabs .station-tabs-tabtitle:first-child span').click()
 });
 
+live(scrollLink,'click',function(){
+document.querySelector('#station-tabs-tab_ht-i1-t11').click()
+})
 
 
 
