@@ -1,6 +1,8 @@
 // targetting 
 
-                {% if product == all_products['bundle-save'] or product == all_products['marlow-tampons'] %}
+{% if product == all_products['bundle-save'] or product == all_products['marlow-tampons'] %}
+
+document.querySelector('body').classList.add('bundle-marlow')
 
   {% endif %}
 
