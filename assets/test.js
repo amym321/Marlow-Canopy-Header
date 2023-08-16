@@ -166,17 +166,7 @@ scrollLink.addEventListener('click', function (event) {
 
 
 live(scrollLink,'click',function(){  
-    var marlowFirst=document.querySelector('#station-tabs-tab_ht-i1-t11');
-
-var TamponsFirst=document.querySelector('#station-tabs-tab_ht-i1-t5');
-if(marlowFirst){
-  marlowFirst.click() 
-}
-if(TamponsFirst){
-   TamponsFirst.click()
-}
-
-
+    var marlowFirst=document.querySelector('#station-tabs-tab_ht-i1-t11').click()
 })
 
 
