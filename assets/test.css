@@ -143,7 +143,7 @@ html body.bundle-marlow  .product-details >.product-detail__gap-sm.rte.product-a
 html body.bundle-marlow  .variant-select
 {
   display:none;
-  padding:0;
+  padding:0 !important;
 }
 
 
