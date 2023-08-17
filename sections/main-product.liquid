@@ -382,10 +382,11 @@
                           <img src="{{ section.settings.Light }}" alt="">
                         </div>
                       {% endif -%}
-
-                      <div class="varient Regular" data-id="1">
-                        <img src="{{ section.settings.Regular }}" alt="">
-                      </div>
+                      {% if section.settings.Regular != blank -%}
+                        <div class="varient Regular" data-id="1">
+                          <img src="{{ section.settings.Regular }}" alt="">
+                        </div>
+                      {% endif -%}
 
                       <div class="varient Super" data-id="2">
                         <img src="{{ section.settings.Super }}" alt="">
