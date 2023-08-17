@@ -52,7 +52,7 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
 
   setTimeout(() => {
     document.querySelector('.smartrr-grp-input[value="sub"] label').click()
-    document.querySelector('.data-smartrr-label-sub .varient.Subscribe ').click()
+    document.querySelector('.data-smartrr-label-sub .varient.Combo').click()
   }, 800);
 
 
