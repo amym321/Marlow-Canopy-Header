@@ -120,8 +120,12 @@ function addClickListener(varientSelector, dropbtnSelector) {
 
   }, 800);
 
-        // For .varient-wrapper.subscription .varient elements
+    setTimeout(() => {
+          // For .varient-wrapper.subscription .varient elements
     addClickListener('.varient-wrapper .varient', '#dropdownSelections .dropdown-select:not(.hide) label > div');
+      }, 1000);
+
+  
   
 // For .varient-wrapper.bm-one-time .varient elements
 addClickListener('.varient-wrapper.bm-one-time .varient', '#dropdownSelections .dropdown-select:not(.hide) label > div');
