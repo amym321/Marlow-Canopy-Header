@@ -90,7 +90,7 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
   });
 
 
-  helper.live('.smartrr-otp.smartrr-grp-input','click',function(){
+  helper.live('.smartrr-otp.smartrr-grp-input label','click',function(){
     document.querySelector('.varient-wrapper data-smartrr-label-sub').classList.add('bm-one-time')
   })
 
