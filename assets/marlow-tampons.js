@@ -121,7 +121,7 @@ function addClickListener(varientSelector, dropbtnSelector) {
         // For .varient-wrapper.subscription .varient elements
     addClickListener('.varient-wrapper .varient', '#dropdownSelections .dropdown-select:not(.hide) label > div');
 
-  }, 800);
+  }, 1500);
 
   
 // For .varient-wrapper.bm-one-time .varient elements
