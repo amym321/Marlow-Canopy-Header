@@ -377,9 +377,13 @@
                 {% if product == all_products['bundle-save'] or product == all_products['marlow-tampons'] %}
                   <div class="varient-wrapper data-smartrr-label-sub">
                     <div class="varient-inner">
-                      {% if section.settings.Light != blank -%}
-                        <div class="varient Light" data-id="0">
-                          <img src="{{ section.settings.Light | image_url}}" alt="">
+                      {% if section.settings.Subscribe != blank -%}
+                        <div class="varient Subscribe" data-id="3">
+                          <img src="{{ section.settings.Subscribe | image_url }}" alt="">
+                        </div>
+                      {% else -%}
+                        <div class="normal">
+                          <img src="{{ 'path_to_default_image.jpg' | asset_url }}" alt="">
                         </div>
                       {% endif -%}
                       {% if section.settings.Regular != blank -%}
