@@ -211,35 +211,28 @@ live('.smartrr-grp-input[value="sub"] label','click',function(){
 
 
 
-  document.querySelectorAll('.varient-wrapper.subscription .varient').forEach(function(el) {
-  el.addEventListener('click', function() {
-    var checkClass = this.getAttribute('class').split(' ');
+function addClickListener(varientSelector, dropbtnSelector) {
+  document.querySelectorAll(varientSelector).forEach(function(el) {
+    el.addEventListener('click', function() {
+      var checkClass = this.getAttribute('class').split(' ');
 
-    document.querySelectorAll('#dropdownSelections div[data-smartrr-choose-sub] label > div').forEach(function(dropbtn) {
-      checkClass.forEach(function(className) {
-        if (dropbtn.textContent.includes(className)) {
-          dropbtn.click()
-        }
+      document.querySelectorAll(dropbtnSelector).forEach(function(dropbtn) {
+        checkClass.forEach(function(className) {
+          if (dropbtn.textContent.includes(className)) {
+            dropbtn.click();
+          }
+        });
       });
     });
   });
-});
+}
 
+// For .varient-wrapper.subscription .varient elements
+addClickListener('.varient-wrapper.subscription .varient', '#dropdownSelections div[data-smartrr-choose-sub] label > div');
 
+// For .varient-wrapper.bm-one-time .varient elements
+addClickListener('.varient-wrapper.bm-one-time .varient', '#dropdownSelections div[data-smartrr-choose-otp] label > div');
 
-    document.querySelectorAll('.varient-wrapper.bm-one-time .varient').forEach(function(el) {
-  el.addEventListener('click', function() {
-    var checkClass = this.getAttribute('class').split(' ');
-
-    document.querySelectorAll('#dropdownSelections div[data-smartrr-choose-otp] label > div').forEach(function(dropbtn) {
-      checkClass.forEach(function(className) {
-        if (dropbtn.textContent.includes(className)) {
-          dropbtn.click()
-        }
-      });
-    });
-  });
-});
   
 
 
