@@ -521,7 +521,10 @@
                   <div class="description-wrapper bm-description-wrapper otp ">
                     <!-- otp + non-combo -->
                     <div class="varient-description Light">
-                      <p>{{ section.settings.Light_subscription_tampons_otp }}</p>
+                      {% if section.settings.Light_subscription_tampons_otp != blank %}
+                        <p>{{ section.settings.Light_subscription_tampons_otp }}</p>
+                      {% endif -%}
+                      }
                     </div>
                     <div class="varient-description Regular">
                       <p>{{ section.settings.Regular_subscription_tampons_otp }}</p>
