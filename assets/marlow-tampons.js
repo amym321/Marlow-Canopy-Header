@@ -167,6 +167,16 @@ el.classList.remove('hide')
 })
 })
 
+  live('.varient-wrapper.bm-one-time','click',function(el){       
+  var getVarient=this.getAttribute('data-id')
+document.querySelectorAll('.bm-description-wrapper.sub .varient-description').forEach(function (el) {
+if(el.getAttribute('data-id')==getVarient){
+addhideClass()
+el.classList.remove('hide')
+}
+})
+})
+
 
 
 
