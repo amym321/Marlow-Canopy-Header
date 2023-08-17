@@ -118,10 +118,10 @@ function addClickListener(varientSelector, dropbtnSelector) {
     document.querySelector('.data-smartrr-label-sub .varient.Combo').click()
 
     // For .varient-wrapper.subscription .varient elements
-addClickListener('.varient-wrapper.subscription .varient', '#dropdownSelections div[data-smartrr-choose-sub] label > div');
+addClickListener('.varient-wrapper.subscription .varient', '#dropdownSelections div[data-smartrr-choose-sub]:not(.hide) label > div');
 
 // For .varient-wrapper.bm-one-time .varient elements
-addClickListener('.varient-wrapper.bm-one-time .varient', '#dropdownSelections div[data-smartrr-choose-otp] label > div');
+addClickListener('.varient-wrapper.bm-one-time .varient', '#dropdownSelections div[data-smartrr-choose-otp]:not(.hide) label > div');
   }, 800);
 
   
