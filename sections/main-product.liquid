@@ -377,19 +377,21 @@
                 {% if product == all_products['bundle-save'] or product == all_products['marlow-tampons'] %}
                   <div class="varient-wrapper data-smartrr-label-sub">
                     <div class="varient-inner">
-                      <div class="varient Light" data-id="0">Light</div>
+                      <div class="varient Light" data-id="0"><img src="{{ section.settings.Light }}" alt=""></div>
 
-                      <div class="varient Regular" data-id="1">Regular</div>
+                      <div class="varient Regular" data-id="1"><img src="{{ section.settings.Regular }}" alt=""></div>
 
-                      <div class="varient Super" data-id="2">Super</div>
+                      <div class="varient Super" data-id="2"><img src="{{ section.settings.Super }}" alt=""></div>
 
-                      <div class="varient Subscribe" data-id="3">Combo</div>
+                      <div class="varient Subscribe" data-id="3">
+                        <img src="{{ section.settings.Subscribe }}" alt="">
+                      </div>
                     </div>
                   </div>
 
                   <div class="varient-wrapper data-smartrr-label-otp hide">
                     <div class="varient-inner">
-                      <div class="varient Light" data-id="4">Light</div>
+                      <div class="varient Light" data-id="4"></div>
 
                       <div class="varient Regular" data-id="5">Regular</div>
 
