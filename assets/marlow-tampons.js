@@ -150,7 +150,11 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
 
 
 
+    live('.varient-wrapper.bm-one-time .varient','click',function(el){
 
+         console.log(el.getAttribute('data-id'))
+      
+  })
 
 
 
