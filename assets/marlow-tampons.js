@@ -152,7 +152,7 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
 
     live('.varient-wrapper .varient','click',function(el){
 
-console.log(el.getAttribute('data-id'))
+console.log(this.getAttribute('data-id'))
       
   })
 
