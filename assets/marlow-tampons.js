@@ -119,7 +119,7 @@ function addClickListener(varientSelector, dropbtnSelector) {
     document.querySelector('.data-smartrr-label-sub .varient.Combo').click()
 
         // For .varient-wrapper.subscription .varient elements
-addClickListener('.varient-wrapper.subscription .varient', '#dropdownSelections .dropdown-select:not(.hide) label > div');
+addClickListener('.varient-wrapper .varient', '#dropdownSelections .dropdown-select:not(.hide) label > div');
 
 // For .varient-wrapper.bm-one-time .varient elements
 addClickListener('.varient-wrapper.bm-one-time .varient', '#dropdownSelections .dropdown-select:not(.hide) label > div');
