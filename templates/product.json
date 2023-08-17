@@ -105,13 +105,23 @@
         "enable_video_looping": true,
         "enable_product_image_zoom": true,
         "choose_link": "How do I choose?",
+        "Light": "shopify:\/\/shop_images\/Absorbency_light_state_default.png",
+        "Regular": "shopify:\/\/shop_images\/Absorbency_regular_state_default.png",
+        "Super": "shopify:\/\/shop_images\/Absorbency_super_state_default.png",
         "Light_subscription_bundle": "3 boxes of  light tampons and 3 bottles of lubricant",
         "Regular_subscription_bundle": "3 boxes of  regular tampons and 3 bottles of lubricant",
         "Super_subscription_bundle": "3 boxes of super tampons and 3 bottles of lubricant",
         "Combo_subscription_bundle": "1 box each of light, regular, and super tampons and 3 bottles of lubricant",
         "Light_subscription_bundle_otp": "1 box of light tampons and 1 bottle of lubricant",
         "Regular_subscription_bundle_otp": "1 box of regular tampons and 1 bottle of lubricant",
-        "Super_subscription_bundle_otp": "1 box of super tampons and 1 bottle of lubricant"
+        "Super_subscription_bundle_otp": "1 box of super tampons and 1 bottle of lubricant",
+        "Light_subscription_tampons": "Otp Select light",
+        "Regular_subscription_tampons": "Select Regular",
+        "Super_subscription_tampons": "Select Super",
+        "Combo_subscription_tampons": "Select Combo",
+        "Light_subscription_tampons_otp": "Otp Select light",
+        "Regular_subscription_tampons_otp": "Select Regular",
+        "Super_subscription_tampons_otp": "Select Super"
       }
     },
     "product-recommendations": {
