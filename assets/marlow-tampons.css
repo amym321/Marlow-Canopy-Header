@@ -71,9 +71,9 @@ html body.bundle-marlow .varient-inner {
   margin-bottom: 20px;
 }
 html body.bundle-marlow .varient {
-  min-width: 73px;
-  min-height: 73px;
-  border: 1px solid #302ba3;
+  /* min-width: 73px; */
+  /* min-height: 73px; */
+  /* border: 1px solid #302ba3; */
   display: flex;
   justify-content: center;
   align-items: flex-end;
