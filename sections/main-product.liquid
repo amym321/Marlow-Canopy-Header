@@ -466,7 +466,10 @@
                   <div class="description-wrapper bm-description-wrapper sub">
                     <!-- subscription + non-combo -->
                     <div class="varient-description  Light hide">
-                      <p>{{ section.settings.Light_subscription_bundle }}</p>
+                      {% if section.settings.Light_subscription_bundle != blank %}
+                        <p>{{ section.settings.Light_subscription_bundle }}</p>
+                      {% endif -%}
+                      }
                     </div>
                     <!-- subscription + non-combo -->
                     <div class="varient-description Regular hide">
