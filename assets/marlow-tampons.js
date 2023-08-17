@@ -152,10 +152,7 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
 
     live('.varient-wrapper .varient','click',function(el){
 
-        document.querySelectorAll('.bm-description-wrapper.sub .varient-description').forEach(function (el) {
-    
-    console.log(el.getAttribute('data-id'))
-})
+console.log(el)
       
   })
 
