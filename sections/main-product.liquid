@@ -379,22 +379,22 @@
                     <div class="varient-inner">
                       {% if section.settings.Light != blank -%}
                         <div class="varient Light" data-id="0">
-                          <img src="{{ section.settings.Light }}" alt="">
+                          <img src="{{ section.settings.Light | image_url}}" alt="">
                         </div>
                       {% endif -%}
                       {% if section.settings.Regular != blank -%}
                         <div class="varient Regular" data-id="1">
-                          <img src="{{ section.settings.Regular }}" alt="">
+                          <img src="{{ section.settings.Regular | image_tag }}" alt="">
                         </div>
                       {% endif -%}
                       {% if section.settings.Regular != blank -%}
                         <div class="varient Super" data-id="2">
-                          <img src="{{ section.settings.Super }}" alt="">
+                          <img src="{{ section.settings.Super | image_url}}" alt="">
                         </div>
                       {% endif -%}
                       {% if section.settings.Regular != blank -%}
                         <div class="varient Subscribe" data-id="3">
-                          <img src="{{ section.settings.Subscribe }}" alt="">
+                          <img src="{{ section.settings.Subscribe |image_url }}" alt="">
                         </div>
                       {% endif -%}
                     </div>
