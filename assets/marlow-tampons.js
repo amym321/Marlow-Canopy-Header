@@ -123,7 +123,7 @@ function addClickListener(varientSelector, dropbtnSelector) {
     setTimeout(() => {
           // For .varient-wrapper.subscription .varient elements
     addClickListener('.varient-wrapper .varient', '#dropdownSelections .dropdown-select:not(.hide) label > div');
-      }, 1000);
+      }, 700);
 
   
   
