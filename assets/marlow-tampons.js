@@ -116,7 +116,7 @@ function addClickListener(varientSelector, dropbtnSelector) {
 }
 
 // For .varient-wrapper.subscription .varient elements
-addClickListener('.varient-wrapper .varient', '#dropdownSelections div[data-smartrr-choose-sub] label > div');
+addClickListener('.varient-wrapper.subscription .varient', '#dropdownSelections div[data-smartrr-choose-sub] label > div');
 
 // For .varient-wrapper.bm-one-time .varient elements
 addClickListener('.varient-wrapper.bm-one-time .varient', '#dropdownSelections div[data-smartrr-choose-otp] label > div');
