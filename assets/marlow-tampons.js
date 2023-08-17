@@ -175,7 +175,7 @@ document.querySelectorAll('.bm-description-wrapper.sub .varient-description').fo
 if(el.getAttribute('data-id')==getVarient){
 addhideClass()
 
-console.log(el)
+
 el.classList.remove('hide')
 }
 })
