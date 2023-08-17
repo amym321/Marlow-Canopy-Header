@@ -166,7 +166,6 @@ function check(){
 
 
     live('.varient-wrapper .varient','click',function(el){
-
       check()
   })
 
