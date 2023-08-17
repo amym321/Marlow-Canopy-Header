@@ -57,9 +57,7 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
   document.querySelectorAll('.varient').forEach(function (el) {
     el.addEventListener('click', function () {
       removeClass();
-      this.classList.add('active');     
-      var checkText = el.textContent;
-      selectDropdownByVariant(checkText);      
+      this.classList.add('active');        
     });
   });
 
