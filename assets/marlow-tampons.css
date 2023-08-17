@@ -71,7 +71,8 @@ html body.bundle-marlow .varient-inner {
   margin-bottom: 20px;
 }
 html body.bundle-marlow .varient img{
-  height:100%;
+  height:50px;
+  width:50px;
 }
 html body.bundle-marlow .varient {
 cursor:pointer;
