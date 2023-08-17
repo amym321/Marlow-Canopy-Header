@@ -81,6 +81,9 @@ html body.bundle-marlow .active-img{
 html body.bundle-marlow .varient.active .active-img {
 display:block;
 }
+html body.bundle-marlow .varient.active .img {
+display:none;
+}
 html body.bundle-marlow .smartrr-purchase-options .smartrr-selling-plan-group-input-display:before {
   border: 2px solid #302ba3;
 }
