@@ -64,6 +64,7 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
     el.addEventListener('click', function () {
       removeClass();
       this.classList.add('active');
+      el.querySelector('img').classList.add('active');
       // var checkText = el.textContent;
       // selectDropdownByVariant(checkText);
 
