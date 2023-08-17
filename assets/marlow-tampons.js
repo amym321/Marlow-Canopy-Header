@@ -90,13 +90,7 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
   });
 
 
-  // by default subscribe click 
-
-  setTimeout(() => {
-    document.querySelector('.smartrr-grp-input[value="sub"] label').click()
-    document.querySelector('.data-smartrr-label-sub .varient.Combo').click()
-  }, 800);
-
+ 
 
 
 function addClickListener(varientSelector, dropbtnSelector) {
@@ -107,6 +101,7 @@ function addClickListener(varientSelector, dropbtnSelector) {
       document.querySelectorAll(dropbtnSelector).forEach(function(dropbtn) {
         checkClass.forEach(function(className) {
           if (dropbtn.textContent.includes(className)) {
+
             dropbtn.click();
           }
         });
@@ -115,11 +110,19 @@ function addClickListener(varientSelector, dropbtnSelector) {
   });
 }
 
-// For .varient-wrapper.subscription .varient elements
+
+ // by default subscribe click 
+
+  setTimeout(() => {
+    document.querySelector('.smartrr-grp-input[value="sub"] label').click()
+    document.querySelector('.data-smartrr-label-sub .varient.Combo').click()
+
+    // For .varient-wrapper.subscription .varient elements
 addClickListener('.varient-wrapper.subscription .varient', '#dropdownSelections div[data-smartrr-choose-sub] label > div');
 
 // For .varient-wrapper.bm-one-time .varient elements
 addClickListener('.varient-wrapper.bm-one-time .varient', '#dropdownSelections div[data-smartrr-choose-otp] label > div');
+  }, 800);
 
   
 
