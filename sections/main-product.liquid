@@ -514,6 +514,44 @@
                   </div>
                 {% endif %}
 
+                {% if product == all_products['marlow-tampons'] %}
+                  <div class="description-wrapper bm-description-wrapper sub">
+                    <!-- subscription + non-combo -->
+                    <div class="varient-description  Light hide" data-id="0">
+                      <p>{{ section.settings.Light_subscription_tampons }}</p>
+                    </div>
+                    <!-- subscription + non-combo -->
+                    <div class="varient-description Regular hide" data-id="1">
+                      <p>{{ section.settings.Regular_subscription_tampons }}</p>
+                    </div>
+                    <!-- subscription + non-combo -->
+                    <div class="varient-description Super hide" data-id="2">
+                      <p>{{ section.settings.Super_subscription_tampons }}</p>
+                    </div>
+
+                    <!-- subscription + combo: -->
+                    <div class="varient-description Combo " data-id="3">
+                      <p>{{ section.settings.Combo_subscription_tampons }}</p>
+                    </div>
+                  </div>
+
+                  <div class="description-wrapper bm-description-wrapper otp ">
+                    <!-- otp + non-combo -->
+                    <div class="varient-description Light" data-id="0">
+                      {% if section.settings.Light_subscription_tampons_otp != blank %}
+                        <p>{{ section.settings.Light_subscription_tampons_otp }}</p>
+                      {% endif -%}
+                      }
+                    </div>
+                    <div class="varient-description Regular" data-id="1">
+                      <p>{{ section.settings.Regular_subscription_tampons_otp }}</p>
+                    </div>
+                    <div class="varient-description Super" data-id="2">
+                      <p>{{ section.settings.Super_subscription_tampons_otp }}</p>
+                    </div>
+                  </div>
+                {% endif %}
+
                 {% if product == all_products['bundle-save'] or product == all_products['marlow-tampons'] %}
                   <div
                     class="data-smartrr-top-price"
