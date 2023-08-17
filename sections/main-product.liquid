@@ -378,7 +378,7 @@
                   <div class="varient-wrapper data-smartrr-label-sub">
                     <div class="varient-inner">
                       {% if section.settings.Light != blank -%}
-                        <div class="varient Light" data-id="3">
+                        <div class="varient Light" data-id="0">
                           <img src="{{ section.settings.Light | image_url }}" alt="">
                         </div>
                       {% else -%}
@@ -391,15 +391,28 @@
                         <div class="varient Regular" data-id="1">
                           <img src="{{ section.settings.Regular | image_url }}" alt="">
                         </div>
-                      {% endif -%}
-                      {% if section.settings.Super != blank -%}
-                        <div class="varient Super" data-id="2">
-                          <img src="{{ section.settings.Super | image_url}}" alt="">
+                      {% else -%}
+                        <div class="active">
+                          <img src="{{ section.settings.Regular_active | image_url }}" alt="">
                         </div>
                       {% endif -%}
-                      {% if section.settings.Subscribe != blank -%}
-                        <div class="varient Subscribe" data-id="3">
-                          <img src="{{ section.settings.Subscribe |image_url }}" alt="">
+
+                      {% if section.settings.Light != blank -%}
+                        <div class="varient Super" data-id="2">
+                          <img src="{{ section.settings.Super | image_url }}" alt="">
+                        </div>
+                      {% else -%}
+                        <div class="active">
+                          <img src="{{ section.settings.Super_active | image_url }}" alt="">
+                        </div>
+                      {% endif -%}
+                      {% if section.settings.Combo != blank -%}
+                        <div class="varient Combo" data-id="3">
+                          <img src="{{ section.settings.Combo | image_url }}" alt="">
+                        </div>
+                      {% else -%}
+                        <div class="active">
+                          <img src="{{ section.settings.Combo_active | image_url }}" alt="">
                         </div>
                       {% endif -%}
                     </div>
