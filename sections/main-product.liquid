@@ -501,15 +501,19 @@
                   <div class="description-wrapper bm-description-wrapper otp ">
                     <!-- otp + non-combo -->
                     <div class="varient-description Light" data-id="0">
-                      {% if section.settings.Light_subscription_bundle != blank %}
+                      {% if section.settings.Light_subscription_bundle_otp != blank %}
                         <p>{{ section.settings.Light_subscription_bundle_otp }}</p>
                       {% endif -%}
                     </div>
                     <div class="varient-description Regular" data-id="1">
-                      <p>{{ section.settings.Regular_subscription_bundle_otp }}</p>
+                      {% if section.settings.Regular_subscription_bundle_otp != blank %}
+                        <p>{{ section.settings.Regular_subscription_bundle_otp }}</p>
+                      {% endif -%}
                     </div>
                     <div class="varient-description Super" data-id="2">
-                      <p>{{ section.settings.Super_subscription_bundle_otp }}</p>
+                      {% if section.settings.Super_subscription_bundle_otp != blank %}
+                        <p>{{ section.settings.Super_subscription_bundle_otp }}</p>
+                      {% endif -%}
                     </div>
                   </div>
                 {% endif %}
