@@ -70,6 +70,9 @@ html body.bundle-marlow .varient-inner {
   gap: 20px;
   margin-bottom: 20px;
 }
+html body.bundle-marlow .varient img{
+  height:100%;
+}
 html body.bundle-marlow .varient {
 cursor:pointer;
 }
