@@ -129,7 +129,7 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
 
 
   // otp combo click 
-  document.querySelector('.varient-wrapper.data-smartrr-label-otp .varient.Subscribe ').addEventListener('click', function () {
+  document.querySelector('.varient-wrapper.data-smartrr-label-otp .varient.Combo ').addEventListener('click', function () {
     document.querySelector('.smartrr-grp-input[value="sub"] label').click()
     document.querySelector('.varient-wrapper.data-smartrr-label-otp').classList.add('hide')
   });
