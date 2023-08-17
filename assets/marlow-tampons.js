@@ -99,6 +99,29 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
 
 
 
+function addClickListener(varientSelector, dropbtnSelector) {
+  document.querySelectorAll(varientSelector).forEach(function(el) {
+    el.addEventListener('click', function() {
+      var checkClass = this.getAttribute('class').split(' ');
+
+      document.querySelectorAll(dropbtnSelector).forEach(function(dropbtn) {
+        checkClass.forEach(function(className) {
+          if (dropbtn.textContent.includes(className)) {
+            dropbtn.click();
+          }
+        });
+      });
+    });
+  });
+}
+
+// For .varient-wrapper.subscription .varient elements
+addClickListener('.varient-wrapper.subscription .varient', '#dropdownSelections div[data-smartrr-choose-sub] label > div');
+
+// For .varient-wrapper.bm-one-time .varient elements
+addClickListener('.varient-wrapper.bm-one-time .varient', '#dropdownSelections div[data-smartrr-choose-otp] label > div');
+
+  
 
 
 
@@ -211,29 +234,6 @@ live('.smartrr-grp-input[value="sub"] label','click',function(){
 
 
 
-function addClickListener(varientSelector, dropbtnSelector) {
-  document.querySelectorAll(varientSelector).forEach(function(el) {
-    el.addEventListener('click', function() {
-      var checkClass = this.getAttribute('class').split(' ');
-
-      document.querySelectorAll(dropbtnSelector).forEach(function(dropbtn) {
-        checkClass.forEach(function(className) {
-          if (dropbtn.textContent.includes(className)) {
-            dropbtn.click();
-          }
-        });
-      });
-    });
-  });
-}
-
-// For .varient-wrapper.subscription .varient elements
-addClickListener('.varient-wrapper.subscription .varient', '#dropdownSelections div[data-smartrr-choose-sub] label > div');
-
-// For .varient-wrapper.bm-one-time .varient elements
-addClickListener('.varient-wrapper.bm-one-time .varient', '#dropdownSelections div[data-smartrr-choose-otp] label > div');
-
-  
 
 
 }
