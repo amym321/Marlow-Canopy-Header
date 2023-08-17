@@ -149,6 +149,8 @@ el.classList.remove('hide')
 
 live('.bm-one-time .Combo','click',function(){
   document.querySelector('.smartrr-grp-input[value="sub"] label').click()
+ document.querySelector('.bm-description-wrapper.sub .Combo').click()
+  
 })
 
 
