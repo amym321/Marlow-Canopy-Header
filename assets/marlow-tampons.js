@@ -59,23 +59,23 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
   }
 
 
-  var varientText;
-  document.querySelectorAll('.varient').forEach(function (el) {
-    el.addEventListener('click', function () {
-      removeClass();
-      this.classList.add('active');
-      var checkText = el.textContent;
-      selectDropdownByVariant(checkText);
+  // var varientText;
+  // document.querySelectorAll('.varient').forEach(function (el) {
+  //   el.addEventListener('click', function () {
+  //     removeClass();
+  //     this.classList.add('active');
+  //     var checkText = el.textContent;
+  //     selectDropdownByVariant(checkText);
 
-      // description text 
-      varientText = this.textContent;
-      document.querySelectorAll('.varient-description.' + varientText).forEach(function (el) {
-        addhideClass()
-        el.classList.remove('hide')
-        document.querySelector('.otp p span').innerHTML = varientText;
-      });
-    });
-  });
+  //     // description text 
+  //     varientText = this.textContent;
+  //     document.querySelectorAll('.varient-description.' + varientText).forEach(function (el) {
+  //       addhideClass()
+  //       el.classList.remove('hide')
+  //       document.querySelector('.otp p span').innerHTML = varientText;
+  //     });
+  //   });
+  // });
 
 
   // by default subscribe click 
