@@ -480,7 +480,9 @@
                     </div>
                     <!-- subscription + non-combo -->
                     <div class="varient-description Super hide">
-                      <p>{{ section.settings.Super_subscription_bundle }}</p>
+                      {% if section.settings.Super_subscription_bundle != blank %}
+                        <p>{{ section.settings.Super_subscription_bundle }}</p>
+                      {% endif -%}
                     </div>
 
                     <!-- subscription + combo: -->
