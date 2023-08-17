@@ -387,14 +387,16 @@
                           <img src="{{ section.settings.Regular }}" alt="">
                         </div>
                       {% endif -%}
-
-                      <div class="varient Super" data-id="2">
-                        <img src="{{ section.settings.Super }}" alt="">
-                      </div>
-
-                      <div class="varient Subscribe" data-id="3">
-                        <img src="{{ section.settings.Subscribe }}" alt="">
-                      </div>
+                      {% if section.settings.Regular != blank -%}
+                        <div class="varient Super" data-id="2">
+                          <img src="{{ section.settings.Super }}" alt="">
+                        </div>
+                      {% endif -%}
+                      {% if section.settings.Regular != blank -%}
+                        <div class="varient Subscribe" data-id="3">
+                          <img src="{{ section.settings.Subscribe }}" alt="">
+                        </div>
+                      {% endif -%}
                     </div>
                   </div>
 
