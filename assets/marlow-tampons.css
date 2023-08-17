@@ -74,10 +74,13 @@ html body.bundle-marlow .varient {
 cursor:pointer;
 }
 
-/* html body.bundle-marlow .varient.active {
-  background: #302ba3;
-  color: #fff;
-} */
+html body.bundle-marlow .active-img{
+  display:none;
+}
+
+html body.bundle-marlow .varient.active .active-img {
+display:block;
+}
 html body.bundle-marlow .smartrr-purchase-options .smartrr-selling-plan-group-input-display:before {
   border: 2px solid #302ba3;
 }
