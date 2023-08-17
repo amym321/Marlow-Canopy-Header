@@ -123,33 +123,7 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// subscription click 
 
 live('.varient-wrapper .varient','click',function(el){       
   var getVarient=this.getAttribute('data-id')
@@ -161,6 +135,7 @@ el.classList.remove('hide')
 })
 })
 
+  // one time click
   live('.varient-wrapper.bm-one-time','click',function(el){       
   var getVarient=this.getAttribute('data-id')
 document.querySelectorAll('.bm-description-wrapper.otp .varient-description').forEach(function (el) {
