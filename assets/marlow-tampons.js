@@ -102,7 +102,7 @@ function addClickListener(varientSelector, dropbtnSelector) {
         checkClass.forEach(function(className) {
           if (dropbtn.textContent.includes(className)) {
 
-            dropbtn.click();
+            dropbtn.closest('label').click();
           }
         });
       });
