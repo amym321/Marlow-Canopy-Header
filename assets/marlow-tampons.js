@@ -116,13 +116,12 @@ function addClickListener(varientSelector, dropbtnSelector) {
 
   setTimeout(() => {
     document.querySelector('.smartrr-grp-input[value="sub"] label').click()
-    document.querySelector('.data-smartrr-label-sub .varient.Combo').click()
-
-        // For .varient-wrapper.subscription .varient elements
-    addClickListener('.varient-wrapper .varient', '#dropdownSelections .dropdown-select:not(.hide) label > div');
+    document.querySelector('.data-smartrr-label-sub .varient.Combo').click()  
 
   }, 800);
 
+        // For .varient-wrapper.subscription .varient elements
+    addClickListener('.varient-wrapper .varient', '#dropdownSelections .dropdown-select:not(.hide) label > div');
   
 // For .varient-wrapper.bm-one-time .varient elements
 addClickListener('.varient-wrapper.bm-one-time .varient', '#dropdownSelections .dropdown-select:not(.hide) label > div');
