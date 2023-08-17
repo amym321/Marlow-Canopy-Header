@@ -382,13 +382,13 @@
                           <img src="{{ section.settings.Light | image_url }}" alt="">
                         </div>
                       {% else -%}
-                        <div class="varient Light.active">
+                        <div class="varient Light active">
                           <img src="{{ section.settings.Light_active | image_url }}" alt="">
                         </div>
                       {% endif -%}
 
                       {% if section.settings.Regular != blank -%}
-                        <div class="varient Regular" data-id="1">
+                        <div class="varient Regular active" data-id="1">
                           <img src="{{ section.settings.Regular | image_url }}" alt="">
                         </div>
                       {% else -%}
@@ -402,7 +402,7 @@
                           <img src="{{ section.settings.Super | image_url }}" alt="">
                         </div>
                       {% else -%}
-                        <div class="active">
+                        <div class=" varient Super active">
                           <img src="{{ section.settings.Super_active | image_url }}" alt="">
                         </div>
                       {% endif -%}
