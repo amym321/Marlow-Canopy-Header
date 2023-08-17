@@ -515,8 +515,8 @@
                   <div class="description-wrapper bm-description-wrapper otp ">
                     <!-- otp + non-combo -->
                     <div class="varient-description Light" data-id="0">
-                      {% if section.settings.Combo_subscription_bundle != blank %}
-                        <p>{{ section.settings.Combo_subscription_bundle_otp }}</p>
+                      {% if section.settings.Light_subscription_bundle != blank %}
+                        <p>{{ section.settings.Light_subscription_bundle_otp }}</p>
                       {% endif -%}
                     </div>
                     <div class="varient-description Regular" data-id="1">
@@ -524,44 +524,6 @@
                     </div>
                     <div class="varient-description Super" data-id="2">
                       <p>{{ section.settings.Super_subscription_bundle_otp }}</p>
-                    </div>
-                  </div>
-                {% endif %}
-
-                {% if product == all_products['marlow-tampons'] %}
-                  <div class="description-wrapper bm-description-wrapper sub">
-                    <!-- subscription + non-combo -->
-                    <div class="varient-description  Light hide">
-                      <p>{{ section.settings.Light_subscription_tampons }}</p>
-                    </div>
-                    <!-- subscription + non-combo -->
-                    <div class="varient-description Regular hide">
-                      <p>{{ section.settings.Regular_subscription_tampons }}</p>
-                    </div>
-                    <!-- subscription + non-combo -->
-                    <div class="varient-description Super hide">
-                      <p>{{ section.settings.Super_subscription_tampons }}</p>
-                    </div>
-
-                    <!-- subscription + combo: -->
-                    <div class="varient-description Combo ">
-                      <p>{{ section.settings.Combo_subscription_tampons }}</p>
-                    </div>
-                  </div>
-
-                  <div class="description-wrapper bm-description-wrapper otp ">
-                    <!-- otp + non-combo -->
-                    <div class="varient-description Light">
-                      {% if section.settings.Light_subscription_tampons_otp != blank %}
-                        <p>{{ section.settings.Light_subscription_tampons_otp }}</p>
-                      {% endif -%}
-                      }
-                    </div>
-                    <div class="varient-description Regular">
-                      <p>{{ section.settings.Regular_subscription_tampons_otp }}</p>
-                    </div>
-                    <div class="varient-description Super">
-                      <p>{{ section.settings.Super_subscription_tampons_otp }}</p>
                     </div>
                   </div>
                 {% endif %}
