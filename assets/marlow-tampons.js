@@ -159,6 +159,7 @@ live('.smartrr-otp.smartrr-grp-input label','click',function(){
 live('.smartrr-grp-input[value="sub"] label','click',function(){ 
  document.querySelector('.bm-description-wrapper.sub').classList.remove('hide')  
    document.querySelector('.bm-description-wrapper.otp ').classList.add('hide')  
+  document.querySelector('.varient-wrapper.data-smartrr-label-sub .Combo').click()
 })
 
 
