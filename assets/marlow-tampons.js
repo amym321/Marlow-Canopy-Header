@@ -151,6 +151,10 @@ live('.smartrr-otp.smartrr-grp-input label','click',function(){
  document.querySelector('.bm-description-wrapper.sub').classList.add('hide')  
 })
 
+  live('.smartrr-otp.smartrr-grp-input label','click',function(){ 
+ document.querySelector('.bm-description-wrapper.sub').classList.add('hide')  
+})
+
 
 
 
