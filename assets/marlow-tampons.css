@@ -163,7 +163,7 @@ html body.bundle-marlow .varient:after {
   left: 0;
 }
 
-html body.bundle-marlow .Light:after {
+/* html body.bundle-marlow .Light:after {
   background-image: url("https://cdn.shopify.com/s/files/1/0384/8254/2731/files/Light_1080x@2x.png?v=1691989209");
 }
 
@@ -193,7 +193,7 @@ html body.bundle-marlow .Subscribe:after {
 
 html body.bundle-marlow .Subscribe.active:after {
   background-image: url("https://cdn.shopify.com/s/files/1/0384/8254/2731/files/ComboActive_1080x@2x.png?v=1691989210");
-}
+} */
 
 html body.bundle-marlow [data-smartrr-subscription-benefits] [data-smartrr-benefits-all]:before {
   content:'';
