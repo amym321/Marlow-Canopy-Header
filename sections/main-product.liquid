@@ -378,7 +378,11 @@
                   <div class="varient-wrapper data-smartrr-label-sub">
                     <div class="varient-inner">
                       <div class="varient Light" data-id="0">
-                        <img src="{{ section.settings.Light }}" alt="">
+                        {% if section.settings.Light != blank -%}
+                          }
+                          <img src="{{ section.settings.Light }}" alt="">
+                        {% endif -%}
+                        }
                       </div>
 
                       <div class="varient Regular" data-id="1">
@@ -1362,6 +1366,11 @@
       "id": "choose_link",
       "label": "Choose link",
       "default": "How do I choose?"
+    },
+     {
+      "type": "image_picker",
+      "id": "Light",
+      "label": "Light image"
     },
      {
       "type": "text",
