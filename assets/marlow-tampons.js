@@ -39,13 +39,7 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
   }
 
 
-    function selectDropdownByVariant(checkText) {
-    document.querySelectorAll('#dropdownSelections .dropdown-select:not(.hide) .input').forEach(function (el) {
-      if (el.textContent.includes(checkText)) {
-        el.querySelector('input').click();
-      }
-    });
-  }
+
   
 
     // triggerSelector: The selector for the element that triggers the click event.
