@@ -487,7 +487,9 @@
 
                     <!-- subscription + combo: -->
                     <div class="varient-description Combo ">
-                      <p>{{ section.settings.Combo_subscription_bundle }}</p>
+                      {% if section.settings.Combo_subscription_bundle != blank %}
+                        <p>{{ section.settings.Combo_subscription_bundle }}</p>
+                      {% endif -%}
                     </div>
                   </div>
 
