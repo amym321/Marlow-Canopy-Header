@@ -231,7 +231,7 @@ live('.smartrr-grp-input[value="sub"] label','click',function(){
   el.addEventListener('click', function() {
     var checkClass = this.getAttribute('class').split(' ');
 
-    document.querySelectorAll('#dropdownSelections div[data-smartrr-choose-sub] label > div').forEach(function(dropbtn) {
+    document.querySelectorAll('#dropdownSelections div[data-smartrr-choose-otp] label > div').forEach(function(dropbtn) {
       checkClass.forEach(function(className) {
         if (dropbtn.textContent.includes(className)) {
           dropbtn.click()
