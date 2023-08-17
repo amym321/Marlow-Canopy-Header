@@ -50,13 +50,7 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
     });
   }
 
-  function selectDropdownByVariant(checkText) {
-    document.querySelectorAll('#dropdownSelections .dropdown-select:not(.hide) .input').forEach(function (el) {
-      if (el.textContent.includes(checkText)) {
-        el.querySelector('input').click();
-      }
-    });
-  }
+
 
 
   // var varientText;
@@ -65,15 +59,7 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
       removeClass();
       this.classList.add('active');     
       var checkText = el.textContent;
-      selectDropdownByVariant(checkText);
-
-      // description text 
-      varientText = this.textContent;
-      document.querySelectorAll('.varient-description.' + varientText).forEach(function (el) {
-        addhideClass()
-        el.classList.remove('hide')
-        // document.querySelector('.otp p span').innerHTML = varientText;
-      });
+      selectDropdownByVariant(checkText);      
     });
   });
 
@@ -87,60 +73,10 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
 
 
 
-  // triggerSelector: The selector for the element that triggers the click event.
-  // hideSelector: The selector for the element to be hidden.
-  // showSelector: The selector for the element to be shown.
-  // clickSelector: The selector for the element to be clicked.
-
-
-  function addDynamicClickListener(triggerSelector, hideSelector, showSelector, clickSelector) {
-    const triggerElement = document.querySelector(triggerSelector);
-    const hideElement = document.querySelector(hideSelector);
-    const showElement = document.querySelector(showSelector);
-    const clickElement = document.querySelector(clickSelector);
-
-    if (triggerElement && hideElement && showElement && clickElement) {
-      triggerElement.addEventListener('click', function () {
-        hideElement.classList.add('hide');
-        showElement.classList.remove('hide');
-        clickElement.click();
-      });
-    }
-  }
-
-  // Usage
-
-  // subscribe click 
-  addDynamicClickListener(
-    '.smartrr-grp-input[value="sub"] label', //trigger
-    '.varient-wrapper.data-smartrr-label-otp', //hide
-    '.varient-wrapper.data-smartrr-label-sub', //show
-    '.varient-wrapper.data-smartrr-label-sub>div :last-child' // click 
-  );
-
-  // OTP CLICK 
-  addDynamicClickListener(
-    '.smartrr-otp.smartrr-grp-input label',
-    '.varient-wrapper.data-smartrr-label-sub',
-    '.varient-wrapper.data-smartrr-label-otp',
-    '.varient-wrapper.data-smartrr-label-otp  div[data-id="4"]'
-  );
 
 
 
-  // otp combo click 
-  document.querySelector('.varient-wrapper.data-smartrr-label-otp .varient.Combo ').addEventListener('click', function () {
-    document.querySelector('.smartrr-grp-input[value="sub"] label').click()
-    document.querySelector('.varient-wrapper.data-smartrr-label-otp').classList.add('hide')
-  });
-
-  // for varient image 
-  document.querySelectorAll('.smartrr-purchase-options div[data-smartrr-selling-plan-groups] > div label').forEach(function (el) {
-    el.addEventListener('click', function () {
-      removeClassBySelectors('color-active', '.smartrr-purchase-options div[data-smartrr-selling-plan-groups] > div');
-      this.closest('.smartrr-grp-input').classList.add('color-active');
-    });
-  });
+ 
 
   live('.scroll-link', 'click', function () {
     if (document.querySelector('#station-tabs-tab_ht-i1-t11')) {
