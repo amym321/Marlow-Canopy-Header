@@ -105,7 +105,7 @@
         "enable_video_looping": true,
         "enable_product_image_zoom": true,
         "choose_link": "How do I choose?",
-        "Light": "shopify:\/\/shop_images\/Absorbency_light_state_default.png",
+        "Light": "shopify:\/\/shop_images\/Absorbency_light_state_default.svg",
         "Light_active": "shopify:\/\/shop_images\/Absorbency_light_state_selected.png",
         "Regular": "shopify:\/\/shop_images\/Absorbency_regular_state_default.png",
         "Regular_active": "shopify:\/\/shop_images\/Absorbency_regular_state_selected.png",
