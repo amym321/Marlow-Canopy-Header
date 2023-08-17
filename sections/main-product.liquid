@@ -486,28 +486,28 @@
                 {% if product == all_products['bundle-save'] %}
                   <div class="description-wrapper bm-description-wrapper sub">
                     <!-- subscription + non-combo -->
-                    <div class="varient-description  Light hide">
+                    <div class="varient-description  Light hide " data-id="0">
                       {% if section.settings.Light_subscription_bundle != blank %}
                         <p>{{ section.settings.Light_subscription_bundle }}</p>
                       {% endif -%}
                       }
                     </div>
                     <!-- subscription + non-combo -->
-                    <div class="varient-description Regular hide">
+                    <div class="varient-description Regular hide" data-id="1">
                       {% if section.settings.Regular_subscription_bundle != blank %}
                         <p>{{ section.settings.Regular_subscription_bundle }}</p>
                       {% endif -%}
                       }
                     </div>
                     <!-- subscription + non-combo -->
-                    <div class="varient-description Super hide">
+                    <div class="varient-description Super hide" data-id="2">
                       {% if section.settings.Super_subscription_bundle != blank %}
                         <p>{{ section.settings.Super_subscription_bundle }}</p>
                       {% endif -%}
                     </div>
 
                     <!-- subscription + combo: -->
-                    <div class="varient-description Combo ">
+                    <div class="varient-description Combo " data-id="3">
                       {% if section.settings.Combo_subscription_bundle != blank %}
                         <p>{{ section.settings.Combo_subscription_bundle }}</p>
                       {% endif -%}
