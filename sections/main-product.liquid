@@ -377,12 +377,10 @@
                 {% if product == all_products['bundle-save'] or product == all_products['marlow-tampons'] %}
                   <div class="varient-wrapper data-smartrr-label-sub">
                     <div class="varient-inner">
-                      {% if section.settings.Light != blank %}
-                        <div class="varient Light" data-id="0">Light</div>
-                      {% endif -%}
-                      {% if section.settings.Regular != blank %}
-                        <div class="varient Regular" data-id="1">Regular</div>
-                      {% endif -%}
+                      <div class="varient Light" data-id="0">Light</div>
+
+                      <div class="varient Regular" data-id="1">Regular</div>
+
                       {% if section.settings.Super != blank %}
                         <div class="varient Super" data-id="2">Super</div>
                       {% endif -%}
