@@ -125,7 +125,7 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
     // by default subscribe click 
 
     setTimeout(() => {
-        document.querySelector('.smartrr-grp-input[value="sub"] label').click()
+        document.querySelector('.smartrr-otp.smartrr-grp-input').click()
         document.querySelector('.data-smartrr-label-sub .varient.Combo').click()
 
     }, 800);
