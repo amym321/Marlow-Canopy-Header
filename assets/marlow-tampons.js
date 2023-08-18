@@ -126,7 +126,7 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
 
     setTimeout(() => {
         document.querySelector('.smartrr-otp.smartrr-grp-input').click()
-        document.querySelector('.data-smartrr-label-sub .varient.Light').click()
+        document.querySelector('.varient-wrapper.bm-one-time .varient.Light').click()
 
     }, 800);
 
