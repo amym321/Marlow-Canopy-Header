@@ -143,14 +143,14 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
         if (document.querySelector('#station-tabs-tab_ht-i1-t11')) {
             setTimeout(() => {
                 document.querySelector('#station-tabs-tab_ht-i1-t11').click()
-            }, 200);
+            }, 500);
 
         }
 
         if (document.querySelector('#station-tabs-tab_ht-i1-t17')) {
             setTimeout(() => {
                 document.querySelector('#station-tabs-tab_ht-i1-t17').click()
-            }, 200);
+            }, 500);
 
         }
 
