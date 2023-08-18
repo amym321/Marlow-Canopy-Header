@@ -216,3 +216,11 @@ html body.bundle-marlow .purchase-radio span {
   text-align: left;
   color: #00b48a;
 }
+
+
+@media screen and (min-width: 768px) {
+   .description-wrapper+.data-smartrr-top-price{
+        display:none;
+    }
+}
+
