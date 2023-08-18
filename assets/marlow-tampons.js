@@ -122,24 +122,22 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
     }
 
 
-    // by default subscribe click 
+    // by default one time click 
 
     setTimeout(() => {
         document.querySelector('.smartrr-otp.smartrr-grp-input label').click()
         document.querySelector('.varient-wrapper .varient.Light').click()
-
     }, 800);
 
   
         // For .varient-wrapper.subscription .varient elements
         addClickListener('.varient-wrapper.subscription .varient', '#dropdownSelections .dropdown-select:not(.hide) label > div');
-   
 
 
-  setTimeout(() => {
-    // For .varient-wrapper.bm-one-time .varient elements
-    addClickListener('.varient-wrapper.bm-one-time .varient', '#dropdownSelections .dropdown-select:not(.hide) label > div');
- }, 1000);
+      setTimeout(() => {
+        // For .varient-wrapper.bm-one-time .varient elements
+        addClickListener('.varient-wrapper.bm-one-time .varient', '#dropdownSelections .dropdown-select:not(.hide) label > div');
+     }, 1000);
 
     live('.scroll-link', 'click', function() {
         if (document.querySelector('#station-tabs-tab_ht-i1-t11')) {
