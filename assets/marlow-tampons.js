@@ -132,7 +132,7 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
 
     setTimeout(() => {
         // For .varient-wrapper.subscription .varient elements
-        addClickListener('.varient-wrapper.bm-one-time .varient', '#dropdownSelections .dropdown-select:not(.hide) label > div');
+        addClickListener('.varient-wrapper.subscription .varient', '#dropdownSelections .dropdown-select:not(.hide) label > div');
     }, 1000);
 
 
