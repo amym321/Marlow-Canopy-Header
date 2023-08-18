@@ -217,6 +217,14 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
     });
 
 
+    // for varient image 
+  document.querySelectorAll('.smartrr-purchase-options div[data-smartrr-selling-plan-groups] > div label').forEach(function (el) {
+    el.addEventListener('click', function () {
+      removeClassBySelectors('color-active', '.smartrr-purchase-options div[data-smartrr-selling-plan-groups] > div');
+      this.closest('.smartrr-grp-input').classList.add('color-active');
+    });
+  });
+
 
 
 }
