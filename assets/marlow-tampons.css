@@ -95,7 +95,7 @@ html body.bundle-marlow .smartrr-purchase-options .smartrr-selling-plan-group-in
 }
 
 html body.bundle-marlow .smartrr-purchase-options div[data-smartrr-selling-plan-groups] > div {
-  padding: 10px 16px;
+  padding:16px;
 }
 
 html body.bundle-marlow .radio-wrapper .color-active {
