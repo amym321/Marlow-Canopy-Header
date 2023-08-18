@@ -219,7 +219,7 @@ html body.bundle-marlow .purchase-radio span {
 
 
 @media screen and (max-width: 768px) {
-   .description-wrapper+.data-smartrr-top-price{
+  html body.bundle-marlow .description-wrapper+.data-smartrr-top-price {
         display:none;
     }
 }
