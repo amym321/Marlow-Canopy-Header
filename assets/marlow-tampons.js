@@ -31,6 +31,18 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
         });
     }
 
+  // remove class function 
+  function removeClassBySelectors(className, selectors) {
+    const elements = document.querySelectorAll(selectors);
+
+    elements.forEach(element => {
+      if (element.classList.contains(className)) {
+        element.classList.remove(className);
+      }
+    });
+  }
+
+
 
     function addhideClass() {
         document.querySelectorAll('.description-wrapper .varient-description').forEach(function(el) {
