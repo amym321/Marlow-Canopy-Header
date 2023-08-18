@@ -147,9 +147,9 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
 
         }
 
-        if (document.querySelector('#station-tabs-tab_ht-i1-t5')) {
+        if (document.querySelector('#station-tabs-tab_ht-i1-t17')) {
             setTimeout(() => {
-                document.querySelector('#station-tabs-tab_ht-i1-t5').click()
+                document.querySelector('#station-tabs-tab_ht-i1-t17').click()
             }, 500);
 
         }
