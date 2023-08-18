@@ -140,12 +140,20 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
      }, 1000);
 
     live('.scroll-link', 'click', function() {
-        if (document.querySelector('#station-tabs-tab_ht-i1-t17')) {
+        if (document.querySelector('#station-tabs-tab_ht-i1-t11')) {
             setTimeout(() => {
-                document.querySelector('#station-tabs-tab_ht-i1-t17').click()
+                document.querySelector('#station-tabs-tab_ht-i1-t11').click()
             }, 500);
 
         }
+
+        if (document.querySelector('#station-tabs-tab_ht-i1-t5')) {
+            setTimeout(() => {
+                document.querySelector('#station-tabs-tab_ht-i1-t5').click()
+            }, 500);
+
+        }
+
     })
 
 
