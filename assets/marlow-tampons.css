@@ -118,10 +118,10 @@ html body.bundle-marlow .bm-description-wrapper.otp .description p {
   text-align: left;
 }
 
-html body.bundle-marlow .product-details > .product-detail__gap-sm.rte.product-area__rte:nth-child(3),
+/* html body.bundle-marlow .product-details > .product-detail__gap-sm.rte.product-area__rte:nth-child(3),
 html body.bundle-marlow .variant-select {
   display: none;
-}
+} */
 
 html body.bundle-marlow .product-details > .product-detail__gap-sm.rte.product-area__rte {
   padding: 0 !important;
