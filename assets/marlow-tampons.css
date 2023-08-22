@@ -67,8 +67,8 @@ html body.bundle-marlow div[data-smartrr-choose-sub-benefit] {
 }
 html body.bundle-marlow .varient-inner {
   display: flex;
-  gap: 20px;
   margin-bottom: 20px;
+  justify-content:space-between;
 }
 
 html body.bundle-marlow .varient {
