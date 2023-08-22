@@ -55,7 +55,7 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
     // var varientText;
     document.querySelectorAll('.varient').forEach(function(el) {
         el.addEventListener('click', function() {
-          removeClassBySelectors('.varient', 'active') 
+          removeClassBySelectors('active', '.varient') 
             this.classList.add('active');
         });
     });
