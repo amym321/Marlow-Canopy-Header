@@ -176,7 +176,12 @@ varient.forEach(function(el){
     if(el.classList.contains('active')){
         var id = el.getAttribute('data-id')
         controlOption[id].click();
-      console.log(el, this)
+      if(el.closest('.bm-one-time')){ 
+        detailText(el, '.bm-description-wrapper.otp .varient-description')
+      }
+      if(el.closest('.subscription')){ 
+        detailText(el, '.bm-description-wrapper.sub .varient-description')
+      }
     }
 })
 }
@@ -201,8 +206,6 @@ varient.forEach(function(el){
 
        document.querySelector('.bm-description-wrapper.sub').classList.add('bm-hide')
         document.querySelector('.bm-description-wrapper.otp ').classList.remove('bm-hide')
-
-      detailText(this, '.bm-description-wrapper.otp .varient-description');
       
       chosseOption();
     })
@@ -213,8 +216,6 @@ varient.forEach(function(el){
 
       document.querySelector('.bm-description-wrapper.sub').classList.remove('bm-hide')
         document.querySelector('.bm-description-wrapper.otp ').classList.add('bm-hide')
-
-      detailText(this, '.bm-description-wrapper.sub .varient-description');
 
        chosseOption();
       
