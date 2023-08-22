@@ -93,12 +93,6 @@ if (urlCheck.includes("bundle-save") || urlCheck.includes("marlow-tampons")) {
   }, 1000);
 
   live(".scroll-link", "click", function (el) {
-
-    if(document.querySelector('.station-tabs-tab.is-active')){
-      el.preventDefault()
-    }
-
-
     if (document.querySelector("#station-tabs-tab_ht-i1-t11:not(.is-active)")) {
       setTimeout(() => {
         document.querySelector("#station-tabs-tab_ht-i1-t11").click();
