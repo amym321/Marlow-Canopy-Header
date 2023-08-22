@@ -109,7 +109,6 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
                     checkClass.forEach(function(className) {
                         if (dropbtn.textContent.includes(className)) {
 
-                            console.log(dropbtn.closest('.input'))
                             dropbtn.closest('.input').click();
                         }
                     });
@@ -177,12 +176,12 @@ varient.forEach(function(el){
     if(el.classList.contains('active')){
         var id = el.getAttribute('data-id')
         controlOption[id].click();
+      console.log(el, this)
     }
 })
 }
 
   function detailText($this, params) {
-    console.log($this, params)
     var getVarient = $this.getAttribute('data-id')
         document.querySelectorAll(params).forEach(function(el) {
             if (el.getAttribute('data-id') == getVarient) {
