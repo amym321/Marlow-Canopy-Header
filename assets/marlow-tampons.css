@@ -182,11 +182,13 @@ html body.bundle-marlow .purchase-radio span {
         display:none;
     }
 }
-
-
-.radio-wrapper div[data-smartrr-subscription-benefits]{
+@media screen and (max-width: 768px) {
+  html body.bundle-marlow .radio-wrapper div[data-smartrr-subscription-benefits]{
   padding-left:0;
 }
+}
+
+
 
 
 
