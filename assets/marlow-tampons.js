@@ -74,12 +74,12 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
     // Usage
 
     // // subscribe click 
-    // addDynamicClickListener(
-    //     '.smartrr-grp-input[value="sub"] label', //trigger
-    //     '.varient-wrapper.data-smartrr-label-otp', //hide
-    //     '.varient-wrapper.data-smartrr-label-sub', //show
-    //     '.varient-wrapper.data-smartrr-label-sub>div :last-child' // click 
-    // );
+    addDynamicClickListener(
+        '.smartrr-grp-input[value="sub"] label', //trigger
+        '.varient-wrapper.data-smartrr-label-otp', //hide
+        '.varient-wrapper.data-smartrr-label-sub', //show
+        '.varient-wrapper.data-smartrr-label-sub>div :last-child' // click 
+    );
 
     // OTP CLICK 
     addDynamicClickListener(
@@ -127,14 +127,14 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
     }, 800);
 
   
-        // For .varient-wrapper.subscription .varient elements
-        addClickListener('.varient-wrapper.subscription .varient', '#dropdownSelections .dropdown-select:not(.hide) label > div');
+     //    // For .varient-wrapper.subscription .varient elements
+     //    addClickListener('.varient-wrapper.subscription .varient', '#dropdownSelections .dropdown-select:not(.hide) label > div');
 
 
-      setTimeout(() => {
-        // For .varient-wrapper.bm-one-time .varient elements
-        addClickListener('.varient-wrapper.bm-one-time .varient', '#dropdownSelections .dropdown-select:not(.hide) label > div');
-     }, 1000);
+     //  setTimeout(() => {
+     //    // For .varient-wrapper.bm-one-time .varient elements
+     //    addClickListener('.varient-wrapper.bm-one-time .varient', '#dropdownSelections .dropdown-select:not(.hide) label > div');
+     // }, 1000);
 
     live('.scroll-link', 'click', function() {
         if (document.querySelector('#station-tabs-tab_ht-i1-t11')) {
