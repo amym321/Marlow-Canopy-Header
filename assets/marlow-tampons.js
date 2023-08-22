@@ -66,7 +66,7 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
             triggerElement.addEventListener('click', function() {
                 hideElement.classList.add('hide');
                 showElement.classList.remove('hide');
-                clickElement.click();
+                // clickElement.click();
             });
         }
     }
@@ -78,7 +78,7 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
         '.smartrr-grp-input[value="sub"] label', //trigger
         '.varient-wrapper.data-smartrr-label-otp', //hide
         '.varient-wrapper.data-smartrr-label-sub', //show
-        '.varient-wrapper.data-smartrr-label-sub>div :last-child' // click 
+        // '.varient-wrapper.data-smartrr-label-sub>div :last-child' // click 
     );
 
     // OTP CLICK 
@@ -86,7 +86,7 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
         '.smartrr-otp.smartrr-grp-input label',
         '.varient-wrapper.data-smartrr-label-sub',
         '.varient-wrapper.data-smartrr-label-otp',
-        '.varient-wrapper.data-smartrr-label-otp  div[data-id="4"]'
+        // '.varient-wrapper.data-smartrr-label-otp  div[data-id="4"]'
     );
 
     // var varientText;
