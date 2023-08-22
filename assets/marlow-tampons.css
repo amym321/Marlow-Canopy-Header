@@ -80,6 +80,10 @@ cursor:pointer;
   height:80px;
 }
 
+html body.bundle-marlow .varient img{
+  width:100%;
+}
+
 
 html body.bundle-marlow .active-img{
   display:none;
