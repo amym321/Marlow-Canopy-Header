@@ -1,10 +1,7 @@
 // tagetting set 
 var urlCheck = window.location.pathname;
 if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
-
     document.querySelector('body').classList.add('bundle-marlow');
-
-
 
     function live(selector, event, callback, context) {
         /****Helper Functions****/
@@ -76,13 +73,13 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
 
     // Usage
 
-    // subscribe click 
-    addDynamicClickListener(
-        '.smartrr-grp-input[value="sub"] label', //trigger
-        '.varient-wrapper.data-smartrr-label-otp', //hide
-        '.varient-wrapper.data-smartrr-label-sub', //show
-        '.varient-wrapper.data-smartrr-label-sub>div :last-child' // click 
-    );
+    // // subscribe click 
+    // addDynamicClickListener(
+    //     '.smartrr-grp-input[value="sub"] label', //trigger
+    //     '.varient-wrapper.data-smartrr-label-otp', //hide
+    //     '.varient-wrapper.data-smartrr-label-sub', //show
+    //     '.varient-wrapper.data-smartrr-label-sub>div :last-child' // click 
+    // );
 
     // OTP CLICK 
     addDynamicClickListener(
