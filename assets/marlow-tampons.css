@@ -231,7 +231,9 @@ html body.bundle-marlow .purchase-radio span {
   color: white;
 }
 
-.drop-button .dropbtn{  
+.drop-button .dropbtn,
+.dropdown-select .input
+{  
   color: #302ba3;
   background-color: white;
   border-radius:5px;
@@ -239,6 +241,7 @@ html body.bundle-marlow .purchase-radio span {
   width:60px;
   border:1px solid #302ba3;
 }
+
 
 .drop-button div[data-smartrr-label-otp],
 .drop-button div[data-smartrr-label-sub]
