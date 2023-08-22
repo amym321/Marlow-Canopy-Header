@@ -266,4 +266,6 @@ div[data-smartrr-label-otp]{
 
 .dropdown-select .input{
   margin:0;
+  max-height:60px;
+  max-width:60px;
 }
