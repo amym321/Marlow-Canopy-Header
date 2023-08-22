@@ -167,6 +167,7 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
    // for description wrapper
         live('.varient-wrapper .varient', 'click', function(el) {
         var getVarient = this.getAttribute('data-id')
+          console.log(getVarient)
         document.querySelectorAll('.bm-description-wrapper .varient-description').forEach(function(el) {
             if (el.getAttribute('data-id') == getVarient) {
                 addhideClass()
