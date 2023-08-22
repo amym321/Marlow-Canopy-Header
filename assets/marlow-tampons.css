@@ -76,6 +76,7 @@ html body.bundle-marlow .varient-inner {
 
 html body.bundle-marlow .varient {
 cursor:pointer;
+  width:80px;
 }
 
 
