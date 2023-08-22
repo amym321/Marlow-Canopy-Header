@@ -78,7 +78,7 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
         '.smartrr-grp-input[value="sub"] label', //trigger
         '.varient-wrapper.data-smartrr-label-otp', //hide
         '.varient-wrapper.data-smartrr-label-sub', //show
-        '.varient-wrapper.data-smartrr-label-sub>div :last-child' // click 
+        // '.varient-wrapper.data-smartrr-label-sub>div :last-child' // click 
     );
 
     // OTP CLICK 
