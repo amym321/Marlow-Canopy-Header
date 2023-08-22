@@ -225,11 +225,11 @@ html body.bundle-marlow .purchase-radio span {
 }
 
 
-/* .drop-button .dropbtn.hide-button{
+.input.smartrr-active-vaiant{
   display:block;
   background-color: #302ba3;
   color: white;
-} */
+}
 
 /* .drop-button .dropbtn,
 .dropdown-select .input
