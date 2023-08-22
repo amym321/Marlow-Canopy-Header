@@ -118,10 +118,10 @@ html body.bundle-marlow .bm-description-wrapper.otp .description p {
   text-align: left;
 }
 
-/* html body.bundle-marlow .product-details > .product-detail__gap-sm.rte.product-area__rte:nth-child(3),
+html body.bundle-marlow .product-details > .product-detail__gap-sm.rte.product-area__rte:nth-child(3),
 html body.bundle-marlow .variant-select {
   display: none;
-} */
+}
 
 html body.bundle-marlow .product-details > .product-detail__gap-sm.rte.product-area__rte {
   padding: 0 !important;
@@ -142,50 +142,7 @@ html body.bundle-marlow .bm-description-wrapper p span {
   text-transform: lowercase;
 }
 
-/* html body.bundle-marlow .varient:after {
-  content: "";
-  background-size: auto;
-  background-position: 12px 25px;
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  z-index: 1;
-  left: 0;
-} */
 
-/* html body.bundle-marlow .Light:after {
-  background-image: url("https://cdn.shopify.com/s/files/1/0384/8254/2731/files/Light_1080x@2x.png?v=1691989209");
-}
-
-html body.bundle-marlow .Light.active:after {
-  background-image: url("https://cdn.shopify.com/s/files/1/0384/8254/2731/files/LightActive_1080x@2x.png?v=1691989218");
-}
-
-html body.bundle-marlow .Regular:after {
-  background-image: url("https://cdn.shopify.com/s/files/1/0384/8254/2731/files/Regular_1080x@2x.png?v=1691989209");
-}
-
-html body.bundle-marlow .Regular.active:after {
-  background-image: url("https://cdn.shopify.com/s/files/1/0384/8254/2731/files/RegularActive_1080x@2x.png?v=1691989209");
-}
-
-html body.bundle-marlow .Super:after {
-  background-image: url("https://cdn.shopify.com/s/files/1/0384/8254/2731/files/super_1080x@2x.png?v=1691989209");
-}
-
-html body.bundle-marlow .Super.active:after {
-  background-image: url("https://cdn.shopify.com/s/files/1/0384/8254/2731/files/SuberActive_1080x@2x.png?v=1691989209");
-}
-html body.bundle-marlow .Subscribe:after {
-  background-position: 18px 25px;
-  background-image: url("https://cdn.shopify.com/s/files/1/0384/8254/2731/files/Combo_1080x@2x.png?v=1691989209");
-}
-
-html body.bundle-marlow .Subscribe.active:after {
-  background-image: url("https://cdn.shopify.com/s/files/1/0384/8254/2731/files/ComboActive_1080x@2x.png?v=1691989210");
-} */
 
 html body.bundle-marlow [data-smartrr-subscription-benefits] [data-smartrr-benefits-all]:before {
   content:'';
