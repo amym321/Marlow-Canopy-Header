@@ -172,8 +172,9 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
 
 
     live('.smartrr-otp.smartrr-grp-input label', 'click', function() {
-        document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.add('bm-one-time')
-        document.querySelector('.bm-one-time .varient.Light').click()
+
+      // for varient wrapper       
+        document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.add('bm-one-time')       
         document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.remove('subscription')
     })
 
@@ -207,17 +208,17 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
     })
 
 
-    live('.smartrr-otp.smartrr-grp-input label', 'click', function() {
-        document.querySelector('.bm-description-wrapper.sub').classList.add('hide')
-        document.querySelector('.bm-description-wrapper.otp ').classList.remove('hide')
-      document.querySelector('.varient-wrapper.data-smartrr-label-sub .Light').click()
-    })
+    // live('.smartrr-otp.smartrr-grp-input label', 'click', function() {
+    //     document.querySelector('.bm-description-wrapper.sub').classList.add('hide')
+    //     document.querySelector('.bm-description-wrapper.otp ').classList.remove('hide')
+    //   document.querySelector('.varient-wrapper.data-smartrr-label-sub .Light').click()
+    // })
 
-    live('.smartrr-grp-input[value="sub"] label', 'click', function() {
-        document.querySelector('.bm-description-wrapper.sub').classList.remove('hide')
-        document.querySelector('.bm-description-wrapper.otp ').classList.add('hide')
-        document.querySelector('.varient-wrapper.data-smartrr-label-sub .Combo').click()
-    })
+    // live('.smartrr-grp-input[value="sub"] label', 'click', function() {
+    //     document.querySelector('.bm-description-wrapper.sub').classList.remove('hide')
+    //     document.querySelector('.bm-description-wrapper.otp ').classList.add('hide')
+    //     document.querySelector('.varient-wrapper.data-smartrr-label-sub .Combo').click()
+    // })
 
 
     live('.bm-one-time .Combo', 'click', function() {
