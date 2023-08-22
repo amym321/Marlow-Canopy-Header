@@ -180,6 +180,18 @@ varient.forEach(function(el){
     }
 })
 }
+
+  function detailText($this, params) {
+    console.log($this, params)
+    var getVarient = $this.getAttribute('data-id')
+        document.querySelectorAll(params).forEach(function(el) {
+            if (el.getAttribute('data-id') == getVarient) {
+                addhideClass()
+                el.classList.remove('hide')
+            }
+        })
+  }
+
   
     live('.smartrr-otp.smartrr-grp-input label', 'click', function() {
         document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.add('bm-one-time')
@@ -208,17 +220,6 @@ varient.forEach(function(el){
        chosseOption();
       
     })
-
-
-  function detailText($this, params) {
-    var getVarient = $this.getAttribute('data-id')
-        document.querySelectorAll(params).forEach(function(el) {
-            if (el.getAttribute('data-id') == getVarient) {
-                addhideClass()
-                el.classList.remove('hide')
-            }
-        })
-  }
 
 
     live('.varient-wrapper .varient', 'click', function(el) {
