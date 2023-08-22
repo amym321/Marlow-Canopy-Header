@@ -176,6 +176,7 @@ var varient = document.querySelectorAll('.varient-wrapper .varient');
 varient.forEach(function(el){
     if(el.classList.contains('active')){
         var id = el.getAttribute('data-id')
+      console.log(id, controlOption[id])
         controlOption[id].click();
     }
 })
@@ -183,7 +184,9 @@ varient.forEach(function(el){
   
     live('.smartrr-otp.smartrr-grp-input label', 'click', function() {
         document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.add('bm-one-time')
-        // document.querySelector('.bm-one-time .varient.Light').click()
+      if(document.qyerySelector('.varient-wrapper .varient.Combo').classList.contains('active')){ 
+        document.querySelector('.bm-one-time .varient.Light').click()
+      }
         document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.remove('subscription')
       chosseOption();
     })
