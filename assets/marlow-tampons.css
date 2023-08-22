@@ -229,3 +229,7 @@ html body.bundle-marlow .purchase-radio span {
   display:block;
 }
 
+.drop-button div[data-smartrr-label-otp]{
+  display:flex;
+}
+
