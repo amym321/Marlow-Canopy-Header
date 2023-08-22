@@ -184,7 +184,7 @@ varient.forEach(function(el){
   
     live('.smartrr-otp.smartrr-grp-input label', 'click', function() {
         document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.add('bm-one-time')
-      if(document.qyerySelector('.varient-wrapper .varient.Combo').classList.contains('active')){ 
+      if(document.querySelector('.varient-wrapper .varient.Combo').classList.contains('active')){ 
         document.querySelector('.bm-one-time .varient.Light').click()
       }
         document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.remove('subscription')
