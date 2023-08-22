@@ -56,7 +56,7 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
     // clickSelector: The selector for the element to be clicked.
 
 
-    function addDynamicClickListener(triggerSelector, hideSelector, showSelector, clickSelector) {
+    // function addDynamicClickListener(triggerSelector, hideSelector, showSelector, clickSelector) {
         const triggerElement = document.querySelector(triggerSelector);
         const hideElement = document.querySelector(hideSelector);
         const showElement = document.querySelector(showSelector);
@@ -73,21 +73,21 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
 
     // Usage
 
-    // // subscribe click 
-    addDynamicClickListener(
-        '.smartrr-grp-input[value="sub"] label', //trigger
-        '.varient-wrapper.data-smartrr-label-otp', //hide
-        '.varient-wrapper.data-smartrr-label-sub', //show
-        // '.varient-wrapper.data-smartrr-label-sub>div :last-child' // click 
-    );
+    // // // subscribe click 
+    // addDynamicClickListener(
+    //     '.smartrr-grp-input[value="sub"] label', //trigger
+    //     '.varient-wrapper.data-smartrr-label-otp', //hide
+    //     '.varient-wrapper.data-smartrr-label-sub', //show
+    //     // '.varient-wrapper.data-smartrr-label-sub>div :last-child' // click 
+    // );
 
-    // OTP CLICK 
-    addDynamicClickListener(
-        '.smartrr-otp.smartrr-grp-input label',
-        '.varient-wrapper.data-smartrr-label-sub',
-        '.varient-wrapper.data-smartrr-label-otp',
-        // '.varient-wrapper.data-smartrr-label-otp  div[data-id="4"]'
-    );
+    // // OTP CLICK 
+    // addDynamicClickListener(
+    //     '.smartrr-otp.smartrr-grp-input label',
+    //     '.varient-wrapper.data-smartrr-label-sub',
+    //     '.varient-wrapper.data-smartrr-label-otp',
+    //     // '.varient-wrapper.data-smartrr-label-otp  div[data-id="4"]'
+    // );
 
     // var varientText;
     document.querySelectorAll('.varient').forEach(function(el) {
