@@ -83,6 +83,7 @@ cursor:pointer;
 html body.bundle-marlow .active-img{
   display:none;
   margin-top:-5px; 
+  width:100%;
 }
 
 html body.bundle-marlow .varient.active .active-img {
