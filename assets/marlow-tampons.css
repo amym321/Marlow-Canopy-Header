@@ -279,3 +279,8 @@ div[data-smartrr-label-otp]{
   color: white;
   font-size:0;
 }
+
+
+.dropdown-options.dropdown-field{
+  width:100%;
+}
