@@ -199,26 +199,26 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
 
 
 
-    // live('.varient-wrapper .varient', 'click', function(el) {
-    //     var getVarient = this.getAttribute('data-id')
-    //     document.querySelectorAll('.bm-description-wrapper.sub .varient-description').forEach(function(el) {
-    //         if (el.getAttribute('data-id') == getVarient) {
-    //             addhideClass()
-    //             el.classList.remove('hide')
-    //         }
-    //     })
-    // })
+    live('.varient-wrapper .varient', 'click', function(el) {
+        var getVarient = this.getAttribute('data-id')
+        document.querySelectorAll('.bm-description-wrapper.sub .varient-description').forEach(function(el) {
+            if (el.getAttribute('data-id') == getVarient) {
+                addhideClass()
+                el.classList.remove('hide')
+            }
+        })
+    })
 
 
-    // live('.bm-one-time .varient ', 'click', function(el) {
-    //     var getVarient = this.getAttribute('data-id')
-    //     document.querySelectorAll('.bm-description-wrapper.otp .varient-description').forEach(function(el) {
-    //         if (el.getAttribute('data-id') == getVarient) {
-    //             addhideClass()
-    //             el.classList.remove('hide')
-    //         }
-    //     })
-    // })
+    live('.bm-one-time .varient ', 'click', function(el) {
+        var getVarient = this.getAttribute('data-id')
+        document.querySelectorAll('.bm-description-wrapper.otp .varient-description').forEach(function(el) {
+            if (el.getAttribute('data-id') == getVarient) {
+                addhideClass()
+                el.classList.remove('hide')
+            }
+        })
+    })
 
 
     // live('.smartrr-otp.smartrr-grp-input label', 'click', function() {
