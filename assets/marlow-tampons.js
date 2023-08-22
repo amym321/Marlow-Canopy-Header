@@ -64,8 +64,8 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
 
         if (triggerElement && hideElement && showElement && clickElement) {
             triggerElement.addEventListener('click', function() {
-                hideElement.classList.add('hide');
-                showElement.classList.remove('hide');
+                hideElement.classList.add('bm-hide');
+                showElement.classList.remove('bm-hide');
                 clickElement.click();
             });
         }
@@ -208,13 +208,13 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
 
 
     live('.smartrr-otp.smartrr-grp-input label', 'click', function() {
-        document.querySelector('.bm-description-wrapper.sub').classList.add('hide')
-        document.querySelector('.bm-description-wrapper.otp ').classList.remove('hide')
+        document.querySelector('.bm-description-wrapper.sub').classList.add('bm-hide')
+        document.querySelector('.bm-description-wrapper.otp ').classList.remove('bm-hide')
     })
 
     live('.smartrr-grp-input[value="sub"] label', 'click', function() {
-        document.querySelector('.bm-description-wrapper.sub').classList.remove('hide')
-        document.querySelector('.bm-description-wrapper.otp ').classList.add('hide')
+        document.querySelector('.bm-description-wrapper.sub').classList.remove('bm-hide')
+        document.querySelector('.bm-description-wrapper.otp ').classList.add('bm-hide')
         // document.querySelector('.varient-wrapper.data-smartrr-label-sub .Combo').click()
     })
 
