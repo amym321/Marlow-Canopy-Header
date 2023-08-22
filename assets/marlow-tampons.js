@@ -22,11 +22,11 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
         live(selector, event, callback, context);
     }
 
-    function removeClass() {
-        document.querySelectorAll('.varient').forEach(function(el) {
-            el.classList.remove('active');
-        });
-    }
+    // function removeClass() {
+    //     document.querySelectorAll('.varient').forEach(function(el) {
+    //         el.classList.remove('active');
+    //     });
+    // }
 
   // remove class function 
   function removeClassBySelectors(className, selectors) {
