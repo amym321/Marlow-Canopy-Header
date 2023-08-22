@@ -62,6 +62,10 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
 
 
 
+  
+
+
+
 
     function addClickListener(varientSelector, dropbtnSelector) {
         document.querySelectorAll(varientSelector).forEach(function(el) {
@@ -117,21 +121,7 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
     })
 
 
-    // Find the element to scroll to
-    var targetElement = document.querySelector('.quantity');
 
-    // Find the element that triggers the scroll
-    var scrollLink = document.querySelector('.scroll-link');
-
-    // Add a click event listener to the scrollLink
-    scrollLink.addEventListener('click', function(event) {
-        // Scroll to the target element, stopping a bit before the top
-        targetElement.scrollIntoView({
-            behavior: 'smooth', // Use smooth scrolling
-            inline: 'nearest' // Keep the target element as close to the vertical center as possible
-        });
-
-    });
 
 
     live('.smartrr-otp.smartrr-grp-input label', 'click', function() {
@@ -195,6 +185,25 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
   });
 
 
+
+
+
+
+      // Find the element to scroll to
+    var targetElement = document.querySelector('.quantity');
+
+    // Find the element that triggers the scroll
+    var scrollLink = document.querySelector('.scroll-link');
+
+    // Add a click event listener to the scrollLink
+    scrollLink.addEventListener('click', function(event) {
+        // Scroll to the target element, stopping a bit before the top
+        targetElement.scrollIntoView({
+            behavior: 'smooth', // Use smooth scrolling
+            inline: 'nearest' // Keep the target element as close to the vertical center as possible
+        });
+
+    });
 
 }
 // end targetting 
