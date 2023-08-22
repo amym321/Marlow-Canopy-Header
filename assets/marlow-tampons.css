@@ -244,6 +244,11 @@ html body.bundle-marlow .purchase-radio span {
 
  */
 
+div[data-smartrr-label-sub],
+div[data-smartrr-label-otp]{
+  display:none;
+}
+
 .varient-wrapper{
   display:none;
 }
