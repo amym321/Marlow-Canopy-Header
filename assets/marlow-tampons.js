@@ -176,7 +176,6 @@ var varient = document.querySelectorAll('.varient-wrapper .varient');
 varient.forEach(function(el){
     if(el.classList.contains('active')){
         var id = el.getAttribute('data-id')
-      console.log(id, controlOption[id])
         controlOption[id].click();
     }
 })
@@ -188,12 +187,19 @@ varient.forEach(function(el){
         document.querySelector('.bm-one-time .varient.Light').click()
       }
         document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.remove('subscription')
+
+       document.querySelector('.bm-description-wrapper.sub').classList.add('bm-hide')
+        document.querySelector('.bm-description-wrapper.otp ').classList.remove('bm-hide')
+      
       chosseOption();
     })
 
     live('.smartrr-grp-input[value="sub"] label', 'click', function() {
         document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.remove('bm-one-time')
         document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.add('subscription')
+
+      document.querySelector('.bm-description-wrapper.sub').classList.remove('bm-hide')
+        document.querySelector('.bm-description-wrapper.otp ').classList.add('bm-hide')
 
        chosseOption();
       
@@ -224,16 +230,16 @@ varient.forEach(function(el){
     })
 
 
-    live('.smartrr-otp.smartrr-grp-input label', 'click', function() {
-        document.querySelector('.bm-description-wrapper.sub').classList.add('bm-hide')
-        document.querySelector('.bm-description-wrapper.otp ').classList.remove('bm-hide')
-    })
+    // live('.smartrr-otp.smartrr-grp-input label', 'click', function() {
+    //     document.querySelector('.bm-description-wrapper.sub').classList.add('bm-hide')
+    //     document.querySelector('.bm-description-wrapper.otp ').classList.remove('bm-hide')
+    // })
 
-    live('.smartrr-grp-input[value="sub"] label', 'click', function() {
-        document.querySelector('.bm-description-wrapper.sub').classList.remove('bm-hide')
-        document.querySelector('.bm-description-wrapper.otp ').classList.add('bm-hide')
-        // document.querySelector('.varient-wrapper.data-smartrr-label-sub .Combo').click()
-    })
+    // live('.smartrr-grp-input[value="sub"] label', 'click', function() {
+    //     document.querySelector('.bm-description-wrapper.sub').classList.remove('bm-hide')
+    //     document.querySelector('.bm-description-wrapper.otp ').classList.add('bm-hide')
+    //     // document.querySelector('.varient-wrapper.data-smartrr-label-sub .Combo').click()
+    // })
 
 
     live('.bm-one-time .Combo', 'click', function() {
