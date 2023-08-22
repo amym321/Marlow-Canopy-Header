@@ -237,6 +237,7 @@ html body.bundle-marlow .purchase-radio span {
   border-radius:5px;
   heigh:60px;
   width:60px;
+  border:1px solid #302ba3;
 }
 
 .drop-button div[data-smartrr-label-otp],
