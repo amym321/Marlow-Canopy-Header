@@ -56,38 +56,38 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
     // clickSelector: The selector for the element to be clicked.
 
 
-    function addDynamicClickListener(triggerSelector, hideSelector, showSelector) {
-        const triggerElement = document.querySelector(triggerSelector);
-        const hideElement = document.querySelector(hideSelector);
-        const showElement = document.querySelector(showSelector);
-        // const clickElement = document.querySelector(clickSelector);
+    // function addDynamicClickListener(triggerSelector, hideSelector, showSelector) {
+    //     const triggerElement = document.querySelector(triggerSelector);
+    //     const hideElement = document.querySelector(hideSelector);
+    //     const showElement = document.querySelector(showSelector);
+    //     // const clickElement = document.querySelector(clickSelector);
 
-        if (triggerElement && hideElement && showElement && clickElement) {
-            triggerElement.addEventListener('click', function() {
-                hideElement.classList.add('hide');
-                showElement.classList.remove('hide');
-                // clickElement.click();
-            });
-        }
-    }
+    //     if (triggerElement && hideElement && showElement && clickElement) {
+    //         triggerElement.addEventListener('click', function() {
+    //             hideElement.classList.add('hide');
+    //             showElement.classList.remove('hide');
+    //             // clickElement.click();
+    //         });
+    //     }
+    // }
 
-    // Usage
+    // // Usage
 
-    // // subscribe click 
-    addDynamicClickListener(
-        '.smartrr-grp-input[value="sub"] label', //trigger
-        '.varient-wrapper.data-smartrr-label-otp', //hide
-        '.varient-wrapper.data-smartrr-label-sub', //show
-        // '.varient-wrapper.data-smartrr-label-sub>div :last-child' // click 
-    );
+    // // // subscribe click 
+    // addDynamicClickListener(
+    //     '.smartrr-grp-input[value="sub"] label', //trigger
+    //     '.varient-wrapper.data-smartrr-label-otp', //hide
+    //     '.varient-wrapper.data-smartrr-label-sub', //show
+    //     // '.varient-wrapper.data-smartrr-label-sub>div :last-child' // click 
+    // );
 
-    // OTP CLICK 
-    addDynamicClickListener(
-        '.smartrr-otp.smartrr-grp-input label',
-        '.varient-wrapper.data-smartrr-label-sub',
-        '.varient-wrapper.data-smartrr-label-otp',
-        // '.varient-wrapper.data-smartrr-label-otp  div[data-id="4"]'
-    );
+    // // OTP CLICK 
+    // addDynamicClickListener(
+    //     '.smartrr-otp.smartrr-grp-input label',
+    //     '.varient-wrapper.data-smartrr-label-sub',
+    //     '.varient-wrapper.data-smartrr-label-otp',
+    //     // '.varient-wrapper.data-smartrr-label-otp  div[data-id="4"]'
+    // );
 
     // var varientText;
     document.querySelectorAll('.varient').forEach(function(el) {
@@ -136,6 +136,9 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
      //    addClickListener('.varient-wrapper.bm-one-time .varient', '#dropdownSelections .dropdown-select:not(.hide) label > div');
      // }, 1000);
 
+
+
+  // by default accordian open
     live('.scroll-link', 'click', function() {
         if (document.querySelector('#station-tabs-tab_ht-i1-t11')) {
             setTimeout(() => {
