@@ -242,12 +242,12 @@ html body.bundle-marlow .purchase-radio span {
   border:1px solid #302ba3;
 }
 
+ */
 
-.drop-button div[data-smartrr-label-otp],
-.drop-button div[data-smartrr-label-sub]
+.dropdown-select
 {
   display:flex;
-} */
+}
 #dropdownSelections{
   display:block;
 }
