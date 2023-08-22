@@ -65,6 +65,9 @@ html body.bundle-marlow .radio-wrapper .smartrr-purchase-options {
 html body.bundle-marlow div[data-smartrr-choose-sub-benefit] {
   margin-top: 1.2rem;
 }
+html body.bundle-marlow .varient-wrapper.data-smartrr-label-sub{
+  max-width:400px;
+}
 html body.bundle-marlow .varient-inner {
   display: flex;
   margin-bottom: 20px;
