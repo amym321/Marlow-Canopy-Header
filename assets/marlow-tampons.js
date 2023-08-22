@@ -40,7 +40,7 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
   }
 
 
-
+// use in description 
     function addhideClass() {
         document.querySelectorAll('.description-wrapper .varient-description').forEach(function(el) {
             el.classList.add('hide');
