@@ -173,7 +173,7 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
 
     live('.smartrr-otp.smartrr-grp-input label', 'click', function() {
         document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.add('bm-one-time')
-        document.querySelector('.bm-one-time .varient.Light').click()
+        // document.querySelector('.bm-one-time .varient.Light').click()
         document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.remove('subscription')
     })
 
