@@ -276,4 +276,5 @@ div[data-smartrr-label-otp]{
   display:block;
   background-color: #302ba3;
   color: white;
+  font-size:0;
 }
