@@ -76,8 +76,6 @@ html body.bundle-marlow .varient-inner {
 
 html body.bundle-marlow .varient {
 cursor:pointer;
-  width:80px;
-  height:80px;
 }
 
 html body.bundle-marlow .varient img{
@@ -89,8 +87,6 @@ html body.bundle-marlow .varient img{
 html body.bundle-marlow .active-img{
   display:none;
   margin-top:-5px; 
-    width:80px;
-  height:80px;
 }
 
 html body.bundle-marlow .varient.active .active-img {
