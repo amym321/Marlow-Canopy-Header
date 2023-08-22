@@ -75,7 +75,6 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
                 document.querySelectorAll(dropbtnSelector).forEach(function(dropbtn) {
                     checkClass.forEach(function(className) {
                         if (dropbtn.textContent.includes(className)) {
-
                             console.log(dropbtn.closest('.input'))
                             dropbtn.closest('.input').click();
                         }
