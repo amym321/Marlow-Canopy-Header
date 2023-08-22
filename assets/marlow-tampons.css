@@ -144,7 +144,7 @@ html body.bundle-marlow .bm-description-wrapper p span {
 
 
 
-html body.bundle-marlow [data-smartrr-subscription-benefits] [data-smartrr-benefits-all]:before {
+html body.bundle-marlow div[data-smartrr-benefits-all]:before {
   content:'';
   color: #00b48a;
   min-width: 30px; 
