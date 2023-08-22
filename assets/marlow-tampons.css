@@ -227,6 +227,13 @@ html body.bundle-marlow .purchase-radio span {
 
 .drop-button .dropbtn.hide-button{
   display:block;
+  background-color: #302ba3;
+  color: white;
+}
+
+.drop-button .dropbtn{  
+  color: #302ba3;
+  background-color: white;
 }
 
 .drop-button div[data-smartrr-label-otp],
