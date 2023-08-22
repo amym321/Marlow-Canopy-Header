@@ -56,11 +56,11 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
     // clickSelector: The selector for the element to be clicked.
 
 
-    function addDynamicClickListener(triggerSelector, hideSelector, showSelector, clickSelector) {
+    function addDynamicClickListener(triggerSelector, hideSelector, showSelector) {
         const triggerElement = document.querySelector(triggerSelector);
         const hideElement = document.querySelector(hideSelector);
         const showElement = document.querySelector(showSelector);
-        const clickElement = document.querySelector(clickSelector);
+        // const clickElement = document.querySelector(clickSelector);
 
         if (triggerElement && hideElement && showElement && clickElement) {
             triggerElement.addEventListener('click', function() {
@@ -86,7 +86,7 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
         '.smartrr-otp.smartrr-grp-input label',
         '.varient-wrapper.data-smartrr-label-sub',
         '.varient-wrapper.data-smartrr-label-otp',
-        '.varient-wrapper.data-smartrr-label-otp  div[data-id="4"]'
+        // '.varient-wrapper.data-smartrr-label-otp  div[data-id="4"]'
     );
 
     // var varientText;
