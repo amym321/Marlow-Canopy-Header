@@ -225,13 +225,13 @@ html body.bundle-marlow .purchase-radio span {
 }
 
 
-.drop-button .dropbtn.hide-button{
+/* .drop-button .dropbtn.hide-button{
   display:block;
   background-color: #302ba3;
   color: white;
-}
+} */
 
-.drop-button .dropbtn,
+/* .drop-button .dropbtn,
 .dropdown-select .input
 {  
   color: #302ba3;
@@ -247,5 +247,5 @@ html body.bundle-marlow .purchase-radio span {
 .drop-button div[data-smartrr-label-sub]
 {
   display:flex;
-}
+} */
 
