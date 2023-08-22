@@ -131,10 +131,7 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
         addClickListener('.varient-wrapper .varient', '#dropdownSelections .dropdown-select:not(.hide) label > div');
 
 
-     //  setTimeout(() => {
-     //    // For .varient-wrapper.bm-one-time .varient elements
-     //    addClickListener('.varient-wrapper.bm-one-time .varient', '#dropdownSelections .dropdown-select:not(.hide) label > div');
-     // }, 1000);
+ 
 
 
 
@@ -207,7 +204,7 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
    // for description wrapper
     live('.varient-wrapper .varient', 'click', function(el) {
         var getVarient = this.getAttribute('data-id')
-        document.querySelectorAll('.bm-description-wrapper.sub .varient-description').forEach(function(el) {
+        document.querySelectorAll('.bm-description-wrapper .varient-description').forEach(function(el) {
             if (el.getAttribute('data-id') == getVarient) {
                 addhideClass()
                 el.classList.remove('hide')
@@ -215,15 +212,15 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
         })
     })
 
-    live('.bm-one-time .varient ', 'click', function(el) {
-        var getVarient = this.getAttribute('data-id')
-        document.querySelectorAll('.bm-description-wrapper.otp .varient-description').forEach(function(el) {
-            if (el.getAttribute('data-id') == getVarient) {
-                addhideClass()
-                el.classList.remove('hide')
-            }
-        })
-    })
+    // live('.bm-one-time .varient ', 'click', function(el) {
+    //     var getVarient = this.getAttribute('data-id')
+    //     document.querySelectorAll('.bm-description-wrapper.otp .varient-description').forEach(function(el) {
+    //         if (el.getAttribute('data-id') == getVarient) {
+    //             addhideClass()
+    //             el.classList.remove('hide')
+    //         }
+    //     })
+    // })
 
      // for description wrapper end
 
