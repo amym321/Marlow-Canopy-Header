@@ -170,55 +170,66 @@ if (urlCheck.includes('bundle-save') || urlCheck.includes('marlow-tampons')) {
 
     });
 
-
+  // one time radio  click 
     live('.smartrr-otp.smartrr-grp-input label', 'click', function() {
 
       // for varient wrapper       
         document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.add('bm-one-time')       
         document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.remove('subscription')
+
+      // for description wrapper
+         document.querySelector('.bm-description-wrapper.sub').classList.add('hide')
+        document.querySelector('.bm-description-wrapper.otp ').classList.remove('hide')
     })
 
-    live('.smartrr-grp-input[value="sub"] label', 'click', function() {
+
+  
+// subscribe radio click 
+  
+        live('.smartrr-grp-input[value="sub"] label', 'click', function() {
+            // for varient wrapper 
         document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.remove('bm-one-time')
         document.querySelector('.varient-wrapper.data-smartrr-label-sub').classList.add('subscription')
+
+   // for description wrapper
+         document.querySelector('.bm-description-wrapper.sub').classList.remove('hide')
+        document.querySelector('.bm-description-wrapper.otp ').classList.add('hide')
     })
 
 
 
 
-    live('.varient-wrapper .varient', 'click', function(el) {
-        var getVarient = this.getAttribute('data-id')
-        document.querySelectorAll('.bm-description-wrapper.sub .varient-description').forEach(function(el) {
-            if (el.getAttribute('data-id') == getVarient) {
-                addhideClass()
-                el.classList.remove('hide')
-            }
-        })
-    })
+    // live('.varient-wrapper .varient', 'click', function(el) {
+    //     var getVarient = this.getAttribute('data-id')
+    //     document.querySelectorAll('.bm-description-wrapper.sub .varient-description').forEach(function(el) {
+    //         if (el.getAttribute('data-id') == getVarient) {
+    //             addhideClass()
+    //             el.classList.remove('hide')
+    //         }
+    //     })
+    // })
 
 
-    live('.bm-one-time .varient ', 'click', function(el) {
-        var getVarient = this.getAttribute('data-id')
-        document.querySelectorAll('.bm-description-wrapper.otp .varient-description').forEach(function(el) {
-            if (el.getAttribute('data-id') == getVarient) {
-                addhideClass()
-                el.classList.remove('hide')
-            }
-        })
-    })
+    // live('.bm-one-time .varient ', 'click', function(el) {
+    //     var getVarient = this.getAttribute('data-id')
+    //     document.querySelectorAll('.bm-description-wrapper.otp .varient-description').forEach(function(el) {
+    //         if (el.getAttribute('data-id') == getVarient) {
+    //             addhideClass()
+    //             el.classList.remove('hide')
+    //         }
+    //     })
+    // })
 
 
     // live('.smartrr-otp.smartrr-grp-input label', 'click', function() {
-    //     document.querySelector('.bm-description-wrapper.sub').classList.add('hide')
-    //     document.querySelector('.bm-description-wrapper.otp ').classList.remove('hide')
+     
     //   document.querySelector('.varient-wrapper.data-smartrr-label-sub .Light').click()
     // })
 
-    // live('.smartrr-grp-input[value="sub"] label', 'click', function() {
-    //     document.querySelector('.bm-description-wrapper.sub').classList.remove('hide')
-    //     document.querySelector('.bm-description-wrapper.otp ').classList.add('hide')
-    //     document.querySelector('.varient-wrapper.data-smartrr-label-sub .Combo').click()
-    // })
+    live('.smartrr-grp-input[value="sub"] label', 'click', function() {
+     
+        document.querySelector('.varient-wrapper.data-smartrr-label-sub .Combo').click()
+    })
 
 
     live('.bm-one-time .Combo', 'click', function() {
