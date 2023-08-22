@@ -53,7 +53,7 @@ html body.bundle-marlow .radio-wrapper {
   border: 2px solid #302ba3;
   box-shadow: 2px 2px 6px 0px #302ba340;
   background-color: #fffaf6;
-  /* min-height:200px; */
+  max-width:400px;
   border-radius: 6px;
   overflow: hidden;
 }
