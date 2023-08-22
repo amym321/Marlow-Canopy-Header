@@ -79,6 +79,10 @@ cursor:pointer;
   width:85px;
   height:85px;
 }
+html body.bundle-marlow .varient img {
+width:100%;
+  height:100%;
+}
 
 html body.bundle-marlow .active-img{
   display:none;
