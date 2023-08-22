@@ -263,3 +263,7 @@ div[data-smartrr-label-otp]{
 .variant-select{
   margin-bottom:70px;
 }
+
+.dropdown-select .input{
+  margin:0;
+}
