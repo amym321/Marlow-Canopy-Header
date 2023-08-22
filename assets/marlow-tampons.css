@@ -257,6 +257,7 @@ div[data-smartrr-label-otp]{
 }
 #dropdownSelections{
   display:block;
+  box-shadow:none;
 }
 .variant-select{
   margin-bottom:70px;
