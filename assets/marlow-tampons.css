@@ -116,7 +116,7 @@ html body.bundle-marlow .radio-wrapper .color-active {
 
 html body.bundle-marlow .bm-description-wrapper .varient-description,
 html body.bundle-marlow .bm-description-wrapper.otp .description {
-  margin: 20px 0;
+  margin: 24px 0 6px;
 }
 
 html body.bundle-marlow .bm-description-wrapper .varient-description p,
