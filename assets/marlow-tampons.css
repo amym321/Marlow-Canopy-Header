@@ -79,7 +79,9 @@ html body.bundle-marlow div[data-smartrr-subscription-benefits]{
   padding-top:8px;
 }
 
-html body.bundle-marlow .varient-wrapper.data-smartrr-label-sub{
+html body.bundle-marlow .varient-wrapper.data-smartrr-label-sub,
+html body.bundle-marlow .description-wrapper 
+{
   max-width:400px;
 }
 html body.bundle-marlow .varient-inner {
