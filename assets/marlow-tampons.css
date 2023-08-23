@@ -62,12 +62,6 @@ html body.bundle-marlow .radio-wrapper .smartrr-purchase-options {
   margin-right: 0;
   margin-bottom: 0;
 }
-/* html body.bundle-marlow div[data-smartrr-choose-sub-benefit] ,
-html body.bundle-marlow div[data-smartrr-choose-otp-benefit]
-{
-  margin-top: 1.2rem;
-} */
-
 html body.bundle-marlow .smartrr-otp.smartrr-grp-input{
   border-bottom:1px solid #978FC7;
 
