@@ -110,7 +110,7 @@ html body.bundle-marlow .smartrr-purchase-options div[data-smartrr-selling-plan-
 
 html body.bundle-marlow .radio-wrapper .color-active {
   background-color: #fdf3eb;
-  box-shadow: 2px 2px 6px 0px #302ba340;
+  /* box-shadow: 2px 2px 6px 0px #302ba340; */
 }
 
 html body.bundle-marlow .bm-description-wrapper .varient-description,
