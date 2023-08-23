@@ -76,6 +76,7 @@ html body.bundle-marlow .smartrr-otp.smartrr-grp-input{
 html body.bundle-marlow div[data-smartrr-onetime-benefits],
 html body.bundle-marlow div[data-smartrr-subscription-benefits]{
   padding-bottom:16px;
+  padding-top:8px;
 }
 
 html body.bundle-marlow .varient-wrapper.data-smartrr-label-sub{
