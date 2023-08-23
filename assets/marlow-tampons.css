@@ -67,6 +67,12 @@ html body.bundle-marlow div[data-smartrr-choose-otp-benefit]
 {
   margin-top: 1.2rem;
 }
+
+html body.bundle-marlow div[data-smartrr-onetime-benefits],
+html body.bundle-marlow div[data-smartrr-subscription-benefits]{
+  padding-bottom:18px;
+}
+
 html body.bundle-marlow .varient-wrapper.data-smartrr-label-sub{
   max-width:400px;
 }
