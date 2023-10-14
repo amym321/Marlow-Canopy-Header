@@ -199,7 +199,9 @@ html body.bundle-marlow .purchase-radio span {
 }
 
 
-
+.data-smartrr-top-price [data-smartrr-compare-price]{
+  order:-1;
+}
 
 
 
