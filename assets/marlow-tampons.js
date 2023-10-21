@@ -78,6 +78,9 @@ if (urlCheck.includes("bundle-save") || urlCheck.includes("marlow-tampons")) {
     document.querySelector(".varient-wrapper .varient.Light").click();
   }, 800);
 
+window.scrollTo(0, 0);
+
+  
   //    // For .varient-wrapper.subscription .varient elements
   addClickListener(
     ".varient-wrapper.subscription .varient",
