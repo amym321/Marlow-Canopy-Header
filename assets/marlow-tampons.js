@@ -107,20 +107,20 @@ if (urlCheck.includes("bundle-save") || urlCheck.includes("marlow-tampons")) {
   });
   
 
-  // Find the element to scroll to
-  var targetElement = document.querySelector(".quantity");
+  // // Find the element to scroll to
+  // var targetElement = document.querySelector(".quantity");
 
-  // Find the element that triggers the scroll
-  var scrollLink = document.querySelector(".scroll-link");
+  // // Find the element that triggers the scroll
+  // var scrollLink = document.querySelector(".scroll-link");
 
-  // Add a click event listener to the scrollLink
-  scrollLink.addEventListener("click", function (event) {
-    // Scroll to the target element, stopping a bit before the top
-    targetElement.scrollIntoView({
-      behavior: "smooth", // Use smooth scrolling
-      inline: "nearest", // Keep the target element as close to the vertical center as possible
-    });
-  });
+  // // Add a click event listener to the scrollLink
+  // scrollLink.addEventListener("click", function (event) {
+  //   // Scroll to the target element, stopping a bit before the top
+  //   targetElement.scrollIntoView({
+  //     behavior: "smooth", // Use smooth scrolling
+  //     inline: "nearest", // Keep the target element as close to the vertical center as possible
+  //   });
+  // });
 
   function chosseOption() {
     var controlOption = document.querySelectorAll(
