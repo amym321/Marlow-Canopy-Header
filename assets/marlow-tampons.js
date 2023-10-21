@@ -73,10 +73,10 @@ if (urlCheck.includes("bundle-save") || urlCheck.includes("marlow-tampons")) {
 
   // by default one time click
 
-  // setTimeout(() => {
-  //   document.querySelector(".smartrr-otp.smartrr-grp-input label").click();
-  //   document.querySelector(".varient-wrapper .varient.Light").click();
-  // }, 800);
+  setTimeout(() => {
+    document.querySelector(".smartrr-otp.smartrr-grp-input label").click();
+    document.querySelector(".varient-wrapper .varient.Light").click();
+  }, 800);
 
   //    // For .varient-wrapper.subscription .varient elements
   // addClickListener(
