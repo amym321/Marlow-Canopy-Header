@@ -82,10 +82,7 @@ if (urlCheck.includes("bundle-save") || urlCheck.includes("marlow-tampons")) {
   }, 800);
 
    setTimeout(() => {
- 
-
   window.scrollTo(0, 0);
-
   },1000);
 
 
