@@ -76,9 +76,10 @@ if (urlCheck.includes("bundle-save") || urlCheck.includes("marlow-tampons")) {
   setTimeout(() => {
     document.querySelector(".smartrr-otp.smartrr-grp-input label").click();
     document.querySelector(".varient-wrapper .varient.Light").click();
-  }, 800);
-
+    
 window.scrollTo(0, 0);
+
+  }, 800);
 
   
   //    // For .varient-wrapper.subscription .varient elements
