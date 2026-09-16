@@ -12041,12 +12041,12 @@ body.tab-used .cc-checkbox__input:focus + .cc-checkbox__label, html.no-js .cc-ch
 
 .not-scrolled .toolbar-container,
 .not-scrolled .main-nav .nav-item .nav-item-link {
-  color: {{nav_tran_desk_col}} !important;   /* color: {{#fff}} !important; */
+  color: {{nav_tran_desk_col}} !important;   /* color: {{ fff }} !important; */
 }
 @media (max-width: 768px) {
   .not-scrolled .toolbar-container,
   .not-scrolled .main-nav .nav-item .nav-item-link {
-    color: {{nav_tran_mobile_col}} !important;   /* color: {{#fff}} !important; */
+    color: {{nav_tran_mobile_col}} !important;   /* color: {{ fff }} !important; */
   }
 }
 .not-scrolled:hover .toolbar-container,
@@ -12163,4 +12163,16 @@ body.tab-used .cc-checkbox__input:focus + .cc-checkbox__label, html.no-js .cc-ch
 }
 .not-scrolled:hover .main-nav .sub-nav .sub-nav-item-link {
   color: {{ nav_featured_col }} !important;
-}
+}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{{#fff}}"
+  to: "{{ fff }}"
+  position: 311919..311928
+- from: "{{#fff}}"
+  to: "{{ fff }}"
+  position: 312122..312131
+{%- endcomment -%}
